@@ -23,4 +23,4 @@ The goal of this project is to make planning easier, increase participation, and
 This project is developed independently as a student project, with a focus on building a clear and useful website for prom information and planning.
 
 ## Status
-In progress — actively developing features and improving design
+In progress — actively developing

@@ -1,6 +1,6 @@
 # BRHS Prom 2026 Website
 
-Student-built website created by a team to organize and promote BRHS Prom 2026, helping students access tickets, event details, and important updates in one place.
+Student-built website created to organize and promote BRHS Prom 2026, helping students access tickets, event details, and important updates in one place.
 
 ## Project Purpose
 This project is designed to improve how students receive information about prom by centralizing everything into a single platform. Instead of relying only on social media, this website provides a more structured, reliable, and accessible information for all people who wish to attend.
@@ -18,9 +18,6 @@ The goal of this project is to make planning easier, increase participation, and
 - Mobile-friendly and responsive design
 - Real-time updates and notifications
 - Ticket confirmation and user flow system
-
-## Development
-This project is developed independently as a student project, with a focus on building a clear and useful website for prom information and planning.
 
 ## Status
 In progress — actively developing

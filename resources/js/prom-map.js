@@ -1,7 +1,10 @@
 function initPromMap() {
-    const venue = { lat: 35.2271, lng: -80.8431 }; // update later if needed
+    const venue = { lat: 35.2271, lng: -80.8431 };
 
-    const map = new google.maps.Map(document.getElementById("prom-map"), {
+    const mapEl = document.getElementById("prom-map");
+    if (!mapEl || !window.google || !google.maps) return;
+
+    const map = new google.maps.Map(mapEl, {
         center: venue,
         zoom: 15,
         disableDefaultUI: false,
@@ -24,3 +27,5 @@ function initPromMap() {
         );
     });
 }
+
+window.initPromMap = initPromMap;

@@ -20,13 +20,6 @@
 @yield('content')
 
 <script src="{{ asset('js/app.js') }}"></script>
-<script src="{{ asset('js/prom-map.js') }}"></script>
-
-<script
-    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&loading=async&callback=initPromMap&libraries=marker"
-    async
-    defer
-></script>
 
 </body>
 </html>

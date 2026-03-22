@@ -34,9 +34,11 @@
 
         <div class="prom-info-panel map-wrapper">
             <iframe
-                src="https://www.google.com/maps?q=820+Hamilton+St+Charlotte+NC&output=embed"
                 class="prom-map"
-                loading="lazy">
+                src="https://www.google.com/maps?q=820+Hamilton+St+Unit+A3+Charlotte+NC&output=embed"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </div>
 

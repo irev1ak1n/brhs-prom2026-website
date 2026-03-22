@@ -7,6 +7,9 @@ function initPromMap() {
     const map = new google.maps.Map(mapEl, {
         center: venue,
         zoom: 15,
+
+        gestureHandling: "greedy",
+
         disableDefaultUI: false,
         streetViewControl: false,
         mapTypeControl: false,

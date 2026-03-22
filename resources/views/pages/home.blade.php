@@ -9,16 +9,16 @@
             <div class="hero-glow hero-glow-1"></div>
             <div class="hero-glow hero-glow-2"></div>
 
-            <header class="topbar">
-                <div class="topbar-shell">
+            <header class="topbar hero-top">
+                <div class="topbar-shell top-row">
                     <a href="{{ url('/') }}" class="brand brand-uw" aria-label="Go to homepage">
                         <div class="brand-text">
-                            <strong>Prom 2026</strong>
-                            <span>BRHS Las Vegas Night</span>
+                            <strong>Prom: A Night in Las Vegas</strong>
+                            <span>Ballantyne Ridge High School</span>
                         </div>
                     </a>
 
-                    <nav class="nav-pill">
+                    <nav class="nav" aria-label="Primary navigation">
                         <a href="#info">Info</a>
                         <a href="#tickets">Get Tickets</a>
                         <a href="#gallery">Gallery</a>

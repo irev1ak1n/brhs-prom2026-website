@@ -26,26 +26,37 @@
 }
 
 .brand-uw {
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    gap: 14px;
     text-decoration: none;
     color: #fff;
-    padding: 6px 8px;
+
+    padding: 6px 4px;
     border-radius: 16px;
+
     position: relative;
     overflow: hidden;
+
+    flex: 0 0 auto;
+    min-width: fit-content;
+    margin-right: 20px;
+
+    transform: none;
+
     transition: transform .18s ease, background .18s ease, box-shadow .18s ease;
 }
 
 .brand-uw:hover {
     transform: translateY(-1px);
-    background: rgba(255,255,255,.05);
+    background: rgba(255,255,255,.06);
     box-shadow: 0 10px 22px rgba(0,0,0,.18);
 }
 
 .brand-uw:focus-visible {
-    outline: 2px solid rgba(232,178,79,1);
-    outline-offset: 3px;
+    outline: 2px solid rgba(232,178,79,.9);
+    outline-offset: 4px;
+    border-radius: 10px;
 }
 
 .brand-uw::before {
@@ -55,7 +66,7 @@
     left: -60%;
     width: 60%;
     height: 180%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,.12), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,.14), transparent);
     transform: rotate(18deg);
     transition: left .55s ease;
     pointer-events: none;
@@ -65,62 +76,634 @@
     left: 110%;
 }
 
-.brand-text {
+.brand-uw .brand-text {
     display: flex;
     flex-direction: column;
     gap: 4px;
 }
 
-.brand-text strong {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 28px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    line-height: 1.05;
-    color: #fff6e8;
-    text-shadow: 0 10px 28px rgba(0,0,0,.4);
+.brand-uw .brand-text strong,
+.brand-uw .brand-text span {
+    white-space: nowrap;
 }
 
-.brand-text span {
+.brand-uw .brand-text strong {
+    font-family: "Bree Serif", serif;
+    font-size: clamp(20px, 1.7vw, 26px);
+    font-weight: 400;
+    letter-spacing: .3px;
+    line-height: 1.05;
+    text-transform: none;
+    text-shadow: 0 8px 22px rgba(0,0,0,.35);
+}
+
+.brand-uw .brand-text span {
     font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
     font-size: 12px;
     font-weight: 600;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: rgba(255, 220, 170, 0.85);
+    opacity: .85;
 }
 
-.nav-pill {
-    justify-self: center;
+
+
+
+
+/* =========================
+   NAV PILL
+========================= */
+.nav{
+    display:flex;
+    justify-self:center;
+    align-items:center;
+
+    gap:24px;
+    padding: 12px 18px;
+
+    background: rgba(0,0,0,.28);
+    border: 1px solid rgba(255,255,255,.14);
+    border-radius: 999px;
+    backdrop-filter: blur(10px);
+
+    font-weight:800;
+    font-size:13px;
+    letter-spacing: .06em;
+    text-transform:uppercase;
+
+    white-space: nowrap;
+    flex-wrap: nowrap;
+}
+
+.nav a{
+    position: relative;
+    padding: 6px 0;
+    text-decoration: none;
+    color:#fff;
+    opacity:.92;
+
+    white-space: nowrap;
+    transition: opacity .2s ease, transform .2s ease;
+}
+
+.nav a:hover{
+    opacity:1;
+    transform: translateY(-1px);
+}
+
+.nav a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:0%;
+    height:2px;
+    border-radius: 99px;
+    background: rgba(255,255,255,.85);
+    transition: width .25s ease;
+}
+
+.nav a:hover::after{
+    width:100%;
+}
+
+
+
+
+
+
+
+
+
+/* ===== HERO-TOP / NAVBAR — CLEAN FINAL ===== */
+
+/* Top bar shell */
+.hero-top{
+    transition: padding .2s ease, background .2s ease;
+}
+
+.hero-top.is-scrolled{
+    padding: 10px 0;
+    background: rgba(0,0,0,.38);
+}
+
+/* Main row layout */
+.hero-top .container.top-row{
+    display: flex !important;
+    align-items: center !important;
+    gap: 24px !important;
+
+    max-width: 1400px !important;
+    margin-left: 16px !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Brand */
+.hero-top .brand-uw{
+    flex: 0 0 auto !important;
+    margin-right: 20px !important;
+    transform: none !important;
+}
+
+.hero-top .brand-uw .brand-text strong,
+.hero-top .brand-uw .brand-text span{
+    white-space: nowrap !important;
+}
+
+.hero-top .brand-uw .brand-text strong{
+    font-size: clamp(20px, 1.7vw, 26px) !important;
+}
+
+/* Nav */
+.hero-top .nav{
+    flex: 1 1 auto !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    gap: 32px !important;
+    padding: 12px 28px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.hero-top .nav a.is-active{
+    opacity: 1;
+}
+
+.hero-top .nav a.is-active::after{
+    width: 100%;
+    background: rgba(232,178,79,.95);
+}
+
+/* Keep useful focus styling for nav + brand */
+.hero-top .nav a:focus-visible,
+.hero-top .brand-uw:focus-visible{
+    outline: 2px solid rgba(232,178,79,.9);
+    outline-offset: 4px;
+    border-radius: 10px;
+}
+
+/* ===== SEARCH BAR — FINAL CLEAN VERSION ===== */
+
+.hero-top .nav-search{
+    position: relative !important;
+    flex: 0 0 auto !important;
+    width: clamp(240px, 22vw, 340px) !important;
+    margin-left: 24px !important;
+    height: 44px !important;
+    border-radius: 999px !important;
+    overflow: hidden !important;
+
+    background: rgba(0,0,0,.22) !important;
+    border: 1px solid rgba(255,255,255,.14) !important;
+
+    backdrop-filter: blur(12px);
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.06),
+        0 12px 28px rgba(0,0,0,.18) !important;
+
+    transition:
+        border-color .18s ease,
+        background .18s ease,
+        box-shadow .18s ease,
+        transform .18s ease !important;
+}
+
+/* Focus = subtle, latest version */
+.hero-top .nav-search:focus-within{
+    background: rgba(0,0,0,.28) !important;
+    border-color: rgba(255,255,255,.26) !important;
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.08),
+        0 18px 46px rgba(0,0,0,.26),
+        0 0 0 3px rgba(120,180,255,.10) !important;
+    transform: translateY(-1px) !important;
+}
+
+/* Gold underline animation kept from newest override */
+.hero-top .nav-search::after{
+    content: "";
+    position: absolute;
+    left: 18px;
+    right: 18px;
+    bottom: 6px;
+    height: 2px;
+    border-radius: 99px;
+    background: rgba(232,178,79,.95);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .22s ease;
+    opacity: .9;
+    pointer-events: none;
+}
+
+.hero-top .nav-search:focus-within::after{
+    transform: scaleX(1);
+}
+
+/* Input */
+.hero-top .nav-search input{
+    flex: 1;
+    height: 100%;
+    border: 0;
+    outline: none !important;
+    background: transparent;
+
+    color: rgba(255,255,255,.92);
+    padding: 0 14px 0 18px;
+
+    font-size: 14px;
+    font-weight: 650;
+    letter-spacing: .01em;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    caret-color: rgba(255,255,255,.85);
+}
+
+.hero-top .nav-search input::placeholder{
+    color: rgba(255,255,255,.52);
+    font-weight: 650;
+}
+
+/* Button */
+.hero-top .nav-search button{
+    width: 46px;
+    height: 100%;
+    border: 0;
+    outline: none !important;
+    box-shadow: none !important;
+
+    background: transparent !important;
+    color: rgba(255,255,255,.88);
+    border-left: 1px solid rgba(255,255,255,.10);
+
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+
+    transition: transform .15s ease, background .15s ease !important;
+}
+
+.hero-top .nav-search button:hover{
+    transform: translateY(-1px);
+    background: rgba(255,255,255,.06);
+}
+
+.hero-top .nav-search button:active{
+    transform: translateY(0);
+    background: rgba(255,255,255,.10);
+}
+
+.hero-top .nav-search button:focus-visible{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   NAV PILL
+========================= */
+.nav{
     display: flex;
     align-items: center;
-    gap: 6px;
-    padding: 10px 14px;
+    justify-self: center;
+
+    gap: 24px;
+    padding: 12px 18px;
+
+    background: rgba(0,0,0,.28);
+    border: 1px solid rgba(255,255,255,.14);
     border-radius: 999px;
-    background: rgba(8, 12, 20, 0.78);
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    box-shadow:
-        0 14px 34px rgba(0, 0, 0, 0.24),
-        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(10px);
+
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+
+    white-space: nowrap;
+    flex-wrap: nowrap;
 }
 
-.nav-pill a {
+.nav a{
+    position: relative;
+    padding: 6px 0;
+    text-decoration: none;
+    color: #fff;
+    opacity: .92;
+
+    white-space: nowrap;
+    transition: opacity .2s ease, transform .2s ease;
+}
+
+.nav a:hover{
+    opacity: 1;
+    transform: translateY(-1px);
+}
+
+.nav a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    border-radius: 99px;
+    background: rgba(255,255,255,.85);
+    transition: width .25s ease;
+}
+
+.nav a:hover::after{
+    width: 100%;
+}
+
+/* active nav link */
+.hero-top .nav a.is-active{
+    opacity: 1;
+}
+
+.hero-top .nav a.is-active::after{
+    width: 100%;
+    background: rgba(232,178,79,.95);
+}
+
+/* nav placement */
+.hero-top .nav{
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 12px 28px;
+    margin-left: 0;
+    margin-right: 12px;
+}
+
+/* =========================
+   NAV SEARCH
+========================= */
+.nav-search{
+    display: flex;
+    align-items: center;
+    height: 44px;
+    width: clamp(220px, 22vw, 320px);
+
+    margin-left: 18px;
+    background: rgba(0,0,0,.28);
+    border: 1px solid rgba(255,255,255,.16);
+    border-radius: 999px;
+    overflow: hidden;
+
+    backdrop-filter: blur(12px);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.08);
+}
+
+.nav-search input{
+    flex: 1;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #fff;
+
+    padding: 0 16px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.nav-search input::placeholder{
+    color: rgba(255,255,255,.70);
+}
+
+.nav-search button{
+    width: 48px;
+    height: 100%;
+    border: 0;
+    background: transparent;
+    color: rgba(255,255,255,.92);
+
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 900;
+
+    border-left: 1px solid rgba(255,255,255,.12);
+    transition: background .18s ease, transform .18s ease;
+}
+
+.nav-search button:hover{
+    background: rgba(255,255,255,.06);
+    transform: translateY(-1px);
+}
+
+/* final search placement */
+.hero-top .nav-search{
+    position: relative !important;
+    flex: 0 0 auto !important;
+    width: clamp(240px, 22vw, 340px);
+    margin-left: 24px !important;
+    margin-right: 6px;
+
+    height: 44px;
+    border-radius: 999px;
+    overflow: hidden;
+
+    background: rgba(0,0,0,.22) !important;
+    border: 1px solid rgba(255,255,255,.14) !important;
+
+    backdrop-filter: blur(12px);
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.06),
+        0 12px 28px rgba(0,0,0,.18) !important;
+
+    transition:
+        border-color .18s ease,
+        background .18s ease,
+        box-shadow .18s ease,
+        transform .18s ease !important;
+}
+
+.hero-top .nav-search::after{
+    content: "";
+    position: absolute;
+    left: 18px;
+    right: 18px;
+    bottom: 6px;
+    height: 2px;
+    border-radius: 99px;
+    background: rgba(232,178,79,.95);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .22s ease;
+    opacity: .9;
+    pointer-events: none;
+}
+
+.hero-top .nav-search:focus-within{
+    background: rgba(0,0,0,.28) !important;
+    border-color: rgba(255,255,255,.26) !important;
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.08),
+        0 18px 46px rgba(0,0,0,.26),
+        0 0 0 3px rgba(120,180,255,.10) !important;
+    transform: translateY(-1px) !important;
+}
+
+.hero-top .nav-search:focus-within::after{
+    transform: scaleX(1);
+}
+
+.hero-top .nav-search input{
+    padding: 0 14px 0 18px;
+    color: rgba(255,255,255,.92);
+    font-size: 14px;
+    font-weight: 650;
+    letter-spacing: .01em;
+    caret-color: rgba(255,255,255,.85);
+}
+
+.hero-top .nav-search input::placeholder{
+    color: rgba(255,255,255,.52);
+}
+
+.hero-top .nav-search button{
+    width: 46px;
+    height: 100%;
+    border: 0;
+    background: transparent !important;
+    color: rgba(255,255,255,.88);
+    border-left: 1px solid rgba(255,255,255,.10);
+
+    display: grid;
+    place-items: center;
+
+    cursor: pointer;
+    box-shadow: none !important;
+    transition: transform .15s ease, background .15s ease, color .18s ease !important;
+}
+
+.hero-top .nav-search button:hover{
+    transform: translateY(-1px);
+    background: rgba(255,255,255,.06);
+    color: rgba(255,255,255,.96);
+}
+
+.hero-top .nav-search button:active{
+    transform: translateY(0);
+    background: rgba(255,255,255,.10);
+}
+
+.hero-top .nav-search input,
+.hero-top .nav-search button{
+    outline: none !important;
+}
+
+.hero-top .nav-search button:focus-visible{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.nav-search-icon{
+    width: 18px;
+    height: 18px;
+    display: block;
+}
+
+/* =========================
+   ACCESSIBILITY / FOCUS
+========================= */
+.hero-top .nav a:focus-visible,
+.hero-top .brand-uw:focus-visible,
+.hero-top .nav-search input:focus-visible{
+    outline: 2px solid rgba(232,178,79,.9);
+    outline-offset: 4px;
+    border-radius: 10px;
+}
+
+/* =========================
+   NAV DROPDOWNS
+========================= */
+.nav-item{
+    position: relative;
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    min-height: 44px;
-    padding: 0 18px;
-    border-radius: 999px;
-    color: rgba(255, 245, 230, 0.86);
-    font-size: 0.95rem;
-    font-weight: 700;
-    transition: background .22s ease, color .22s ease, transform .22s ease;
 }
 
-.nav-pill a:hover {
-    background: rgba(255, 255, 255, 0.05);
-    color: #ffffff;
-    transform: translateY(-1px);
+.nav-link{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dd-caret{
+    font-size: .9em;
+    opacity: .85;
+    transform: translateY(1px);
+}
+
+.nav-dd{
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 260px;
+    padding: 10px;
+    border-radius: 14px;
+
+    background: rgba(10, 14, 20, .92);
+    border: 1px solid rgba(255,255,255,.10);
+    box-shadow: 0 18px 45px rgba(0,0,0,.45);
+
+    display: none;
+    z-index: 50;
+    backdrop-filter: blur(10px);
+}
+
+.nav-dd a{
+    display: block;
+    padding: 10px 12px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: rgba(255,255,255,.92);
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.nav-dd a:hover,
+.nav-dd a:focus-visible{
+    background: rgba(255,255,255,.08);
+    outline: none;
+}
+
+.nav-dd .dd-all{
+    margin-top: 6px;
+    border-top: 1px solid rgba(255,255,255,.10);
+    padding-top: 12px;
+    font-weight: 600;
+}
+
+/* open state */
+.nav-item.open > .nav-dd{
+    display: block;
+}
+
+.nav-item.open > .nav-link{
+    color: #fff;
+}
+
+/* keep last dropdown from overflowing right */
+.nav > .nav-item.has-dd:last-child .nav-dd{
+    left: auto;
+    right: 0;
+    transform: none;
 }
 
 @media (max-width: 980px) {

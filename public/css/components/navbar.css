@@ -98,10 +98,10 @@
 }
 
 .brand-uw .brand-text span {
-    font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-    font-size: 12px;
+    font-size: clamp(14px, 1vw, 16px); /* bigger + responsive */
     font-weight: 600;
-    opacity: .85;
+    opacity: .9;
+    letter-spacing: .02em; /* optional = cleaner look */
 }
 
 

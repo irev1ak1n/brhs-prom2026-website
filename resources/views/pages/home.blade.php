@@ -10,14 +10,22 @@
             <div class="hero-glow hero-glow-2"></div>
 
             <header class="topbar">
-                <div class="brand">PROM 2026</div>
+                <div class="topbar-shell">
+                    <a href="{{ url('/') }}" class="brand brand-uw" aria-label="Go to homepage">
+                        <div class="brand-text">
+                            <strong>Prom 2026</strong>
+                            <span>BRHS Las Vegas Night</span>
+                        </div>
+                    </a>
 
-                <nav class="nav">
-                    <a href="#">Home</a>
-                    <a href="#">Tickets</a>
-                    <a href="#">Gallery</a>
-                    <a href="#">FAQ</a>
-                </nav>
+                    <nav class="nav-pill">
+                        <a href="#info">Info</a>
+                        <a href="#tickets">Get Tickets</a>
+                        <a href="#gallery">Gallery</a>
+                        <a href="#contact">Contact Us</a>
+                        <a href="#faq">FAQ</a>
+                    </nav>
+                </div>
             </header>
 
             <section class="hero container hero-minimal">

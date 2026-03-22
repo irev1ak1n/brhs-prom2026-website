@@ -6,6 +6,7 @@
     <title>@yield('title', 'Prom 2026')</title>
 
     <link rel="stylesheet" href="{{ asset('css/core/global.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/components/navbar.css') }}">
     <link rel="stylesheet" href="{{ asset('css/components/newsletter.css') }}">
     <link rel="stylesheet" href="{{ asset('css/components/prom-info.css') }}">
     <link rel="stylesheet" href="{{ asset('css/pages/home.css') }}">

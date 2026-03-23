@@ -83,6 +83,8 @@
             </div>
         </section>
 
+
+
         @include('components.prom-info')
 
     </main>

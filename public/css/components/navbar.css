@@ -98,80 +98,11 @@
 }
 
 .brand-uw .brand-text span {
-    font-size: clamp(14px, 1vw, 16px); /* bigger + responsive */
+    font-size: clamp(14px, 1vw, 16px);
     font-weight: 600;
     opacity: .9;
-    letter-spacing: .02em; /* optional = cleaner look */
+    letter-spacing: .02em;
 }
-
-
-
-
-
-/* =========================
-   NAV PILL
-========================= */
-.nav{
-    display:flex;
-    justify-self:center;
-    align-items:center;
-
-    gap:24px;
-    padding: 12px 18px;
-
-    background: rgba(0,0,0,.28);
-    border: 1px solid rgba(255,255,255,.14);
-    border-radius: 999px;
-    backdrop-filter: blur(10px);
-
-    font-weight:800;
-    font-size:13px;
-    letter-spacing: .06em;
-    text-transform:uppercase;
-
-    white-space: nowrap;
-    flex-wrap: nowrap;
-}
-
-.nav a{
-    position: relative;
-    padding: 6px 0;
-    text-decoration: none;
-    color:#fff;
-    opacity:.92;
-
-    white-space: nowrap;
-    transition: opacity .2s ease, transform .2s ease;
-}
-
-.nav a:hover{
-    opacity:1;
-    transform: translateY(-1px);
-}
-
-.nav a::after{
-    content:"";
-    position:absolute;
-    left:0;
-    bottom:0;
-    width:0%;
-    height:2px;
-    border-radius: 99px;
-    background: rgba(255,255,255,.85);
-    transition: width .25s ease;
-}
-
-.nav a:hover::after{
-    width:100%;
-}
-
-
-
-
-
-
-
-
 
 /* ===== HERO-TOP / NAVBAR — CLEAN FINAL ===== */
 
@@ -234,14 +165,6 @@
     background: rgba(232,178,79,.95);
 }
 
-/* Keep useful focus styling for nav + brand */
-.hero-top .nav a:focus-visible,
-.hero-top .brand-uw:focus-visible{
-    outline: 2px solid rgba(232,178,79,.9);
-    outline-offset: 4px;
-    border-radius: 10px;
-}
-
 /* ===== SEARCH BAR — FINAL CLEAN VERSION ===== */
 
 .hero-top .nav-search{
@@ -268,7 +191,6 @@
         transform .18s ease !important;
 }
 
-/* Focus = subtle, latest version */
 .hero-top .nav-search:focus-within{
     background: rgba(0,0,0,.28) !important;
     border-color: rgba(255,255,255,.26) !important;
@@ -279,7 +201,6 @@
     transform: translateY(-1px) !important;
 }
 
-/* Gold underline animation kept from newest override */
 .hero-top .nav-search::after{
     content: "";
     position: absolute;
@@ -361,15 +282,6 @@
     box-shadow: none !important;
 }
 
-
-
-
-
-
-
-
-
-
 /* =========================
    NAV PILL
 ========================= */
@@ -437,16 +349,7 @@
     background: rgba(232,178,79,.95);
 }
 
-/* nav placement */
-.hero-top .nav{
-    flex: 1 1 auto;
-    display: flex;
-    justify-content: space-between;
-    gap: 32px;
-    padding: 12px 28px;
-    margin-left: 0;
-    margin-right: 12px;
-}
+
 
 /* =========================
    NAV SEARCH
@@ -502,49 +405,6 @@
 .nav-search button:hover{
     background: rgba(255,255,255,.06);
     transform: translateY(-1px);
-}
-
-/* final search placement */
-.hero-top .nav-search{
-    position: relative !important;
-    flex: 0 0 auto !important;
-    width: clamp(240px, 22vw, 340px);
-    margin-left: 24px !important;
-    margin-right: 6px;
-
-    height: 44px;
-    border-radius: 999px;
-    overflow: hidden;
-
-    background: rgba(0,0,0,.22) !important;
-    border: 1px solid rgba(255,255,255,.14) !important;
-
-    backdrop-filter: blur(12px);
-    box-shadow:
-        inset 0 1px 0 rgba(255,255,255,.06),
-        0 12px 28px rgba(0,0,0,.18) !important;
-
-    transition:
-        border-color .18s ease,
-        background .18s ease,
-        box-shadow .18s ease,
-        transform .18s ease !important;
-}
-
-.hero-top .nav-search::after{
-    content: "";
-    position: absolute;
-    left: 18px;
-    right: 18px;
-    bottom: 6px;
-    height: 2px;
-    border-radius: 99px;
-    background: rgba(232,178,79,.95);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform .22s ease;
-    opacity: .9;
-    pointer-events: none;
 }
 
 .hero-top .nav-search:focus-within{

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Prom 2026')
+@section('title', 'BRHS | PROM 2026 • Vegas Time')
 
 @section('content')
     <main class="home-page">

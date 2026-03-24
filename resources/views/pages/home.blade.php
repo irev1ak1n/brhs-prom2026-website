@@ -12,10 +12,20 @@
             @include('components.navbar')
 
             <section class="hero container hero-minimal">
-                <div class="hero-actions">
-                    <a href="#" class="btn btn-primary">Buy Tickets</a>
-                    <a href="#" class="btn btn-secondary">View Details</a>
+
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        A NIGHT OF LIGHTS, MUSIC, AND MEMORIES.<br>
+                        STEP INTO BRHS PROM 2026.
+                    </h1>
+
+                    <div class="hero-actions">
+                        <a href="#tickets" class="hero-btn outline">GET TICKETS</a>
+                        <a href="#gallery" class="hero-btn outline">VIEW GALLERY</a>
+                        <a href="{{ route('contact') }}" class="hero-btn outline">CONTACT</a>
+                    </div>
                 </div>
+
             </section>
         </section>
 

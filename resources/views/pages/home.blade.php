@@ -23,7 +23,7 @@
                         <a href="#tickets">Get Tickets</a>
                         <a href="#gallery">Gallery</a>
                         <a href="#contact">Contact Us</a>
-                        <a href="#faq">FAQ</a>
+                        <a href="{{ route('faq') }}">FAQ</a>
                     </nav>
                 </div>
             </header>

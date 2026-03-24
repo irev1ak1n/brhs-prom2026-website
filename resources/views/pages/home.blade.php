@@ -9,24 +9,7 @@
             <div class="hero-glow hero-glow-1"></div>
             <div class="hero-glow hero-glow-2"></div>
 
-            <header class="topbar hero-top">
-                <div class="topbar-shell top-row">
-                    <a href="{{ url('/') }}" class="brand brand-uw" aria-label="Go to homepage">
-                        <div class="brand-text">
-                            <strong>Prom: A Night in Las Vegas</strong>
-                            <span>Ballantyne Ridge High School</span>
-                        </div>
-                    </a>
-
-                    <nav class="nav" aria-label="Primary navigation">
-                        <a href="#info">Info</a>
-                        <a href="#tickets">Get Tickets</a>
-                        <a href="#gallery">Gallery</a>
-                        <a href="#contact">Contact Us</a>
-                        <a href="{{ route('faq') }}">FAQ</a>
-                    </nav>
-                </div>
-            </header>
+            @include('components.navbar')
 
             <section class="hero container hero-minimal">
                 <div class="hero-actions">

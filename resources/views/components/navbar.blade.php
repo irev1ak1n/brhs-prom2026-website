@@ -11,7 +11,7 @@
             <a href="{{ url('/#info') }}">Info</a>
             <a href="{{ url('/#tickets') }}">Get Tickets</a>
             <a href="{{ url('/#gallery') }}">Gallery</a>
-            <a href="{{ url('/#contact') }}">Contact Us</a>
+            <a href="{{ route('contact') }}">Contact Us</a>
             <a href="{{ route('faq') }}">FAQ</a>
         </nav>
     </div>

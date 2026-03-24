@@ -1,0 +1,105 @@
+.contact-hero{
+    padding: 120px 0 70px;
+    text-align: center;
+    background:
+        radial-gradient(circle at top, rgba(120, 60, 255, 0.25), transparent 40%),
+        linear-gradient(135deg, #05060d, #0c1024, #140a2a);
+}
+
+.contact-eyebrow{
+    letter-spacing: .2em;
+    color: #f2c46d;
+    text-transform: uppercase;
+    font-size: .9rem;
+}
+
+.contact-hero h1{
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    color: white;
+    margin: 10px 0;
+}
+
+.contact-subtext{
+    color: rgba(255,255,255,0.7);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-section{
+    padding: 80px 0;
+    background: #05060d;
+}
+
+.contact-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.contact-info h2{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.contact-info p{
+    color: rgba(255,255,255,0.7);
+}
+
+.contact-block{
+    margin-top: 20px;
+}
+
+.contact-block h3{
+    color: #f2c46d;
+    margin-bottom: 5px;
+}
+
+.contact-form-card{
+    background: rgba(255,255,255,0.04);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.contact-form label{
+    color: white;
+    font-size: 0.9rem;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255,255,255,0.08);
+    color: white;
+}
+
+.contact-btn{
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #ff2d55, #7b2cff);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-btn:hover{
+    transform: scale(1.05);
+}
+
+/* responsive */
+@media (max-width: 768px){
+    .contact-grid{
+        grid-template-columns: 1fr;
+    }
+}

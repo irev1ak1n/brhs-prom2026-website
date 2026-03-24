@@ -14,10 +14,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="{{ asset('css/core/global.css') }}">
+
     <link rel="stylesheet" href="{{ asset('css/components/navbar.css') }}">
     <link rel="stylesheet" href="{{ asset('css/components/newsletter.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/pages/faq.css') }}">
     <link rel="stylesheet" href="{{ asset('css/components/prom-info.css') }}">
+
+    <link rel="stylesheet" href="{{ asset('css/pages/faq.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/pages/contact.css') }}">
+
     <link rel="stylesheet" href="{{ asset('css/pages/home.css') }}">
 </head>
 <body>

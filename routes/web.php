@@ -7,3 +7,5 @@ Route::get('/', function () {
 });
 
 Route::view('/faq', 'pages.faq')->name('faq');
+
+Route::view('/contact', 'pages.contact')->name('contact');

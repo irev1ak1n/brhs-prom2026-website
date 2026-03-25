@@ -81,6 +81,11 @@
     color: white;
 }
 
+.contact-form textarea[name="message"]{
+    min-height: 200px;
+    resize: vertical;
+}
+
 .contact-btn{
     margin-top: 10px;
     padding: 12px;

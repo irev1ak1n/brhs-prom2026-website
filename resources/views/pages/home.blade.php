@@ -9,8 +9,6 @@
             <div class="hero-glow hero-glow-1"></div>
             <div class="hero-glow hero-glow-2"></div>
 
-            @include('components.navbar')
-
             <section class="hero container hero-minimal">
 
                 <div class="hero-content">
@@ -77,8 +75,8 @@
             </div>
         </section>
 
+
         @include('components.prom-info')
 
-        @include('components.navbar')
     </main>
 @endsection

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{{ asset('css/core/global.css') }}">
 
     <link rel="stylesheet" href="{{ asset('css/components/navbar.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/components/footer.css') }}">
     <link rel="stylesheet" href="{{ asset('css/components/newsletter.css') }}">
     <link rel="stylesheet" href="{{ asset('css/components/prom-info.css') }}">
 
@@ -29,6 +30,8 @@
 @include('components.navbar')
 
 @yield('content')
+
+@include('components.footer')
 
 <script src="{{ asset('js/app.js') }}"></script>
 

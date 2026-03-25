@@ -20,4 +20,4 @@ The goal of this project is to make planning easier, increase participation, and
 - Ticket confirmation and user flow system
 
 ## Status
-In progress — actively developing
+In progress - actively developing

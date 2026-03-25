@@ -22,7 +22,7 @@
 
                     <div class="hero-actions">
                         <a href="#tickets" class="hero-btn outline">GET TICKETS</a>
-                        <a href="#gallery" class="hero-btn outline">VIEW GALLERY</a>
+                        <a href="#gallery" class="hero-btn outline">PLAN YOUR NIGHT</a>
                         <a href="{{ route('contact') }}" class="hero-btn outline">CONTACT</a>
                     </div>
                 </div>

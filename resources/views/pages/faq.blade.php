@@ -94,7 +94,11 @@
                     </p>
                 </details>
 
+
             </div>
         </div>
     </section>
+
+    @include('components.navbar')
+
 @endsection

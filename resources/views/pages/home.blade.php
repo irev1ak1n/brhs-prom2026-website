@@ -77,9 +77,8 @@
             </div>
         </section>
 
-
-
         @include('components.prom-info')
 
+        @include('components.navbar')
     </main>
 @endsection

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'BRHS | PROM 2026')</title>
 
-{{--    <link rel="icon" type="image/jpeg" href="{{ asset('images/icon-v6.jpg') }}">--}}
+    {{--    <link rel="icon" type="image/jpeg" href="{{ asset('images/icon-v6.jpg') }}">--}}
     <link rel="icon" type="image/jpeg" href="{{ asset('images/icon-v5.webp') }}">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">

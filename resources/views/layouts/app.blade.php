@@ -22,6 +22,7 @@
 
     <link rel="stylesheet" href="{{ asset('css/pages/faq.css') }}">
     <link rel="stylesheet" href="{{ asset('css/pages/contact.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/pages/night-guide.css') }}">
 
     <link rel="stylesheet" href="{{ asset('css/pages/home.css') }}">
 </head>

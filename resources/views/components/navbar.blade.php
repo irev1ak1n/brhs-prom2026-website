@@ -8,7 +8,7 @@
         </a>
 
         <nav class="nav" aria-label="Primary navigation">
-            <a href="{{ url('/#info') }}">Night Guide</a>
+            <a href="{{ route('night-guide') }}">NIGHT GUIDE</a>
             <a href="{{ url('/#tickets') }}">Get Tickets</a>
             <a href="{{ url('/#gallery') }}">Gallery</a>
             <a href="{{ route('contact') }}">Contact Us</a>

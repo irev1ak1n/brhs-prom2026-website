@@ -25,7 +25,7 @@
         </div>
     </section>
 
-    <section class="ng-band" style="--bg:url('{{ asset('images/night-guide/time.jpg') }}');">
+    <section class="ng-band" style="--bg:url('{{ asset('images/night-guide/date-time.jpg') }}');">
         <div class="ng-overlay"></div>
         <div class="container ng-band-inner">
             <span class="ng-number">02</span>
@@ -37,7 +37,7 @@
         </div>
     </section>
 
-    <section class="ng-band" style="--bg:url('{{ asset('images/night-guide/venue.jpg') }}');">
+    <section class="ng-band" style="--bg:url('{{ asset('images/night-guide/place.jpg') }}');">
         <div class="ng-overlay"></div>
         <div class="container ng-band-inner">
             <span class="ng-number">03</span>
@@ -49,7 +49,7 @@
         </div>
     </section>
 
-    <section class="ng-band" style="--bg:url('{{ asset('images/night-guide/dresscode.jpg') }}');">
+    <section class="ng-band" style="--bg:url('{{ asset('images/night-guide/dress-code.jpg') }}');">
         <div class="ng-overlay"></div>
         <div class="container ng-band-inner">
             <span class="ng-number">04</span>
@@ -61,7 +61,7 @@
         </div>
     </section>
 
-    <section class="ng-band" style="--bg:url('{{ asset('images/night-guide/tickets.jpg') }}');">
+    <section class="ng-band" style="--bg:url('{{ asset('images/night-guide/karaoke.jpg') }}');">
         <div class="ng-overlay"></div>
         <div class="container ng-band-inner">
             <span class="ng-number">05</span>

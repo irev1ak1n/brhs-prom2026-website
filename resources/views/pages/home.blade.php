@@ -15,8 +15,9 @@
 
                 <div class="hero-content">
                     <h1 class="hero-title">
-                        A NIGHT OF LIGHTS, MUSIC, AND MEMORIES.<br>
-                        STEP INTO BRHS PROM 2026.
+                        <span>WELCOME TO THE NIGHT OF LIGHTS</span>
+                        <span>WHERE MEMORIES ARE MADE</span>
+                        <span>BRHS PROM '26 - LAS VEGAS</span>
                     </h1>
 
                     <div class="hero-actions">

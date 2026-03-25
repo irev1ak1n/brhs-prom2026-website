@@ -24,12 +24,12 @@
             <div class="contact-info">
                 <h2>Get in Touch</h2>
                 <p>
-                    Whether it’s tickets, guests, or event details — reach out and we’ll get back to you.
+                    Whether it’s tickets, guests, or event details - reach out and we’ll get back to you.
                 </p>
 
                 <div class="contact-block">
                     <h3>Email</h3>
-                    <p>brhsprom2026@gmail.com</p>
+                    <p>email@gmail.com</p>
                 </div>
 
                 <div class="contact-block">
@@ -37,10 +37,6 @@
                     <p>The Hamilton<br>Charlotte, NC</p>
                 </div>
 
-                <div class="contact-block">
-                    <h3>Response Time</h3>
-                    <p>We usually respond within 24–48 hours.</p>
-                </div>
             </div>
 
             <!-- RIGHT SIDE FORM -->

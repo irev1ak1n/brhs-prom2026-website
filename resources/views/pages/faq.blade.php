@@ -18,82 +18,79 @@
             <div class="faq-list">
 
                 <details class="faq-item" open>
-                    <summary>When is prom?</summary>
+                    <summary>When and where is prom?</summary>
                     <p>
-                        Prom will take place on <strong>May 2, 2026</strong>, from
-                        <strong>7:00 PM to 11:00 PM</strong>.
-                    </p>
-                </details>
-
-                <details class="faq-item">
-                    <summary>Where is prom being held?</summary>
-                    <p>
-                        Prom will be held at <strong>The Hamilton</strong>,
-                        820 Hamilton St., Unit A3, Charlotte, NC.
+                        Prom will take place on May 2, 2026, from 7:00 PM to 11:00 PM at The Hamilton in Charlotte. Plan your arrival accordingly to avoid missing any part of the event.
                     </p>
                 </details>
 
                 <details class="faq-item">
                     <summary>What is the theme?</summary>
                     <p>
-                        This year’s theme is <strong>Prom: A Night in Las Vegas</strong>,
-                        bringing together lights, glamour, and an unforgettable atmosphere.
+                        The theme is Prom: A Night in Las Vegas. The event will include themed decorations, lighting, and atmosphere inspired by Las Vegas nightlife and entertainment.
                     </p>
                 </details>
 
                 <details class="faq-item">
-                    <summary>How do I buy tickets?</summary>
+                    <summary>How can I purchase tickets for prom?</summary>
                     <p>
-                        Tickets can be purchased through the ticket section on this website.
-                        More details about pricing and deadlines will be posted there.
+                        Tickets can be purchased through the website in the tickets section. Information about pricing, deadlines, and availability will be posted and updated as needed.
                     </p>
                 </details>
 
                 <details class="faq-item">
-                    <summary>Can I bring a guest?</summary>
+                    <summary>Is there a deadline to purchase prom tickets?</summary>
                     <p>
-                        Guest permissions depend on school rules and approval. Please check
-                        with school administration for guest form requirements and deadlines.
+                        Yes. Tickets must be purchased by <strong>April 15</strong>. After this date, ticket sales will be closed and no additional purchases will be available.
                     </p>
                 </details>
 
                 <details class="faq-item">
-                    <summary>What should I wear?</summary>
+                    <summary>Are students allowed to bring a guest?</summary>
                     <p>
-                        Prom is a formal event, so students are expected to dress accordingly.
-                        Dresses, suits, and other formal attire are encouraged.
+                        Guests are allowed with prior approval. A completed guest form must be submitted before the deadline. Additional requirements may apply depending on school guidelines.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>What is the dress code?</summary>
+                    <p>
+                        Prom is a formal event. Students are expected to wear appropriate formal attire such as suits, dresses, or similar clothing that matches the event setting.
                     </p>
                 </details>
 
                 <details class="faq-item">
                     <summary>What time should I arrive?</summary>
                     <p>
-                        It is best to arrive close to the start time so you can enjoy the full
-                        event and avoid missing important moments.
+                        Prom starts at 7:00 PM. Students are encouraged to arrive on time or slightly earlier to make sure they don’t miss any part of the event.
                     </p>
                 </details>
 
                 <details class="faq-item">
-                    <summary>Will food and drinks be provided?</summary>
+                    <summary>Will food, drinks, or entertainment be provided?</summary>
                     <p>
-                        Event refreshment details will be shared closer to prom night.
-                        Keep checking the website for updates.
+                        Food and drinks will be available during the event. Specific details about what will be provided will be shared closer to the date of prom.
                     </p>
                 </details>
 
                 <details class="faq-item">
-                    <summary>Can I leave and come back?</summary>
+                    <summary>Can I leave and re-enter?</summary>
                     <p>
-                        Re-entry policies depend on school rules and venue guidelines.
-                        More information will be posted once it is confirmed.
+                        Re-entry policies depend on school and venue rules. Students should expect limited or no re-entry once they leave. Final guidelines will be communicated before the event.
                     </p>
                 </details>
 
                 <details class="faq-item">
-                    <summary>Who can I contact if I still have questions?</summary>
+                    <summary>Is parking available at or near the venue?</summary>
                     <p>
-                        Use the contact section on the website or reach out to the school/prom committee
-                        for additional information.
+                        Parking will be available near the venue. Additional information about parking locations, directions, and any restrictions will be provided closer to the event date.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Who should I contact if I have additional questions?</summary>
+                    <p>
+                        For additional questions, use the contact page on the website or reach out to the prom committee. Responses will be provided as soon as possible.
                     </p>
                 </details>
 

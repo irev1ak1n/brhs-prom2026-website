@@ -13,7 +13,7 @@
         </div>
     </section>
 
-    <section class="ng-band" style="--bg:url('{{ asset('images/night-guide/theme.jpg') }}');">
+    <section class="ng-band pos-1" style="--bg:url('{{ asset('images/night-guide/theme.jpg') }}');">
         <div class="ng-overlay"></div>
         <div class="container ng-band-inner">
             <span class="ng-number">01</span>
@@ -25,7 +25,7 @@
         </div>
     </section>
 
-    <section class="ng-band" style="--bg:url('{{ asset('images/night-guide/date-time.jpg') }}');">
+    <section class="ng-band pos-2" style="--bg:url('{{ asset('images/night-guide/date-time.jpg') }}');">
         <div class="ng-overlay"></div>
         <div class="container ng-band-inner">
             <span class="ng-number">02</span>
@@ -37,7 +37,7 @@
         </div>
     </section>
 
-    <section class="ng-band" style="--bg:url('{{ asset('images/night-guide/place.jpg') }}');">
+    <section class="ng-band pos-3" style="--bg:url('{{ asset('images/night-guide/place.jpg') }}');">
         <div class="ng-overlay"></div>
         <div class="container ng-band-inner">
             <span class="ng-number">03</span>
@@ -49,7 +49,7 @@
         </div>
     </section>
 
-    <section class="ng-band" style="--bg:url('{{ asset('images/night-guide/dress-code.jpg') }}');">
+    <section class="ng-band pos-4" style="--bg:url('{{ asset('images/night-guide/dress-code.jpg') }}');">
         <div class="ng-overlay"></div>
         <div class="container ng-band-inner">
             <span class="ng-number">04</span>
@@ -61,7 +61,7 @@
         </div>
     </section>
 
-    <section class="ng-band" style="--bg:url('{{ asset('images/night-guide/karaoke.jpg') }}');">
+    <section class="ng-band pos-5" style="--bg:url('{{ asset('images/night-guide/karaoke.jpg') }}');">
         <div class="ng-overlay"></div>
         <div class="container ng-band-inner">
             <span class="ng-number">05</span>

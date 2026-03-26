@@ -19,8 +19,9 @@
             <span class="ng-number">01</span>
             <h2>The Theme</h2>
             <p>
-                This year’s prom is inspired by Las Vegas. Expect lights, music, and a high-energy
-                atmosphere designed to make the night feel different from a regular school event.
+                More than just a dance.
+
+                Inspired by Las Vegas, the night is built around light, movement, and energy. It’s meant to feel different — something you step into, not just attend.
             </p>
         </div>
     </section>

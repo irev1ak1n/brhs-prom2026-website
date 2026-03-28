@@ -261,7 +261,6 @@
             const linkPath = linkUrl.pathname.replace(/\/+$/, "") || "/";
             const linkHash = linkUrl.hash || "";
 
-            // Do not auto-highlight hash-only section links in navbar
             if (linkHash) return;
 
             if (linkPath === currentPath) {

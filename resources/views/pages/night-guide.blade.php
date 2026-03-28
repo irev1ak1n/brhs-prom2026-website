@@ -73,9 +73,13 @@
             </p>
 
             <div class="ng-actions">
-                <a href="#tickets" class="ng-btn ng-btn-primary">Get Tickets</a>
+                <a href="{{ route('tickets') }}" class="ng-btn ng-btn-primary">Get Tickets</a>
                 <a href="{{ route('faq') }}" class="ng-btn">View FAQ</a>
             </div>
         </div>
     </section>
+@endsection
+
+@section('scripts')
+    <script src="{{ asset('js/prom-info.js') }}"></script>
 @endsection

@@ -249,6 +249,7 @@
         if (!links.length) return;
 
         const currentPath = window.location.pathname.replace(/\/+$/, "") || "/";
+        const currentHash = window.location.hash || "";
 
         links.forEach((link) => {
             link.classList.remove("is-active");
@@ -258,13 +259,13 @@
 
             const linkUrl = new URL(href, window.location.origin);
             const linkPath = linkUrl.pathname.replace(/\/+$/, "") || "/";
+            const linkHash = linkUrl.hash || "";
+
+            // Do not auto-highlight hash-only section links in navbar
+            if (linkHash) return;
 
             if (linkPath === currentPath) {
                 link.classList.add("is-active");
-            }
-
-            if (currentPath === "/" && link.getAttribute("href") === "/#gallery") {
-                link.classList.remove("is-active");
             }
         });
     }

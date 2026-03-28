@@ -4,7 +4,7 @@
 
 @section('content')
     <main class="home-page">
-        <section class="hero-page">
+        <section class="hero-page" id="home">
             <div class="hero-bg"></div>
             <div class="hero-glow hero-glow-1"></div>
             <div class="hero-glow hero-glow-2"></div>
@@ -28,7 +28,7 @@
             </section>
         </section>
 
-        <section class="signup-band">
+        <section class="signup-band" id="newsletter">
 
             <div class="container signup-wrap">
                 <div class="signup-copy">
@@ -74,7 +74,6 @@
                 </div>
             </div>
         </section>
-
 
         @include('components.prom-info')
 

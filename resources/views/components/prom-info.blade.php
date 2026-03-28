@@ -1,4 +1,4 @@
-<section class="prom-info-section">
+<section class="prom-info-section" id="map">
     <div class="container prom-info-grid">
 
         <div class="prom-info-copy">

@@ -105,6 +105,7 @@
                         "ticket price", "ticket cost"
                     ],
                 },
+
                 {
                     target: "/faq",
                     keys: [
@@ -117,6 +118,7 @@
                         "restrictions"
                     ],
                 },
+
                 {
                     target: "/contact",
                     keys: [
@@ -128,6 +130,7 @@
                         "who to contact"
                     ],
                 },
+
                 {
                     target: "/#gallery",
                     keys: [
@@ -136,6 +139,7 @@
                         "prom pictures", "prom photos"
                     ],
                 },
+
                 {
                     target: "/night-guide#theme",
                     keys: [
@@ -145,6 +149,7 @@
                         "theme idea", "prom style"
                     ],
                 },
+
                 {
                     target: "/night-guide#date-time",
                     keys: [
@@ -156,18 +161,16 @@
                         "may 2", "7 pm", "11 pm"
                     ],
                 },
+
                 {
                     target: "/night-guide#venue",
                     keys: [
-                        "venue", "location", "address",
-                        "where", "where is prom",
-                        "where is the venue",
+                        "venue",
                         "the hamilton",
-                        "directions", "map",
                         "parking", "parking info",
-                        "how to get there"
                     ],
                 },
+
                 {
                     target: "/night-guide#dress-code",
                     keys: [
@@ -180,6 +183,7 @@
                         "prom outfit"
                     ],
                 },
+
                 {
                     target: "/night-guide#tickets",
                     keys: [
@@ -191,6 +195,7 @@
                         "ticket cutoff"
                     ],
                 },
+
                 {
                     target: "/night-guide",
                     keys: [
@@ -199,6 +204,50 @@
                         "details", "information",
                         "everything about prom",
                         "all info", "full info"
+                    ],
+                },
+
+                {
+                    target: "/",
+                    keys: [
+                        "home", "homepage", "main page",
+                        "start", "go home",
+                        "prom home", "prom homepage",
+                        "back to home", "landing",
+                        "main", "overview"
+                    ],
+                },
+
+                {
+                    target: "/#map",
+                    keys: [
+                        "map", "location map",
+                        "venue map", "prom map",
+                        "where is it on map",
+                        "find location", "see location",
+                        "directions", "how to get there",
+                        "open map", "view map",
+                        "join us", "join us section",
+                        "where is prom located",
+                        "show location", "location", "address",
+                        "where", "where is prom",
+                        "where is the venue", "how to get there"
+                    ],
+                },
+
+                {
+                    target: "/#newsletter",
+                    keys: [
+                        "newsletter", "subscribe",
+                        "sign up", "signup",
+                        "join mailing list",
+                        "email updates",
+                        "get updates", "stay updated",
+                        "notifications", "alerts",
+                        "prom updates",
+                        "news", "latest news",
+                        "updates about prom",
+                        "subscribe for updates"
                     ],
                 },
             ];

@@ -19,7 +19,7 @@
             <h4>Navigation</h4>
             <a href="{{ url('/#info') }}">Night Guide</a>
             <a href="{{ url('/#tickets') }}">Get Tickets</a>
-            <a href="{{ url('/#gallery') }}">Gallery</a>
+            <a href="{{ route('gallery') }}">Gallery</a>
             <a href="{{ route('contact') }}">Contact Us</a>
             <a href="{{ route('faq') }}">FAQ</a>
         </div>

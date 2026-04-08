@@ -10,7 +10,7 @@
         <nav class="nav" aria-label="Primary navigation">
             <a href="{{ route('night-guide') }}">Night Guide</a>
             <a href="{{ route('tickets') }}">Get Tickets</a>
-            <a href="{{ url('/#gallery') }}">Gallery</a>
+            <a href="{{ route('gallery') }}">Gallery</a>
             <a href="{{ route('contact') }}">Contact Us</a>
             <a href="{{ route('faq') }}">FAQ</a>
         </nav>

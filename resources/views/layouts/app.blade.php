@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="{{ asset('css/pages/contact.css') }}">
     <link rel="stylesheet" href="{{ asset('css/pages/night-guide.css') }}">
     <link rel="stylesheet" href="{{ asset('css/pages/tickets.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/pages/gallery.css') }}">
 
     <link rel="stylesheet" href="{{ asset('css/pages/home.css') }}">
 </head>
@@ -38,6 +39,7 @@
 @include('components.footer')
 
 <script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ asset('js/gallery.js') }}"></script>
 <script src="{{ asset('js/components/navbar.js') }}"></script>
 
 </body>

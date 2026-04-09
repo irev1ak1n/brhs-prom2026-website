@@ -14,8 +14,8 @@
             <p class="gallery-kicker">BRHS Prom 2026</p>
             <h1>Gallery</h1>
             <p class="gallery-subtitle">
-                Explore the atmosphere, venue, and details behind
-                <span>A Night in Las Vegas</span>.
+                See the venue. See the vibe. See what makes
+                <span>A Night in Las Vegas unforgettable.</span>
             </p>
         </div>
     </section>

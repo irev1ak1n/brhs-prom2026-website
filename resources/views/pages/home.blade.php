@@ -33,7 +33,7 @@
             <div class="container signup-wrap">
                 <div class="signup-copy">
                     <span class="signup-eyebrow">Stay in the Loop</span>
-                    <h2>Don’t miss prom updates.</h2>
+                    <h2>Don’t miss prom updates</h2>
                     <p>
                         Get important reminders about tickets, event details, deadlines,
                         and announcements for BRHS Prom 2026 — all in one place.

@@ -132,11 +132,14 @@
                 },
 
                 {
-                    target: "/#gallery",
+                    target: "/gallery",
                     keys: [
                         "gallery", "photos", "pictures",
                         "images", "pics",
-                        "prom pictures", "prom photos"
+                        "prom pictures", "prom photos",
+                        "prom gallery", "see photos",
+                        "view gallery", "photo gallery",
+                        "event photos", "prom images"
                     ],
                 },
 
@@ -250,6 +253,8 @@
                         "subscribe for updates"
                     ],
                 },
+
+
             ];
 
             const matches = (keys) =>

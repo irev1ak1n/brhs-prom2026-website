@@ -18,7 +18,7 @@
 
             <div class="tickets-grid">
                 <article class="ticket-card featured">
-                    <span class="ticket-badge">Most Popular</span>
+                    <span class="ticket-badge">Now Available</span>
                     <h2>General Admission</h2>
                     <p class="ticket-price">$75</p>
                     <p class="ticket-desc">
@@ -32,31 +32,30 @@
                         <li>Refreshments included</li>
                     </ul>
 
-                    <div class="ticket-controls">
-                        <button type="button" class="qty-btn" data-target="general" data-action="decrease">−</button>
-                        <input type="number" id="general" class="qty-input" value="0" min="0" max="10" readonly>
-                        <button type="button" class="qty-btn" data-target="general" data-action="increase">+</button>
+                    <div class="ticket-note">
+                        Tickets are purchased through the official school payment system.
                     </div>
                 </article>
 
-                <article class="ticket-card">
-                    <h2>Guest Ticket</h2>
-                    <p class="ticket-price">$85</p>
+                <article class="ticket-card ticket-card-closed">
+                    <span class="ticket-badge ticket-badge-closed">Closed</span>
+                    <h2>Early Bird Special</h2>
+                    <p class="ticket-price">
+                        <span class="old-price">$65</span>
+                    </p>
                     <p class="ticket-desc">
-                        For approved guests attending with a BRHS student.
+                        Early bird tickets were available for $65 through Valentine’s Day.
                     </p>
 
                     <ul class="ticket-features">
-                        <li>Guest admission</li>
-                        <li>Requires approval form</li>
-                        <li>Full event access</li>
-                        <li>Refreshments included</li>
+                        <li>Special launch price</li>
+                        <li>Available before Valentine’s Day</li>
+                        <li>Sales window has ended</li>
+                        <li>General Admission is now $75</li>
                     </ul>
 
-                    <div class="ticket-controls">
-                        <button type="button" class="qty-btn" data-target="guest" data-action="decrease">−</button>
-                        <input type="number" id="guest" class="qty-input" value="0" min="0" max="10" readonly>
-                        <button type="button" class="qty-btn" data-target="guest" data-action="increase">+</button>
+                    <div class="ticket-closed-box">
+                        This offer is no longer available.
                     </div>
                 </article>
             </div>
@@ -67,12 +66,12 @@
 
                 <div class="summary-row">
                     <span>General Admission</span>
-                    <span id="general-count">0</span>
+                    <span>—</span>
                 </div>
 
                 <div class="summary-row">
-                    <span>Guest Ticket</span>
-                    <span id="guest-count">0</span>
+                    <span>Early Bird Special</span>
+                    <span>Closed</span>
                 </div>
 
                 <div class="summary-divider"></div>
@@ -83,10 +82,14 @@
                 </div>
 
                 <p class="summary-note">
-                    Ticket sales close on April 15. Guest tickets require approval before the event.
+                    Early bird pricing ended after Valentine’s Day. General admission tickets are now $75.
                 </p>
 
-                <button type="button" class="summary-btn">Continue</button>
+                <a href="https://osp.osmsinc.com/CMS/BVModules/ProductTemplates/Bvc2013/Product.aspx?productid=AZ536-189"
+                   target="_blank"
+                   class="summary-btn">
+                    Go to Payment
+                </a>
             </aside>
 
         </div>

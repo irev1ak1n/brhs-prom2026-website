@@ -208,6 +208,9 @@
 }
 
 .summary-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     margin-top: 24px;
     padding: 15px 20px;
@@ -217,6 +220,7 @@
     color: #fff;
     font-size: 0.98rem;
     font-weight: 700;
+    text-decoration: none;
     cursor: pointer;
     transition: 0.25s ease;
 }
@@ -224,6 +228,41 @@
 .summary-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 14px 28px rgba(139,70,255,0.24);
+}
+
+.ticket-card-closed {
+    position: relative;
+    opacity: 0.92;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.ticket-badge-closed {
+    background: rgba(255, 255, 255, 0.08);
+    color: #d4d4d8;
+}
+
+.old-price {
+    color: #d4d4d8;
+    text-decoration: line-through;
+    opacity: 0.95;
+}
+
+.ticket-closed-box {
+    margin-top: 1.4rem;
+    padding: 1rem 1.1rem;
+    border-radius: 999px;
+    text-align: center;
+    font-weight: 700;
+    color: #bdbdc7;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    cursor: not-allowed;
+    user-select: none;
+}
+
+.ticket-card-closed .ticket-features li,
+.ticket-card-closed .ticket-desc {
+    color: rgba(255, 255, 255, 0.7);
 }
 
 @media (max-width: 980px) {

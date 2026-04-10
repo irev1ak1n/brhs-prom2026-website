@@ -40,6 +40,7 @@
 
 <script src="{{ asset('js/app.js') }}"></script>
 <script src="{{ asset('js/gallery.js') }}"></script>
+<script src="{{ asset('js/tickets.js') }}"></script>
 <script src="{{ asset('js/components/navbar.js') }}"></script>
 
 </body>

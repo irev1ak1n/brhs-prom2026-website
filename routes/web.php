@@ -21,3 +21,7 @@ Route::view('/tickets', 'pages.tickets')->name('tickets');
 
 // gallery page
 Route::view('/gallery', 'pages.gallery')->name('gallery');
+
+Route::get('/', function () {
+    return redirect('https://www.brhsprom26.com');
+});

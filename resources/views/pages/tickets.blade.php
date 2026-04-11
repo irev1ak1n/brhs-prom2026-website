@@ -76,15 +76,6 @@
 
                 <div class="summary-divider"></div>
 
-                <div class="summary-row total">
-                    <span>Total</span>
-                    <span id="ticket-total">$0</span>
-                </div>
-
-                <p class="summary-note">
-                    Early bird pricing ended after Valentine’s Day. General admission tickets are now $75.
-                </p>
-
                 <a href="https://osp.osmsinc.com/CMS/BVModules/ProductTemplates/Bvc2013/Product.aspx?productid=AZ536-189"
                    target="_blank"
                    class="summary-btn">

@@ -26,9 +26,11 @@ Route::view('/gallery', 'pages.gallery')->name('gallery');
 
 
 Route::get('/', function () {
-    if (Request::getHost() === 'brhsprom26.com') {
-        return redirect('https://www.brhsprom26.com', 301);
+    $host = request()->getHost();
+
+    if ($host === 'brhsprom26.com') {
+        return redirect()->to('https://www.brhsprom26.com', 301);
     }
 
-    return view('welcome'); // or your homepage
+    return view('pages.home');
 });

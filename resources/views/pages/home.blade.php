@@ -18,6 +18,11 @@
                         <span>BRHS PROM '26 - LAS VEGAS</span>
                     </h1>
 
+                    <p style="opacity:0; height:0; overflow:hidden;">
+                        Ballantyne Ridge High School Prom 2026 (BRHS Prom 2026) is the official prom event
+                        in Charlotte, NC. Find tickets, event details, location, dress code, and updates here.
+                    </p>
+
                     <div class="hero-actions">
                         <a href="{{ route('tickets') }}" class="hero-btn outline">GET TICKETS</a>
                         <a href="{{ route('night-guide') }}" class="hero-btn outline">PLAN YOUR NIGHT</a>

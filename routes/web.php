@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Request;
 
 // home page
 Route::get('/', function () {
@@ -22,3 +23,12 @@ Route::view('/tickets', 'pages.tickets')->name('tickets');
 // gallery page
 Route::view('/gallery', 'pages.gallery')->name('gallery');
 
+
+
+Route::get('/', function () {
+    if (Request::getHost() === 'brhsprom26.com') {
+        return redirect('https://www.brhsprom26.com', 301);
+    }
+
+    return view('welcome'); // or your homepage
+});

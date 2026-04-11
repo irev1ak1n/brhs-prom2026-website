@@ -29,6 +29,11 @@
     <link rel="stylesheet" href="{{ asset('css/pages/home.css') }}">
 
     <meta name="google-site-verification" content="wHnDjK5ioRYbTyrndO-W0HZG0jhdBn_7HNgh6DbsjO4" />
+
+    <meta name="description" content="
+    Official Ballantyne Ridge High School Prom 2026 website.
+    Tickets, location, time, and event details for BRHS prom.
+    ">
 </head>
 <body>
 

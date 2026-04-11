@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="{{ asset('css/pages/gallery.css') }}">
 
     <link rel="stylesheet" href="{{ asset('css/pages/home.css') }}">
+
+    <meta name="google-site-verification" content="wHnDjK5ioRYbTyrndO-W0HZG0jhdBn_7HNgh6DbsjO4" />
 </head>
 <body>
 

@@ -60,7 +60,6 @@
 
             <div class="contact-form-card">
                 <form class="contact-form" method="POST" action="https://formspree.io/f/xwvaeejy">
-                    <input type="hidden" name="_next" value="https://www.brhsprom26.com/contact?sent=1">
 
                     <label>Name</label>
                     <input type="text" name="name" required>

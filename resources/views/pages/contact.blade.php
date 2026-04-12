@@ -54,13 +54,13 @@
                 </div>
             </div>
 
-            @if(session('success'))
-                <p style="color: green;">{{ session('success') }}</p>
+            @if(request()->query('sent'))
+                <p style="color: #7CFFB2; margin-bottom: 1rem;">Your message was sent successfully.</p>
             @endif
 
             <div class="contact-form-card">
-                <form class="contact-form" method="POST" action="{{ route('contact.submit') }}">
-                    @csrf
+                <form class="contact-form" method="POST" action="https://formspree.io/f/xwvaeejy">
+                    <input type="hidden" name="_next" value="https://www.brhsprom26.com/contact?sent=1">
 
                     <label>Name</label>
                     <input type="text" name="name" required>

@@ -30,22 +30,3 @@ Route::view('/tickets', 'pages.tickets')->name('tickets');
 // gallery page
 Route::view('/gallery', 'pages.gallery')->name('gallery');
 
-// contact form submit
-Route::post('/contact-submit', function (Request $request) {
-    $data = $request->validate([
-        'name' => 'required|string|max:255',
-        'email' => 'required|email',
-        'message' => 'required|string',
-    ]);
-
-    Mail::raw(
-        "Name: {$data['name']}\nEmail: {$data['email']}\nMessage: {$data['message']}",
-        function ($msg) use ($data) {
-            $msg->to('brhsprom2026@gmail.com')
-                ->replyTo($data['email'], $data['name'])
-                ->subject('New Contact Form Submission');
-        }
-    );
-
-    return back()->with('success', 'Message sent!');
-})->name('contact.submit');

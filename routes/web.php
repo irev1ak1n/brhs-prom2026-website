@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
+use App\Http\Controllers\NewsletterController;
 
 // home page
 Route::get('/', function () {
@@ -30,3 +31,7 @@ Route::view('/tickets', 'pages.tickets')->name('tickets');
 // gallery page
 Route::view('/gallery', 'pages.gallery')->name('gallery');
 
+
+
+Route::post('/newsletter/subscribe', [NewsletterController::class, 'subscribe'])
+    ->name('newsletter.subscribe');

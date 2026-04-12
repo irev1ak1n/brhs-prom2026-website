@@ -46,7 +46,9 @@
                 </div>
 
                 <div class="signup-form-card">
-                    <form class="signup-form" action="#" method="post">
+                    <form class="signup-form" action="{{ route('newsletter.subscribe') }}" method="POST">
+                        @csrf
+
                         <p class="required-note"><span>*</span> indicates required</p>
 
                         <label for="email">Email Address <span>*</span></label>
@@ -75,6 +77,14 @@
                         </fieldset>
 
                         <button type="submit" class="signup-btn">Subscribe</button>
+
+                        @if(session('newsletter_success'))
+                            <p style="margin-top:12px; color:#7CFFB2;">{{ session('newsletter_success') }}</p>
+                        @endif
+
+                        @if(session('newsletter_error'))
+                            <p style="margin-top:12px; color:#ff8f8f;">{{ session('newsletter_error') }}</p>
+                        @endif
                     </form>
                 </div>
             </div>

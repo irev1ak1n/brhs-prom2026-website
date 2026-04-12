@@ -35,4 +35,9 @@ return [
         ],
     ],
 
+    'mailerlite' => [
+        'api_key' => env('MAILERLITE_API_KEY'),
+        'group_id' => env('MAILERLITE_GROUP_ID'),
+    ],
+
 ];

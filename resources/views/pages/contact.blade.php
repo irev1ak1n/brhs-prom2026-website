@@ -59,7 +59,7 @@
             @endif
 
             <div class="contact-form-card">
-                <form class="contact-form" method="POST" action="https://formspree.io/f/xwvaeejy">
+                <form class="contact-form" id="contactForm" action="https://formspree.io/f/xwvaeejy" method="POST">
 
                     <label>Name</label>
                     <input type="text" name="name" required>
@@ -78,4 +78,40 @@
     </section>
 
 
+@endsection
+@section('scripts')
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('contactForm');
+            const status = document.getElementById('formStatus');
+
+            if (!form || !status) return;
+
+            form.addEventListener('submit', async function (e) {
+                e.preventDefault();
+
+                const data = new FormData(form);
+                status.textContent = 'Sending...';
+
+                try {
+                    const response = await fetch(form.action, {
+                        method: 'POST',
+                        body: data,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+
+                    if (response.ok) {
+                        status.textContent = 'Your message was sent successfully.';
+                        form.reset();
+                    } else {
+                        status.textContent = 'Something went wrong. Please try again.';
+                    }
+                } catch (error) {
+                    status.textContent = 'Something went wrong. Please try again.';
+                }
+            });
+        });
+    </script>
 @endsection

@@ -54,10 +54,6 @@
                 </div>
             </div>
 
-            @if(request()->query('sent'))
-                <p style="color: #7CFFB2; margin-bottom: 1rem;">Your message was sent successfully.</p>
-            @endif
-
             <div class="contact-form-card">
                 <form class="contact-form" id="contactForm" action="https://formspree.io/f/xwvaeejy" method="POST">
 
@@ -71,7 +67,24 @@
                     <textarea name="message" rows="5" required></textarea>
 
                     <button type="submit" class="contact-btn">Send Message</button>
+
+                    <p id="formStatus" class="form-status"></p>
                 </form>
+
+                <div class="contact-success-overlay" id="successOverlay" aria-hidden="true">
+                    <div class="success-inner">
+                        <h3>MESSAGE SENT</h3>
+
+                        <div class="success-icon">
+                            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="10" y="18" width="44" height="28" stroke="currentColor" stroke-width="4"/>
+                                <path d="M12 20L32 35L52 20" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+
+                        <p>Thanks for reaching out. We’ll get back to you soon.</p>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -84,14 +97,17 @@
         document.addEventListener('DOMContentLoaded', function () {
             const form = document.getElementById('contactForm');
             const status = document.getElementById('formStatus');
+            const overlay = document.getElementById('successOverlay');
+            const card = document.querySelector('.contact-form-card');
 
-            if (!form || !status) return;
+            if (!form) return;
 
             form.addEventListener('submit', async function (e) {
                 e.preventDefault();
 
                 const data = new FormData(form);
-                status.textContent = 'Sending...';
+
+                if (status) status.textContent = 'Sending...';
 
                 try {
                     const response = await fetch(form.action, {
@@ -103,13 +119,23 @@
                     });
 
                     if (response.ok) {
-                        status.textContent = 'Your message was sent successfully.';
+                        if (status) status.textContent = '';
                         form.reset();
+
+                        if (card && overlay) {
+                            card.classList.add('is-success');
+                            overlay.classList.add('show');
+
+                            setTimeout(() => {
+                                overlay.classList.remove('show');
+                                card.classList.remove('is-success');
+                            }, 2600);
+                        }
                     } else {
-                        status.textContent = 'Something went wrong. Please try again.';
+                        if (status) status.textContent = 'Something went wrong. Please try again.';
                     }
                 } catch (error) {
-                    status.textContent = 'Something went wrong. Please try again.';
+                    if (status) status.textContent = 'Something went wrong. Please try again.';
                 }
             });
         });

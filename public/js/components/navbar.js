@@ -323,9 +323,70 @@
         });
     }
 
+    function initMobileNav() {
+        const body = document.body;
+
+        const menuToggle = document.getElementById("menuToggle");
+        const closeMenu = document.getElementById("closeMenu");
+        const mobileSidebar = document.getElementById("mobileSidebar");
+        const overlay = document.getElementById("mobileMenuOverlay");
+
+        const searchToggle = document.getElementById("searchToggle");
+        const searchWrap = document.getElementById("navSearchWrap");
+        const searchInput = document.getElementById("navSearchInput");
+
+        if (!menuToggle) return;
+
+        function openMenu() {
+            body.classList.add("mobile-menu-open");
+            menuToggle.setAttribute("aria-expanded", "true");
+        }
+
+        function closeSidebar() {
+            body.classList.remove("mobile-menu-open");
+            menuToggle.setAttribute("aria-expanded", "false");
+        }
+
+        function toggleSearch() {
+            if (!searchWrap) return;
+
+            const isOpen = searchWrap.classList.contains("is-open");
+
+            if (isOpen) {
+                searchWrap.classList.remove("is-open");
+                searchToggle.setAttribute("aria-expanded", "false");
+            } else {
+                searchWrap.classList.add("is-open");
+                searchToggle.setAttribute("aria-expanded", "true");
+                setTimeout(() => searchInput?.focus(), 100);
+            }
+        }
+
+        menuToggle.addEventListener("click", openMenu);
+        closeMenu?.addEventListener("click", closeSidebar);
+        overlay?.addEventListener("click", closeSidebar);
+
+        searchToggle?.addEventListener("click", toggleSearch);
+
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") {
+                closeSidebar();
+                searchWrap?.classList.remove("is-open");
+            }
+        });
+
+        document.addEventListener("click", (e) => {
+            if (!searchWrap) return;
+            if (!searchWrap.contains(e.target)) {
+                searchWrap.classList.remove("is-open");
+            }
+        });
+    }
+
     document.addEventListener("DOMContentLoaded", () => {
         initNavSearch();
         initNavScroll();
         setActiveLink();
+        initMobileNav();
     });
 })();

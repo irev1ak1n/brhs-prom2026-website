@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="{{ asset('css/core/global.css') }}">
 
     <link rel="stylesheet" href="{{ asset('css/components/navbar.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/components/mobile-navbar.css') }}">
     <link rel="stylesheet" href="{{ asset('css/components/footer.css') }}">
     <link rel="stylesheet" href="{{ asset('css/components/newsletter.css') }}">
     <link rel="stylesheet" href="{{ asset('css/components/prom-info.css') }}">

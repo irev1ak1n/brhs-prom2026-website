@@ -1,0 +1,367 @@
+/* =========================================
+   MOBILE / TOGGLE SEARCH / HAMBURGER NAV
+   ADD THIS AT THE VERY BOTTOM
+========================================= */
+
+/* make shell flex for the new layout */
+.topbar-shell.top-row{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 16px !important;
+}
+
+/* desktop nav still visible by default */
+.desktop-nav{
+    display: flex;
+    align-items: center;
+}
+
+/* right-side actions */
+.topbar-actions{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+    position: relative;
+    z-index: 2100;
+}
+
+/* icon button shared */
+.icon-btn{
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,.14);
+    background: rgba(0,0,0,.42);
+    backdrop-filter: blur(12px);
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background .2s ease, border-color .2s ease, transform .2s ease;
+    flex-shrink: 0;
+}
+
+.icon-btn:hover{
+    background: rgba(255,255,255,.08);
+    border-color: rgba(255,255,255,.24);
+    transform: translateY(-1px);
+}
+
+.icon-btn:active{
+    transform: translateY(0);
+}
+
+/* search wrapper */
+.nav-search-wrap{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* search toggle button */
+.search-toggle .nav-search-icon{
+    width: 20px;
+    height: 20px;
+}
+
+/* IMPORTANT: override your existing full search bar */
+.hero-top .nav-search-wrap .nav-search{
+    position: absolute !important;
+    top: 50% !important;
+    right: 0 !important;
+    left: auto !important;
+    transform: translateY(-50%) scale(.96) !important;
+
+    display: flex !important;
+    align-items: center !important;
+
+    width: 0 !important;
+    height: 46px !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    overflow: hidden !important;
+    margin-left: 0 !important;
+    padding: 0 !important;
+
+    border-radius: 999px !important;
+    border: 1px solid rgba(255,255,255,.14) !important;
+    background: rgba(8,8,8,.92) !important;
+    backdrop-filter: blur(16px) !important;
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.06),
+        0 18px 46px rgba(0,0,0,.26) !important;
+
+    z-index: 2200 !important;
+    transition:
+        width .28s ease,
+        opacity .22s ease,
+        transform .28s ease !important;
+}
+
+.nav-search-wrap.is-open .nav-search{
+    width: 320px !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    transform: translateY(-50%) scale(1) !important;
+}
+
+/* keep input/button nice inside popup search */
+.hero-top .nav-search-wrap .nav-search input{
+    flex: 1;
+    min-width: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    outline: none;
+    background: transparent;
+    color: rgba(255,255,255,.92);
+    padding: 0 14px 0 18px;
+    font-size: 14px;
+    font-weight: 650;
+}
+
+.hero-top .nav-search-wrap .nav-search button{
+    width: 46px;
+    height: 100%;
+    border: 0;
+    outline: none;
+    background: transparent;
+    color: rgba(255,255,255,.88);
+    border-left: 1px solid rgba(255,255,255,.10);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.hero-top .nav-search-wrap .nav-search::after{
+    display: none !important;
+}
+
+/* hamburger hidden on desktop */
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-toggle span{
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 999px;
+    background: #fff;
+}
+
+/* overlay */
+.mobile-menu-overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: .28s ease;
+    z-index: 3000;
+}
+
+/* sidebar */
+.mobile-sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: min(84vw, 340px);
+    height: 100vh;
+    padding: 18px 16px;
+    background: rgba(10,10,10,.97);
+    backdrop-filter: blur(16px);
+    border-left: 1px solid rgba(255,255,255,.12);
+    transform: translateX(100%);
+    transition: transform .3s ease;
+    z-index: 3100;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.mobile-sidebar-head{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 14px;
+}
+
+.mobile-brand{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.mobile-brand strong{
+    color: #fff;
+    font-size: 1.08rem;
+    font-weight: 800;
+    line-height: 1.15;
+}
+
+.mobile-brand span{
+    color: rgba(255,255,255,.72);
+    font-size: .9rem;
+    line-height: 1.2;
+}
+
+.close-menu{
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+/* mobile search in sidebar */
+.mobile-search{
+    display: flex;
+    align-items: center;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,.12);
+    background: rgba(255,255,255,.04);
+    overflow: hidden;
+}
+
+.mobile-search input{
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #fff;
+    padding: .92rem 1rem;
+    font-size: .95rem;
+}
+
+.mobile-search button{
+    width: 50px;
+    height: 50px;
+    border: 0;
+    background: transparent;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+/* mobile links */
+.mobile-nav-links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mobile-nav-links a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 15px 16px;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,.10);
+    background: rgba(255,255,255,.04);
+    transition: background .2s ease, transform .2s ease;
+}
+
+.mobile-nav-links a:hover{
+    background: rgba(255,255,255,.08);
+    transform: translateX(2px);
+}
+
+/* open states */
+body.mobile-menu-open{
+    overflow: hidden;
+}
+
+body.mobile-menu-open .mobile-menu-overlay{
+    opacity: 1;
+    visibility: visible;
+}
+
+body.mobile-menu-open .mobile-sidebar{
+    transform: translateX(0);
+}
+
+/* -------------------------
+   responsive
+------------------------- */
+@media (max-width: 1100px){
+    .nav-search-wrap.is-open .nav-search{
+        width: 270px !important;
+    }
+}
+
+@media (max-width: 900px){
+    .desktop-nav{
+        display: none !important;
+    }
+
+    .menu-toggle{
+        display: inline-flex !important;
+    }
+
+    .topbar-shell.top-row{
+        gap: 12px !important;
+    }
+
+    .brand-uw{
+        margin-right: 0 !important;
+    }
+
+    .brand-uw .brand-text strong{
+        font-size: clamp(18px, 3vw, 22px) !important;
+    }
+
+    .brand-uw .brand-text span{
+        font-size: clamp(11px, 1.8vw, 14px) !important;
+    }
+
+    .nav-search-wrap.is-open .nav-search{
+        width: 240px !important;
+    }
+}
+
+@media (max-width: 640px){
+    .topbar{
+        padding: 12px 0 !important;
+    }
+
+    .topbar-shell{
+        width: min(100% - 20px, 1320px) !important;
+    }
+
+    .brand-uw .brand-text strong{
+        font-size: 1.02rem !important;
+        line-height: 1.05 !important;
+    }
+
+    .brand-uw .brand-text span{
+        font-size: .72rem !important;
+    }
+
+    .icon-btn{
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+    }
+
+    .nav-search-wrap.is-open .nav-search{
+        position: fixed !important;
+        top: 72px !important;
+        left: 10px !important;
+        right: 10px !important;
+        width: auto !important;
+        transform: scale(1) !important;
+    }
+
+    .mobile-sidebar{
+        width: 88vw;
+    }
+}

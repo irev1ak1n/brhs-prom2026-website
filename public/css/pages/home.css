@@ -227,3 +227,146 @@
         transform: rotate(360deg);
     }
 }
+
+
+/* ===== HOME HERO ENTRANCE ===== */
+.hero-page{
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-bg{
+    transform: scale(1.06);
+    animation: heroBgZoom 8s ease-out forwards;
+}
+
+.hero-glow-1{
+    animation: heroGlowFloatOne 8s ease-in-out infinite alternate;
+}
+
+.hero-glow-2{
+    animation: heroGlowFloatTwo 9s ease-in-out infinite alternate;
+}
+
+.hero-content{
+    opacity: 0;
+    transform: translateY(34px);
+    animation: heroContentIn 1s ease forwards;
+    animation-delay: 0.12s;
+}
+
+.hero-title span{
+    opacity: 0;
+    transform: translateY(26px);
+    filter: blur(6px);
+    animation: heroLineReveal 0.75s ease forwards;
+}
+
+.hero-title span:nth-child(1){
+    animation-delay: 0.2s;
+}
+
+.hero-title span:nth-child(2){
+    animation-delay: 0.38s;
+}
+
+.hero-title span:nth-child(3){
+    animation-delay: 0.56s;
+}
+
+.hero-actions{
+    opacity: 0;
+    transform: translateY(20px);
+    animation: heroActionsIn 0.8s ease forwards;
+    animation-delay: 0.95s;
+}
+
+/* ===== BUTTON POLISH ===== */
+.hero-btn{
+    overflow: hidden;
+}
+
+.hero-btn::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,0.18),
+        transparent
+    );
+    transform: skewX(-20deg);
+    transition: left 0.7s ease;
+    pointer-events: none;
+}
+
+.hero-btn:hover::after{
+    left: 140%;
+}
+
+/* ===== KEYFRAMES ===== */
+@keyframes heroContentIn{
+    from{
+        opacity: 0;
+        transform: translateY(34px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes heroLineReveal{
+    from{
+        opacity: 0;
+        transform: translateY(26px);
+        filter: blur(6px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+@keyframes heroActionsIn{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes heroBgZoom{
+    from{
+        transform: scale(1.06);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@keyframes heroGlowFloatOne{
+    0%{
+        transform: translate3d(0,0,0);
+    }
+    100%{
+        transform: translate3d(18px, -10px, 0);
+    }
+}
+
+@keyframes heroGlowFloatTwo{
+    0%{
+        transform: translate3d(0,0,0);
+    }
+    100%{
+        transform: translate3d(-16px, 14px, 0);
+    }
+}

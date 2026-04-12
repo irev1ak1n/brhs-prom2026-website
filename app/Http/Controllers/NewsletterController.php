@@ -27,9 +27,10 @@ class NewsletterController extends Controller
         try {
             $response = Http::withToken($apiKey)
                 ->acceptJson()
+                ->withoutVerifying()
                 ->post('https://connect.mailerlite.com/api/subscribers', [
                     'email' => $validated['email'],
-                    'groups' => [(string) $groupId],
+                    'groups' => [(int) $groupId],
                     'fields' => [
                         'name' => $validated['first_name'] ?? '',
                         'brhs_role' => $validated['brhs_role'] ?? '',
@@ -56,13 +57,13 @@ class NewsletterController extends Controller
                 'body' => $response->body(),
             ]);
 
-            return back()->with('newsletter_error', 'Something went wrong. Please try again.');
+            return back()->with('newsletter_error', 'MailerLite error (' . $response->status() . '): ' . $response->body());
         } catch (\Throwable $e) {
             Log::error('MailerLite subscribe exception', [
                 'message' => $e->getMessage(),
             ]);
 
-            return back()->with('newsletter_error', 'Something went wrong. Please try again.');
+            return back()->with('newsletter_error', 'Exception: ' . $e->getMessage());
         }
     }
 }

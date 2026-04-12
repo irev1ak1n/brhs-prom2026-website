@@ -78,7 +78,12 @@
 
                 <a href="https://osp.osmsinc.com/CMS/BVModules/ProductTemplates/Bvc2013/Product.aspx?productid=AZ536-189"
                    target="_blank"
-                   class="summary-btn">
+                   class="summary-btn"
+                   onclick="gtag('event', 'buy_tickets_click', {
+                     event_category: 'engagement',
+                     event_label: 'go to payment',
+                     transport_type: 'beacon'
+                   })">
                     Go to Payment
                 </a>
             </aside>

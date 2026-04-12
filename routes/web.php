@@ -1,10 +1,17 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Request;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Http\Request;
 
 // home page
 Route::get('/', function () {
+    $host = request()->getHost();
+
+    if ($host === 'brhsprom26.com') {
+        return redirect()->to('https://www.brhsprom26.com', 301);
+    }
+
     return view('pages.home');
 });
 
@@ -23,14 +30,22 @@ Route::view('/tickets', 'pages.tickets')->name('tickets');
 // gallery page
 Route::view('/gallery', 'pages.gallery')->name('gallery');
 
+// contact form submit
+Route::post('/contact-submit', function (Request $request) {
+    $data = $request->validate([
+        'name' => 'required|string|max:255',
+        'email' => 'required|email',
+        'message' => 'required|string',
+    ]);
 
+    Mail::raw(
+        "Name: {$data['name']}\nEmail: {$data['email']}\nMessage: {$data['message']}",
+        function ($msg) use ($data) {
+            $msg->to('brhsprom2026@gmail.com')
+                ->replyTo($data['email'], $data['name'])
+                ->subject('New Contact Form Submission');
+        }
+    );
 
-Route::get('/', function () {
-    $host = request()->getHost();
-
-    if ($host === 'brhsprom26.com') {
-        return redirect()->to('https://www.brhsprom26.com', 301);
-    }
-
-    return view('pages.home');
-});
+    return back()->with('success', 'Message sent!');
+})->name('contact.submit');

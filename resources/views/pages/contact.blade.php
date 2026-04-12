@@ -54,8 +54,12 @@
                 </div>
             </div>
 
+            @if(session('success'))
+                <p style="color: green;">{{ session('success') }}</p>
+            @endif
+
             <div class="contact-form-card">
-                <form class="contact-form" method="POST" action="#">
+                <form class="contact-form" method="POST" action="{{ route('contact.submit') }}">
                     @csrf
 
                     <label>Name</label>

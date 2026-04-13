@@ -362,6 +362,6 @@
         initNavSearch();
         initNavScroll();
         setActiveLink();
-        initMobileNav();
+        initMobileMenu();
     });
 })();

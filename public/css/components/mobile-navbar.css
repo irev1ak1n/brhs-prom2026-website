@@ -262,6 +262,7 @@ body.mobile-search-open .mobile-search-panel{
     background: rgba(255,255,255,.08);
     border-color: rgba(255,255,255,.22);
 }
+
 @media (max-width: 900px){
     .top-row{
         display: grid;
@@ -291,11 +292,16 @@ body.mobile-search-open .mobile-search-panel{
         margin-top: .18rem;
     }
 
+    /* hide desktop nav on mobile */
+    .topbar .nav,
+    .hero-top .nav,
     .nav,
+    .nav-pill,
     .nav-search{
         display: none !important;
     }
 
+    /* show mobile controls */
     .mobile-search-btn,
     .mobile-menu-btn{
         display: inline-flex !important;
@@ -303,6 +309,8 @@ body.mobile-search-open .mobile-search-panel{
         height: 44px;
         border-radius: 13px;
         align-self: start;
+        position: relative;
+        z-index: 2100;
     }
 
     .mobile-search-btn svg{

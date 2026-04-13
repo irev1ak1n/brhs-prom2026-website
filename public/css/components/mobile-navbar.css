@@ -262,37 +262,52 @@ body.mobile-search-open .mobile-search-panel{
     background: rgba(255,255,255,.08);
     border-color: rgba(255,255,255,.22);
 }
-
 @media (max-width: 900px){
     .top-row{
         display: grid;
-        grid-template-columns: minmax(0, 1fr) auto auto;
+        grid-template-columns: minmax(0, 1fr) 44px 44px;
         align-items: start;
-        gap: .65rem;
+        column-gap: .7rem;
+        row-gap: .4rem;
     }
 
     .brand{
         min-width: 0;
+        max-width: 100%;
         align-self: start;
-        padding-top: .15rem;
+        padding-top: .1rem;
+    }
+
+    .brand-text{
+        min-width: 0;
+        max-width: 100%;
     }
 
     .brand-text strong{
-        font-size: 1.08rem !important;
+        display: block;
+        min-width: 0;
+        max-width: 100%;
+        font-size: 1.02rem !important;
         line-height: 1.05;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        max-width: 100%;
+        padding-right: .1rem;
     }
 
     .brand-text span{
-        font-size: .76rem !important;
+        display: block;
+        min-width: 0;
+        max-width: 100%;
+        font-size: .74rem !important;
         line-height: 1.15;
-        margin-top: .18rem;
+        margin-top: .16rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-right: .1rem;
     }
 
-    /* hide desktop nav on mobile */
     .topbar .nav,
     .hero-top .nav,
     .nav,
@@ -301,7 +316,6 @@ body.mobile-search-open .mobile-search-panel{
         display: none !important;
     }
 
-    /* show mobile controls */
     .mobile-search-btn,
     .mobile-menu-btn{
         display: inline-flex !important;
@@ -309,6 +323,7 @@ body.mobile-search-open .mobile-search-panel{
         height: 44px;
         border-radius: 13px;
         align-self: start;
+        justify-self: end;
         position: relative;
         z-index: 2100;
     }

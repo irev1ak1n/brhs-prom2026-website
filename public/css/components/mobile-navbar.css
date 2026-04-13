@@ -264,38 +264,57 @@ body.mobile-search-open .mobile-search-panel{
 }
 
 @media (max-width: 900px){
+    .topbar-shell{
+        padding: 1rem 1rem 0.4rem;
+    }
+
     .top-row{
         display: grid;
         grid-template-columns: minmax(0, 1fr) auto auto;
-        align-items: center;
-        gap: .7rem;
-    }
-
-    .nav{
-        display: none !important;
-    }
-
-    .nav-search{
-        display: none !important;
-    }
-
-    .mobile-search-btn,
-    .mobile-menu-btn{
-        display: inline-flex !important;
+        align-items: start;
+        gap: .65rem;
     }
 
     .brand{
         min-width: 0;
+        align-self: start;
+        padding-top: .15rem;
     }
 
     .brand-text strong{
+        font-size: 1.08rem !important;
+        line-height: 1.05;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        font-size: 1.2rem;
+        max-width: 100%;
     }
 
     .brand-text span{
-        font-size: .8rem;
+        font-size: .76rem !important;
+        line-height: 1.15;
+        margin-top: .18rem;
+    }
+
+    .mobile-search-btn,
+    .mobile-menu-btn{
+        width: 44px;
+        height: 44px;
+        border-radius: 13px;
+        align-self: start;
+    }
+
+    .mobile-search-btn svg{
+        width: 20px;
+        height: 20px;
+    }
+
+    .mobile-menu-btn span{
+        width: 18px;
+    }
+
+    .mobile-search-panel{
+        width: calc(100% - 2rem);
+        margin: .7rem auto 0;
     }
 }

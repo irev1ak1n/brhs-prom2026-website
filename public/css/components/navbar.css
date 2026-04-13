@@ -554,53 +554,6 @@
 }
 
 
-@media (max-width: 900px){
-    .topbar-shell,
-    .top-row{
-        display: grid;
-        grid-template-columns: 1fr auto;
-        align-items: center;
-        gap: .85rem;
-    }
-
-    .brand{
-        min-width: 0;
-        justify-self: start;
-    }
-
-    .brand-text strong{
-        display: block;
-        font-size: 1.35rem !important;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    .brand-text span{
-        display: block;
-        font-size: .88rem !important;
-    }
-
-    .topbar .nav,
-    .hero-top .nav,
-    .nav,
-    .nav-pill,
-    .nav-search{
-        display: none !important;
-    }
-
-    .mobile-menu-btn{
-        display: inline-flex !important;
-        justify-self: end;
-        position: relative;
-        z-index: 2100;
-    }
-
-    .topbar-shell{
-        padding-inline: 1rem;
-    }
-}
-
 @media (max-width: 640px){
     .brand-text strong{
         font-size: 1.12rem !important;

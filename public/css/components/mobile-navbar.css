@@ -359,4 +359,23 @@ body.mobile-search-open .mobile-search-panel{
     .topbar-shell{
         padding: 1rem 1rem .4rem;
     }
+
+    .hero-top{
+        min-height: auto !important;
+        height: auto !important;
+        padding-bottom: .5rem;
+    }
+
+    .hero,
+    .hero-page{
+        min-height: auto !important;
+        height: auto !important;
+    }
+
+    .hero-bg,
+    .hero-glow,
+    .hero::before{
+        height: 180px !important;
+    }
+
 }

@@ -42,7 +42,14 @@
         </div>
 
         <!-- mobile only -->
-        <button class="mobile-menu-btn" id="menuToggle" type="button" aria-label="Open menu">
+        <button
+            class="mobile-menu-btn"
+            id="menuToggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobileSidebar"
+        >
             <span></span>
             <span></span>
             <span></span>
@@ -52,7 +59,7 @@
 
 <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
 
-<aside class="mobile-sidebar" id="mobileSidebar">
+<aside class="mobile-sidebar" id="mobileSidebar" aria-hidden="true">
     <div class="mobile-sidebar-top">
         <div class="mobile-sidebar-brand">
             <strong>BRHS Prom 2026</strong>

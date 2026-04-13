@@ -328,15 +328,20 @@
         const menuToggle = document.getElementById("menuToggle");
         const closeMenu = document.getElementById("closeMenu");
         const overlay = document.getElementById("mobileMenuOverlay");
+        const sidebar = document.getElementById("mobileSidebar");
 
         if (!menuToggle) return;
 
         function openMenu() {
             body.classList.add("mobile-menu-open");
+            menuToggle.setAttribute("aria-expanded", "true");
+            sidebar?.setAttribute("aria-hidden", "false");
         }
 
         function closeSidebar() {
             body.classList.remove("mobile-menu-open");
+            menuToggle.setAttribute("aria-expanded", "false");
+            sidebar?.setAttribute("aria-hidden", "true");
         }
 
         menuToggle.addEventListener("click", openMenu);
@@ -345,6 +350,11 @@
 
         document.addEventListener("keydown", (e) => {
             if (e.key === "Escape") closeSidebar();
+        });
+
+        // close menu when clicking links
+        document.querySelectorAll(".mobile-sidebar a").forEach(link => {
+            link.addEventListener("click", closeSidebar);
         });
     }
 

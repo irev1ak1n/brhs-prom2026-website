@@ -1,189 +1,238 @@
 /* =========================
-   MOBILE NAV ONLY
-   desktop stays unchanged
+   MOBILE MENU BASE
 ========================= */
-
-.mobile-menu-btn,
-.mobile-menu-overlay,
-.mobile-sidebar {
+.mobile-menu-btn{
     display: none;
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgba(255,255,255,.14);
+    border-radius: 14px;
+    background: rgba(0,0,0,.42);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background .2s ease, border-color .2s ease, transform .2s ease;
 }
 
-@media (max-width: 900px) {
-    .topbar-shell.top-row {
-        display: grid !important;
-        grid-template-columns: 1fr auto !important;
-        grid-template-areas:
-            "brand menu"
-            "search search" !important;
-        align-items: center !important;
-        gap: 12px !important;
+.mobile-menu-btn:hover{
+    background: rgba(255,255,255,.08);
+    border-color: rgba(255,255,255,.22);
+}
+
+.mobile-menu-btn span{
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 999px;
+    background: #fff;
+}
+
+.mobile-menu-overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.55);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .25s ease, visibility .25s ease;
+    z-index: 1998;
+}
+
+.mobile-sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: min(84vw, 340px);
+    height: 100vh;
+    padding: 1rem;
+    background: rgba(10,10,10,.96);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-left: 1px solid rgba(255,255,255,.10);
+    transform: translateX(100%);
+    transition: transform .28s ease;
+    z-index: 1999;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-sidebar-top{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.mobile-sidebar-brand{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.mobile-sidebar-brand strong{
+    font-size: 1.05rem;
+    line-height: 1.2;
+}
+
+.mobile-sidebar-brand span{
+    font-size: .88rem;
+    opacity: .8;
+    margin-top: .2rem;
+}
+
+.mobile-close-btn{
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 12px;
+    background: rgba(255,255,255,.04);
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 1;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.mobile-sidebar-links{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+
+.mobile-sidebar-links a{
+    display: block;
+    padding: 1rem;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,.10);
+    background: rgba(255,255,255,.04);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: .04em;
+    transition: background .2s ease, border-color .2s ease, transform .2s ease;
+}
+
+.mobile-sidebar-links a:hover{
+    background: rgba(255,255,255,.08);
+    border-color: rgba(255,255,255,.18);
+    transform: translateX(2px);
+}
+
+/* open state */
+body.menu-open{
+    overflow: hidden;
+}
+
+body.menu-open .mobile-menu-overlay{
+    opacity: 1;
+    visibility: visible;
+}
+
+body.menu-open .mobile-sidebar{
+    transform: translateX(0);
+}
+
+/* =========================
+   DESKTOP / TABLET DEFAULT
+========================= */
+.top-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.brand{
+    min-width: 0;
+    flex-shrink: 0;
+}
+
+.brand-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-text strong{
+    color: #fff;
+    line-height: 1.1;
+}
+
+.brand-text span{
+    color: rgba(255,255,255,.92);
+    line-height: 1.2;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    gap: .35rem;
+    flex-wrap: nowrap;
+}
+
+.nav a{
+    white-space: nowrap;
+}
+
+/* =========================
+   MOBILE BREAKPOINT
+========================= */
+@media (max-width: 900px){
+    .top-row{
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        gap: .85rem;
     }
 
-    .brand {
-        grid-area: brand;
+    .brand{
+        min-width: 0;
     }
 
-    .nav {
+    .brand-text strong{
+        display: block;
+        font-size: 1.35rem !important;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .brand-text span{
+        display: block;
+        font-size: .88rem !important;
+    }
+
+    /* hide desktop nav + desktop search */
+    .nav,
+    .nav-search{
         display: none !important;
     }
 
-    .nav-search {
-        grid-area: search;
-        display: flex !important;
-        width: 100% !important;
-        margin-left: 0 !important;
+    /* show hamburger */
+    .mobile-menu-btn{
+        display: inline-flex;
+        justify-self: end;
     }
 
-    .mobile-menu-btn {
-        grid-area: menu;
-        display: inline-flex !important;
-        width: 46px;
-        height: 46px;
-        border: 1px solid rgba(255,255,255,.14);
-        border-radius: 14px;
-        background: rgba(0,0,0,.35);
-        color: #fff;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 5px;
-        cursor: pointer;
-        backdrop-filter: blur(10px);
-    }
-
-    .mobile-menu-btn span {
-        display: block;
-        width: 20px;
-        height: 2px;
-        background: #fff;
-        border-radius: 999px;
-    }
-
-    .brand-uw .brand-text strong {
-        font-size: clamp(18px, 4vw, 24px) !important;
-        white-space: normal !important;
-    }
-
-    .brand-uw .brand-text span {
-        font-size: 12px !important;
-        white-space: normal !important;
-    }
-
-    .mobile-menu-overlay {
-        display: block;
-        position: fixed;
-        inset: 0;
-        background: rgba(0,0,0,.5);
-        opacity: 0;
-        visibility: hidden;
-        transition: .25s ease;
-        z-index: 9998;
-    }
-
-    .mobile-sidebar {
-        display: flex;
-        flex-direction: column;
-        gap: 14px;
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: min(82vw, 320px);
-        height: 100vh;
-        padding: 18px 16px;
-        background: rgba(8,10,16,.97);
-        border-left: 1px solid rgba(255,255,255,.12);
-        backdrop-filter: blur(14px);
-        transform: translateX(100%);
-        transition: transform .28s ease;
-        z-index: 9999;
-    }
-
-    .mobile-sidebar-top {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 12px;
-    }
-
-    .mobile-sidebar-brand {
-        display: flex;
-        flex-direction: column;
-        gap: 3px;
-        color: #fff;
-    }
-
-    .mobile-sidebar-brand strong {
-        font-size: 1.05rem;
-    }
-
-    .mobile-sidebar-brand span {
-        font-size: .9rem;
-        opacity: .75;
-    }
-
-    .mobile-close-btn {
-        width: 42px;
-        height: 42px;
-        border: 1px solid rgba(255,255,255,.12);
-        border-radius: 12px;
-        background: rgba(255,255,255,.05);
-        color: #fff;
-        font-size: 1.7rem;
-        line-height: 1;
-        cursor: pointer;
-    }
-
-    .mobile-sidebar-links {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 8px;
-    }
-
-    .mobile-sidebar-links a {
-        display: block;
-        text-decoration: none;
-        color: #fff;
-        font-weight: 700;
-        padding: 14px 14px;
-        border-radius: 14px;
-        background: rgba(255,255,255,.04);
-        border: 1px solid rgba(255,255,255,.08);
-    }
-
-    body.mobile-menu-open {
-        overflow: hidden;
-    }
-
-    body.mobile-menu-open .mobile-menu-overlay {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    body.mobile-menu-open .mobile-sidebar {
-        transform: translateX(0);
+    .topbar-shell{
+        padding-inline: 1rem;
     }
 }
 
-@media (max-width: 640px) {
-    .topbar {
-        padding: 14px 0 !important;
+@media (max-width: 640px){
+    .brand-text strong{
+        font-size: 1.12rem !important;
     }
 
-    .topbar-shell {
-        width: min(100% - 20px, 1320px) !important;
+    .brand-text span{
+        font-size: .8rem !important;
     }
 
-    .nav-search {
-        height: 42px !important;
-    }
-
-    .nav-search input {
-        font-size: 13px !important;
-    }
-
-    .nav-search button {
-        width: 44px !important;
+    .mobile-sidebar{
+        width: 86vw;
     }
 }

@@ -42,45 +42,45 @@
             </button>
         </div>
 
-        <!-- mobile search icon -->
-        <button
-            class="mobile-search-btn"
-            id="mobileSearchToggle"
-            type="button"
-            aria-label="Open search"
-            aria-expanded="false"
-            aria-controls="mobileSearchPanel"
-        >
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                    d="M10.5 18a7.5 7.5 0 1 1 5.3-12.8A7.5 7.5 0 0 1 10.5 18Z"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                />
-                <path
-                    d="M16.3 16.3 21 21"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                />
-            </svg>
-        </button>
+{{--        <!-- mobile search icon -->--}}
+{{--        <button--}}
+{{--            class="mobile-search-btn"--}}
+{{--            id="mobileSearchToggle"--}}
+{{--            type="button"--}}
+{{--            aria-label="Open search"--}}
+{{--            aria-expanded="false"--}}
+{{--            aria-controls="mobileSearchPanel"--}}
+{{--        >--}}
+{{--            <svg viewBox="0 0 24 24" aria-hidden="true">--}}
+{{--                <path--}}
+{{--                    d="M10.5 18a7.5 7.5 0 1 1 5.3-12.8A7.5 7.5 0 0 1 10.5 18Z"--}}
+{{--                    fill="none"--}}
+{{--                    stroke="currentColor"--}}
+{{--                    stroke-width="2"--}}
+{{--                />--}}
+{{--                <path--}}
+{{--                    d="M16.3 16.3 21 21"--}}
+{{--                    fill="none"--}}
+{{--                    stroke="currentColor"--}}
+{{--                    stroke-width="2"--}}
+{{--                    stroke-linecap="round"--}}
+{{--                />--}}
+{{--            </svg>--}}
+{{--        </button>--}}
 
-        <!-- mobile menu -->
-        <button
-            class="mobile-menu-btn"
-            id="menuToggle"
-            type="button"
-            aria-label="Open menu"
-            aria-expanded="false"
-            aria-controls="mobileSidebar"
-        >
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+{{--        <!-- mobile menu -->--}}
+{{--        <button--}}
+{{--            class="mobile-menu-btn"--}}
+{{--            id="menuToggle"--}}
+{{--            type="button"--}}
+{{--            aria-label="Open menu"--}}
+{{--            aria-expanded="false"--}}
+{{--            aria-controls="mobileSidebar"--}}
+{{--        >--}}
+{{--            <span></span>--}}
+{{--            <span></span>--}}
+{{--            <span></span>--}}
+{{--        </button>--}}
     </div>
 
     <!-- mobile search dropdown -->

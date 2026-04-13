@@ -173,9 +173,10 @@
     grid-auto-flow: dense;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+.gallery-hero-content{
+    padding-top: 6rem;
+}
+
 @media (max-width: 1200px) {
     .gallery-mosaic {
         grid-template-columns: repeat(3, minmax(0, 1fr));

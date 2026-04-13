@@ -197,13 +197,18 @@ body.mobile-menu-open .mobile-sidebar{
 }
 
 .mobile-search-panel{
-    width: min(100% - 28px, 1320px);
-    margin: 10px auto 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: calc(100% - 2rem);
+    max-width: 1320px;
+    margin: 0;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transform: translateY(-8px);
+    transform: translateX(-50%) translateY(-8px);
     transition: opacity .25s ease, transform .25s ease, visibility .25s ease;
+    z-index: 120;
 }
 
 .mobile-search-inner{
@@ -249,7 +254,7 @@ body.mobile-search-open .mobile-search-panel{
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-    transform: translateY(0);
+    transform: translateX(-50%) translateY(8px);
 }
 
 .mobile-search-btn{
@@ -262,6 +267,7 @@ body.mobile-search-open .mobile-search-panel{
     background: rgba(255,255,255,.08);
     border-color: rgba(255,255,255,.22);
 }
+
 /* hide mobile title by default */
 .title-mobile{
     display: none;
@@ -351,18 +357,14 @@ body.mobile-search-open .mobile-search-panel{
         width: 18px;
     }
 
-    .mobile-search-panel{
-        width: calc(100% - 2rem);
-        margin: .7rem auto 0;
-    }
-
     .topbar-shell{
         padding: 1rem 1rem .4rem;
     }
 
     .hero-top{
-        height: 90px; !important;   /* 🔥 adjust between 90–130 */
-        min-height: unset; !important;
+        height: 100px !important;
+        min-height: unset !important;
     }
 
 }
+

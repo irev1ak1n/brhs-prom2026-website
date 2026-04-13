@@ -41,7 +41,33 @@
             </button>
         </div>
 
-        <!-- mobile only -->
+        <!-- mobile search icon -->
+        <button
+            class="mobile-search-btn"
+            id="mobileSearchToggle"
+            type="button"
+            aria-label="Open search"
+            aria-expanded="false"
+            aria-controls="mobileSearchPanel"
+        >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                    d="M10.5 18a7.5 7.5 0 1 1 5.3-12.8A7.5 7.5 0 0 1 10.5 18Z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                />
+                <path
+                    d="M16.3 16.3 21 21"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                />
+            </svg>
+        </button>
+
+        <!-- mobile menu -->
         <button
             class="mobile-menu-btn"
             id="menuToggle"
@@ -54,6 +80,35 @@
             <span></span>
             <span></span>
         </button>
+    </div>
+
+    <!-- mobile search dropdown -->
+    <div class="mobile-search-panel" id="mobileSearchPanel" aria-hidden="true">
+        <div class="mobile-search-inner">
+            <input
+                id="mobileSearchInput"
+                type="search"
+                placeholder="Search prom info..."
+                aria-label="Search prom info"
+            />
+            <button id="mobileSearchBtn" type="button" aria-label="Search">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                        d="M10.5 18a7.5 7.5 0 1 1 5.3-12.8A7.5 7.5 0 0 1 10.5 18Z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    />
+                    <path
+                        d="M16.3 16.3 21 21"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                    />
+                </svg>
+            </button>
+        </div>
     </div>
 </header>
 

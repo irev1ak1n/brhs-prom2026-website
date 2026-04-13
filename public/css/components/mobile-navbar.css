@@ -124,22 +124,19 @@
 }
 
 /* open state */
-body.menu-open{
+body.mobile-menu-open{
     overflow: hidden;
 }
 
-body.menu-open .mobile-menu-overlay{
+body.mobile-menu-open .mobile-menu-overlay{
     opacity: 1;
     visibility: visible;
 }
 
-body.menu-open .mobile-sidebar{
+body.mobile-menu-open .mobile-sidebar{
     transform: translateX(0);
 }
 
-/* =========================
-   DESKTOP / TABLET DEFAULT
-========================= */
 .top-row{
     display: flex;
     align-items: center;
@@ -176,4 +173,129 @@ body.menu-open .mobile-sidebar{
 
 .nav a{
     white-space: nowrap;
+}
+
+.mobile-search-btn{
+    display: none;
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgba(255,255,255,.14);
+    border-radius: 14px;
+    background: rgba(0,0,0,.42);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.mobile-search-btn svg{
+    width: 22px;
+    height: 22px;
+}
+
+.mobile-search-panel{
+    width: min(100% - 28px, 1320px);
+    margin: 10px auto 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: opacity .25s ease, transform .25s ease, visibility .25s ease;
+}
+
+.mobile-search-inner{
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(255,255,255,.14);
+    border-radius: 999px;
+    background: rgba(0,0,0,.42);
+    overflow: hidden;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.mobile-search-inner input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    padding: .95rem 1rem;
+    font-size: .95rem;
+}
+
+.mobile-search-inner input::placeholder{
+    color: rgba(255,255,255,.65);
+}
+
+.mobile-search-inner button{
+    width: 52px;
+    height: 52px;
+    border: none;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+.mobile-search-inner button svg{
+    width: 22px;
+    height: 22px;
+}
+
+body.mobile-search-open .mobile-search-panel{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.mobile-search-btn{
+    transition: background .2s ease, border-color .2s ease, transform .2s ease;
+    position: relative;
+    z-index: 2100;
+}
+
+.mobile-search-btn:hover{
+    background: rgba(255,255,255,.08);
+    border-color: rgba(255,255,255,.22);
+}
+
+@media (max-width: 900px){
+    .top-row{
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto auto;
+        align-items: center;
+        gap: .7rem;
+    }
+
+    .nav{
+        display: none !important;
+    }
+
+    .nav-search{
+        display: none !important;
+    }
+
+    .mobile-search-btn,
+    .mobile-menu-btn{
+        display: inline-flex !important;
+    }
+
+    .brand{
+        min-width: 0;
+    }
+
+    .brand-text strong{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 1.2rem;
+    }
+
+    .brand-text span{
+        font-size: .8rem;
+    }
 }

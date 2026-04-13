@@ -358,10 +358,68 @@
         });
     }
 
+    function initMobileSearch() {
+        const body = document.body;
+        const searchToggle = document.getElementById("mobileSearchToggle");
+        const searchPanel = document.getElementById("mobileSearchPanel");
+        const mobileSearchInput = document.getElementById("mobileSearchInput");
+        const mobileSearchBtn = document.getElementById("mobileSearchBtn");
+
+        if (!searchToggle || !searchPanel) return;
+
+        function openSearch() {
+            body.classList.add("mobile-search-open");
+            searchToggle.setAttribute("aria-expanded", "true");
+            searchPanel.setAttribute("aria-hidden", "false");
+            setTimeout(() => mobileSearchInput?.focus(), 50);
+        }
+
+        function closeSearch() {
+            body.classList.remove("mobile-search-open");
+            searchToggle.setAttribute("aria-expanded", "false");
+            searchPanel.setAttribute("aria-hidden", "true");
+        }
+
+        searchToggle.addEventListener("click", () => {
+            const isOpen = body.classList.contains("mobile-search-open");
+            if (isOpen) {
+                closeSearch();
+            } else {
+                openSearch();
+            }
+        });
+
+        mobileSearchBtn?.addEventListener("click", () => {
+            const query = mobileSearchInput?.value?.trim();
+            if (!query) return;
+
+            const desktopInput = document.getElementById("navSearchInput");
+            if (desktopInput) {
+                desktopInput.value = query;
+            }
+
+            document.getElementById("navSearchBtn")?.click();
+        });
+
+        mobileSearchInput?.addEventListener("keydown", (e) => {
+            if (e.key === "Enter") {
+                e.preventDefault();
+                mobileSearchBtn?.click();
+            }
+        });
+
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") {
+                closeSearch();
+            }
+        });
+    }
+
     document.addEventListener("DOMContentLoaded", () => {
         initNavSearch();
         initNavScroll();
         setActiveLink();
         initMobileMenu();
+        initMobileSearch();
     });
 })();

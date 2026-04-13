@@ -361,21 +361,8 @@ body.mobile-search-open .mobile-search-panel{
     }
 
     .hero-top{
-        min-height: auto !important;
-        height: auto !important;
-        padding-bottom: .5rem;
-    }
-
-    .hero,
-    .hero-page{
-        min-height: auto !important;
-        height: auto !important;
-    }
-
-    .hero-bg,
-    .hero-glow,
-    .hero::before{
-        height: 180px !important;
+        height: 90px; !important;   /* 🔥 adjust between 90–130 */
+        min-height: unset; !important;
     }
 
 }

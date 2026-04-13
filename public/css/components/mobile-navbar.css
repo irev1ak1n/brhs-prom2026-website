@@ -262,12 +262,7 @@ body.mobile-search-open .mobile-search-panel{
     background: rgba(255,255,255,.08);
     border-color: rgba(255,255,255,.22);
 }
-
 @media (max-width: 900px){
-    .topbar-shell{
-        padding: 1rem 1rem 0.4rem;
-    }
-
     .top-row{
         display: grid;
         grid-template-columns: minmax(0, 1fr) auto auto;
@@ -296,8 +291,14 @@ body.mobile-search-open .mobile-search-panel{
         margin-top: .18rem;
     }
 
+    .nav,
+    .nav-search{
+        display: none !important;
+    }
+
     .mobile-search-btn,
     .mobile-menu-btn{
+        display: inline-flex !important;
         width: 44px;
         height: 44px;
         border-radius: 13px;
@@ -316,5 +317,9 @@ body.mobile-search-open .mobile-search-panel{
     .mobile-search-panel{
         width: calc(100% - 2rem);
         margin: .7rem auto 0;
+    }
+
+    .topbar-shell{
+        padding: 1rem 1rem .4rem;
     }
 }

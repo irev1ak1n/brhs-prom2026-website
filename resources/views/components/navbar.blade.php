@@ -2,7 +2,8 @@
     <div class="topbar-shell top-row">
         <a href="{{ url('/') }}" class="brand brand-uw" aria-label="Go to homepage">
             <div class="brand-text">
-                <strong>Prom: A Night in Las Vegas</strong>
+                <strong class="title-desktop">Prom: A Night in Las Vegas</strong>
+                <strong class="title-mobile">A Night in Vegas</strong>
                 <span>Ballantyne Ridge High School</span>
             </div>
         </a>

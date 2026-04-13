@@ -262,7 +262,25 @@ body.mobile-search-open .mobile-search-panel{
     background: rgba(255,255,255,.08);
     border-color: rgba(255,255,255,.22);
 }
+
+/* hide mobile title by default */
+.title-mobile{
+    display: none;
+}
+
 @media (max-width: 900px){
+
+    .title-desktop{
+        display: none;
+    }
+
+    .title-mobile{
+        display: block;
+        font-size: 1.05rem;
+        line-height: 1.05;
+        white-space: nowrap;
+    }
+
     .top-row{
         display: grid;
         grid-template-columns: minmax(0, 1fr) 44px 44px;

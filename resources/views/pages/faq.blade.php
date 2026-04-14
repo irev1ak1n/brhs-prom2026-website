@@ -20,7 +20,7 @@
                 <details class="faq-item" open>
                     <summary>When and where is prom?</summary>
                     <p>
-                        Prom will take place on May 2, 2026, from 9:00 PM to 11:00 PM at The Hamilton in Charlotte. Plan your arrival accordingly to avoid missing any part of the event.
+                        Prom will take place on May 2, 2026, from 8:00 PM to 11:00 PM at The Hamilton in Charlotte. Plan your arrival accordingly to avoid missing any part of the event.
                     </p>
                 </details>
 

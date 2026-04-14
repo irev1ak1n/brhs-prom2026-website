@@ -32,7 +32,7 @@
             <span class="ng-number">02</span>
             <h2>Date &amp; Time</h2>
             <p>
-                Prom will take place on May 2, 2026, from 7:00 PM to 11:00 PM.
+                Prom will take place on May 2, 2026, from 8:00 PM to 11:00 PM.
                 Arriving on time is important so you do not miss key moments.
             </p>
         </div>

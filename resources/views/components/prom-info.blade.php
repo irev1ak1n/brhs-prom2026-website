@@ -18,7 +18,7 @@
             <div class="prom-info-block">
                 <h3>Date & Time</h3>
                 <p>
-                    Join us on May 2, 2026, from 9:00 PM to 11:00 PM for a night you won’t forget.
+                    Join us on May 2, 2026, from 8:00 PM to 11:00 PM for a night you won’t forget.
                     We can’t wait to see everyone dressed up, showing up, and making the most of every moment together.
                 </p>
             </div>

@@ -51,29 +51,29 @@
                     <img src="{{ asset('images/gallery/tickets.png') }}" alt="Prom tickets">
                 </article>
 
-                <article class="gallery-item sm">
-                    <img src="{{ asset('images/gallery/cookies.png') }}" alt="Cookies for prom">
-                </article>
+{{--                <article class="gallery-item sm">--}}
+{{--                    <img src="{{ asset('images/gallery/cookies.png') }}" alt="Cookies for prom">--}}
+{{--                </article>--}}
 
-                <article class="gallery-item sm">
-                    <img src="{{ asset('images/gallery/cakes.png') }}" alt="Desserts for prom">
-                </article>
+{{--                <article class="gallery-item sm">--}}
+{{--                    <img src="{{ asset('images/gallery/cakes.png') }}" alt="Desserts for prom">--}}
+{{--                </article>--}}
 
-                <article class="gallery-item sm">
-                    <img src="{{ asset('images/gallery/pizza.png') }}" alt="Pizza for prom">
-                </article>
+{{--                <article class="gallery-item sm">--}}
+{{--                    <img src="{{ asset('images/gallery/pizza.png') }}" alt="Pizza for prom">--}}
+{{--                </article>--}}
 
-                <article class="gallery-item tall">
-                    <img src="{{ asset('images/gallery/food.png') }}" alt="Prom food table">
-                </article>
+{{--                <article class="gallery-item tall">--}}
+{{--                    <img src="{{ asset('images/gallery/food.png') }}" alt="Prom food table">--}}
+{{--                </article>--}}
 
-                <article class="gallery-item md">
-                    <img src="{{ asset('images/gallery/food2.png') }}" alt="Food and refreshments">
-                </article>
+{{--                <article class="gallery-item md">--}}
+{{--                    <img src="{{ asset('images/gallery/food2.png') }}" alt="Food and refreshments">--}}
+{{--                </article>--}}
 
-                <article class="gallery-item wide">
-                    <img src="{{ asset('images/gallery/food3.png') }}" alt="Prom menu items">
-                </article>
+{{--                <article class="gallery-item wide">--}}
+{{--                    <img src="{{ asset('images/gallery/food3.png') }}" alt="Prom menu items">--}}
+{{--                </article>--}}
 
                 <article class="gallery-item md">
                     <img src="{{ asset('images/gallery/karaoke.png') }}" alt="Karaoke area">

@@ -62,7 +62,7 @@
                 <details class="faq-item">
                     <summary>What time should I arrive?</summary>
                     <p>
-                        Prom starts at 9:00 PM. Students are encouraged to arrive on time or slightly earlier to make sure they don’t miss any part of the event.
+                        Prom starts at 8:00 PM. Students are encouraged to arrive on time or slightly earlier to make sure they don’t miss any part of the event.
                     </p>
                 </details>
 

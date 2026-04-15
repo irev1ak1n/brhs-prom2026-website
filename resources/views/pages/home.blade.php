@@ -33,6 +33,53 @@
             </section>
         </section>
 
+        <section class="instagram-feed-section">
+            <div class="container instagram-feed-shell">
+                <div class="instagram-feed-head">
+                    <p class="instagram-kicker">FOLLOW THE NIGHT</p>
+                    <h1 class="hero-title">
+                        <span>LATEST FROM INSTAGRAM</span>
+                    </h1>
+                    <p class="instagram-subtext">
+                        See the newest prom updates, announcements, and behind-the-scenes moments.
+                    </p>
+                </div>
+
+                <div class="instagram-feed-grid">
+                    <div class="instagram-post-card">
+                        <blockquote class="instagram-media"
+                                    data-instgrm-captioned
+                                    data-instgrm-permalink="https://www.instagram.com/reel/DWU68tFjDU9/?utm_source=ig_embed"
+                                    data-instgrm-version="14">
+                        </blockquote>
+                    </div>
+
+                    <div class="instagram-post-card">
+                        <blockquote class="instagram-media"
+                                    data-instgrm-captioned
+                                    data-instgrm-permalink="https://www.instagram.com/p/DVmD46AEayp/"
+                                    data-instgrm-version="14">
+                        </blockquote>
+                    </div>
+
+                    <div class="instagram-post-card">
+                        <blockquote class="instagram-media"
+                                    data-instgrm-captioned
+                                    data-instgrm-permalink="https://www.instagram.com/reel/DWrkETVEfvk/"
+                                    data-instgrm-version="14">
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="instagram-feed-cta">
+                    <a href="https://www.instagram.com/brhsprom26/" target="_blank" rel="noopener" class="instagram-feed-btn">
+                        View More on Instagram
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
 {{--        <section class="prom-voting-section">--}}
 {{--            <div class="prom-voting-glow prom-voting-glow-1"></div>--}}
 {{--            <div class="prom-voting-glow prom-voting-glow-2"></div>--}}

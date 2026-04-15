@@ -76,6 +76,7 @@
 <script src="{{ asset('js/gallery.js') }}"></script>
 <script src="{{ asset('js/tickets.js') }}"></script>
 <script src="{{ asset('js/components/navbar.js') }}"></script>
+<script async src="//www.instagram.com/embed.js"></script>
 
 </body>
 </html>

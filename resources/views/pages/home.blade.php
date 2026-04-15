@@ -115,6 +115,34 @@
             </div>
         </section>
 
+{{--        <section class="song-request-section">--}}
+{{--            <div class="song-request-glow glow-1"></div>--}}
+{{--            <div class="song-request-glow glow-2"></div>--}}
+
+{{--            <div class="container song-request-inner">--}}
+{{--                <p class="song-request-eyebrow">BRHS PROM 2026</p>--}}
+{{--                <h2 class="song-request-title">Suggest a Song</h2>--}}
+
+{{--                <p class="song-request-text">--}}
+{{--                    Want to hear your favorite song at prom? Drop it below and help build the playlist.--}}
+{{--                </p>--}}
+
+{{--                <form class="contact-form" id="contactForm" action="https://formspree.io/f/xwvaeejy" method="POST">--}}
+{{--                    <input type="hidden" name="form_type" value="song_request">--}}
+
+{{--                    <input type="text" name="song" placeholder="Song name" required>--}}
+{{--                    <input type="text" name="artist" placeholder="Artist (optional)">--}}
+{{--                    <input type="text" name="name" placeholder="Your name (optional)">--}}
+
+{{--                    <button type="submit">Submit Song</button>--}}
+{{--                </form>--}}
+
+{{--                @if(session('song_success'))--}}
+{{--                    <p class="song-success">{{ session('song_success') }}</p>--}}
+{{--                @endif--}}
+{{--            </div>--}}
+{{--        </section>--}}
+
         <section class="signup-band" id="newsletter">
 
             <div class="container signup-wrap">

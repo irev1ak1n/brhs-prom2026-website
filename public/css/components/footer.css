@@ -167,6 +167,37 @@
     color: rgba(255,255,255,0.42);
 }
 
+.footer-socials{
+    margin-top: 1rem;
+}
+
+.footer-insta{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    font-size: 0.95rem;
+    color: #fff;
+    opacity: 0.85;
+    transition: 0.25s;
+}
+
+.footer-insta i{
+    font-size: 1.2rem;
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer-insta:hover{
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+.footer-insta:hover i{
+    filter: drop-shadow(0 0 6px rgba(210, 70, 255, 0.6));
+}
+
 @media (max-width: 1100px) {
     .footer-inner {
         grid-template-columns: 1.4fr 1fr 1fr;

@@ -39,6 +39,12 @@
             <a href="mailto:brhsprom2026@gmail.com">brhsprom2026@gmail.com</a>
             <p>Charlotte, NC</p>
             <p>Questions about tickets, guests, or event details? We’re here to help.</p>
+            <div class="footer-socials">
+                <a href="https://instagram.com/brhsprom26" target="_blank" class="footer-insta">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>@brhsprom26</span>
+                </a>
+            </div>
         </div>
 
     </div>

@@ -393,13 +393,12 @@
     border-radius: 12px;
 
     filter: brightness(1.1);
-    /* purple border glow */
+
     border: 2px solid rgba(180, 100, 255, 0.35);
     box-shadow:
         0 0 12px rgba(180, 100, 255, 0.25),
         0 0 30px rgba(180, 100, 255, 0.15);
 
-    /* animation */
     animation: logoPulse 3.5s ease-in-out infinite;
     will-change: transform;
 }
@@ -449,3 +448,112 @@
     }
 }
 
+
+
+.tickets-strip{
+    position: relative;
+    overflow: hidden;
+    padding: 2rem 1.5rem;
+    background: linear-gradient(90deg, #a92bff 0%, #d94cff 50%, #ff5fc7 100%);
+}
+
+.tickets-strip::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 20% 50%, rgba(255,255,255,0.18), transparent 30%),
+        radial-gradient(circle at 80% 50%, rgba(255,255,255,0.12), transparent 28%);
+    animation: stripGlow 6s ease-in-out infinite alternate;
+    pointer-events: none;
+}
+
+.tickets-strip-inner{
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.25rem;
+}
+
+.tickets-strip-text{
+    margin: 0;
+    color: #fff;
+    font-size: clamp(1.15rem, 2vw, 1.8rem);
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    animation: textFloat 3.5s ease-in-out infinite;
+}
+
+.tickets-strip-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.95rem 1.6rem;
+    background: #111;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    border: 1px solid rgba(255,255,255,0.18);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+    animation: btnPulse 2.8s ease-in-out infinite;
+}
+
+.tickets-strip-btn:hover{
+    transform: translateY(-2px) scale(1.04);
+    background: #000;
+    box-shadow: 0 0 18px rgba(255,255,255,0.18);
+}
+
+@keyframes stripGlow{
+    0%{
+        transform: translateX(-2%);
+        opacity: 0.7;
+    }
+    100%{
+        transform: translateX(2%);
+        opacity: 1;
+    }
+}
+
+@keyframes textFloat{
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2px);
+    }
+}
+
+@keyframes btnPulse{
+    0%, 100%{
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(255,255,255,0);
+    }
+    50%{
+        transform: scale(1.04);
+        box-shadow: 0 0 20px rgba(255,255,255,0.16);
+    }
+}
+
+@media (max-width: 768px){
+    .tickets-strip{
+        padding: 1.4rem 1rem;
+    }
+
+    .tickets-strip-inner{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tickets-strip-btn{
+        width: 100%;
+        max-width: 260px;
+    }
+}

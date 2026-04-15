@@ -82,6 +82,14 @@
 {{--            </div>--}}
 {{--        </section>--}}
 
+
+        <section class="tickets-strip">
+            <div class="tickets-strip-inner">
+                <p class="tickets-strip-text">More than 100 tickets sold</p>
+                <a href="{{ route('tickets') }}" class="tickets-strip-btn">Buy Your Tickets</a>
+            </div>
+        </section>
+
         <section class="signup-band" id="newsletter">
 
             <div class="container signup-wrap">

@@ -36,7 +36,7 @@
 
         <div class="footer-contact">
             <h4>Contact</h4>
-            <a href="mailto:brhsprom2026@gmail.com">brhsprom2026@gmail.com</a>
+            <a href="mailto:brhsprom2026@gmail.com"> brhsprom2026@gmail.com</a>
             <p>Charlotte, NC</p>
             <p>Questions about tickets, guests, or event details? We’re here to help.</p>
             <div class="footer-socials">

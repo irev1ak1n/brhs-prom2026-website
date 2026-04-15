@@ -53,9 +53,9 @@
                 </details>
 
                 <details class="faq-item">
-                    <summary>Are students allowed to bring a guest?</summary>
+                    <summary>Are students allowed to bring a guest? When are guest forms due?</summary>
                     <p>
-                        Guests are allowed with prior approval. A completed guest form must be submitted before the deadline.
+                        Guests are allowed with prior approval. Forms are located in the main office. A completed guest form must be submitted by April 17th.
                     </p>
                 </details>
 

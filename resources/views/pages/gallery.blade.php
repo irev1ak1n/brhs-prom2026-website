@@ -35,8 +35,24 @@
                     <img src="{{ asset('images/gallery/prom2026.png') }}" alt="Prom 2026 detail">
                 </article>
 
+                <article class="gallery-item wide">
+                    <img src="{{ asset('images/gallery/promcom11.jpg') }}" alt="Prom 11">
+                </article>
+
+                <article class="gallery-item wide">
+                    <img src="{{ asset('images/gallery/promcom12.jpg') }}" alt="Prom 12 ">
+                </article>
+
+                <article class="gallery-item wide">
+                    <img src="{{ asset('images/gallery/promcom13.jpg') }}" alt="Prom 13 ">
+                </article>
+
                 <article class="gallery-item tall-xl">
                     <img src="{{ asset('images/gallery/event2.png') }}" alt="Interior event space">
+                </article>
+
+                <article class="gallery-item wide">
+                    <img src="{{ asset('images/gallery/promcom10.jpg') }}" alt="Prom 10">
                 </article>
 
                 <article class="gallery-item wide-md">
@@ -47,33 +63,41 @@
                     <img src="{{ asset('images/gallery/overview1.png') }}" alt="Room overview">
                 </article>
 
+                <article class="gallery-item wide">
+                    <img src="{{ asset('images/gallery/promcom9.jpg') }}" alt="Prom 9">
+                </article>
+
                 <article class="gallery-item md">
                     <img src="{{ asset('images/gallery/tickets.png') }}" alt="Prom tickets">
                 </article>
 
-{{--                <article class="gallery-item sm">--}}
-{{--                    <img src="{{ asset('images/gallery/cookies.png') }}" alt="Cookies for prom">--}}
-{{--                </article>--}}
+                <article class="gallery-item wide">
+                    <img src="{{ asset('images/gallery/promcom14.jpg') }}" alt="Prom 14">
+                </article>
 
-{{--                <article class="gallery-item sm">--}}
-{{--                    <img src="{{ asset('images/gallery/cakes.png') }}" alt="Desserts for prom">--}}
-{{--                </article>--}}
+                <article class="gallery-item sm">
+                    <img src="{{ asset('images/gallery/promcom1.jpg') }}" alt="Prom 1">
+                </article>
 
-{{--                <article class="gallery-item sm">--}}
-{{--                    <img src="{{ asset('images/gallery/pizza.png') }}" alt="Pizza for prom">--}}
-{{--                </article>--}}
+                <article class="gallery-item sm">
+                    <img src="{{ asset('images/gallery/promcom2.jpg') }}" alt="Prom 2 ">
+                </article>
 
-{{--                <article class="gallery-item tall">--}}
-{{--                    <img src="{{ asset('images/gallery/food.png') }}" alt="Prom food table">--}}
-{{--                </article>--}}
+                <article class="gallery-item tall">
+                    <img src="{{ asset('images/gallery/promcom4.jpg') }}" alt="Prom 4">
+                </article>
 
-{{--                <article class="gallery-item md">--}}
-{{--                    <img src="{{ asset('images/gallery/food2.png') }}" alt="Food and refreshments">--}}
-{{--                </article>--}}
+                <article class="gallery-item md">
+                    <img src="{{ asset('images/gallery/promcom5.jpg') }}" alt="Prom 5">
+                </article>
 
-{{--                <article class="gallery-item wide">--}}
-{{--                    <img src="{{ asset('images/gallery/food3.png') }}" alt="Prom menu items">--}}
-{{--                </article>--}}
+                <article class="gallery-item sm">
+                    <img src="{{ asset('images/gallery/promcom3.jpg') }}" alt="Prom 3">
+                </article>
+
+                <article class="gallery-item wide">
+                    <img src="{{ asset('images/gallery/promcom6.jpg') }}" alt="Prom 6">
+                </article>
 
                 <article class="gallery-item md">
                     <img src="{{ asset('images/gallery/karaoke.png') }}" alt="Karaoke area">
@@ -87,12 +111,20 @@
                     <img src="{{ asset('images/gallery/karaoke3.png') }}" alt="Stage and lighting area">
                 </article>
 
+                <article class="gallery-item wide">
+                    <img src="{{ asset('images/gallery/promcom7.jpg') }}" alt="Prom 7">
+                </article>
+
                 <article class="gallery-item md">
                     <img src="{{ asset('images/gallery/karaoke4.png') }}" alt="Interior lounge view">
                 </article>
 
                 <article class="gallery-item tall-xl">
                     <img src="{{ asset('images/gallery/karaoke5.png') }}" alt="Entertainment room">
+                </article>
+
+                <article class="gallery-item wide">
+                    <img src="{{ asset('images/gallery/promcom8.jpg') }}" alt="Prom 8">
                 </article>
 
                 <article class="gallery-item no-crop poster">

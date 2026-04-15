@@ -115,7 +115,7 @@
             </div>
         </section>
 
-{{--        <section class="song-request-section">--}}
+{{--       <section class="song-request-section">--}}
 {{--            <div class="song-request-glow glow-1"></div>--}}
 {{--            <div class="song-request-glow glow-2"></div>--}}
 

@@ -34,6 +34,34 @@
         </section>
 
         <section class="instagram-feed-section">
+            <div class="instagram-collage-bg" aria-hidden="true">
+                <span class="collage-tile t1"></span>
+                <span class="collage-tile t2"></span>
+                <span class="collage-tile t3"></span>
+                <span class="collage-tile t4"></span>
+                <span class="collage-tile t5"></span>
+                <span class="collage-tile t6"></span>
+                <span class="collage-tile t7"></span>
+                <span class="collage-tile t8"></span>
+                <span class="collage-tile t9"></span>
+                <span class="collage-tile t10"></span>
+                <span class="collage-tile t11"></span>
+                <span class="collage-tile t12"></span>
+                <span class="collage-tile t13"></span>
+                <span class="collage-tile t14"></span>
+                <span class="collage-tile t15"></span>
+                <span class="collage-tile t16"></span>
+                <span class="collage-tile t17"></span>
+                <span class="collage-tile t18"></span>
+                <span class="collage-tile t19"></span>
+                <span class="collage-tile t20"></span>
+
+            </div>
+
+            <div class="instagram-collage-overlay"></div>
+            <div class="instagram-collage-vignette"></div>
+            <div class="instagram-collage-glow"></div>
+
             <div class="container instagram-feed-shell">
                 <div class="instagram-feed-head">
                     <p class="instagram-kicker">FOLLOW THE NIGHT</p>

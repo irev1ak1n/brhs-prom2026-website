@@ -1,0 +1,345 @@
+
+.instagram-feed-section{
+    position: relative;
+    padding: 5.5rem 0 6rem;
+    background:
+        radial-gradient(circle at top left, rgba(255, 92, 184, 0.12), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(178, 92, 255, 0.16), transparent 30%),
+        linear-gradient(180deg, #120814 0%, #0b0710 100%);
+    overflow: hidden;
+}
+
+.instagram-feed-shell{
+    position: relative;
+    z-index: 2;
+}
+
+.instagram-feed-head{
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 2.4rem;
+}
+
+.instagram-kicker{
+    margin: 0 0 0.7rem;
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #ff9fe1;
+}
+
+.instagram-feed-head h2{
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 3.3rem);
+    line-height: 1.02;
+    font-weight: 900;
+    color: #fff;
+}
+
+.instagram-subtext{
+    margin: 1rem auto 0;
+    max-width: 640px;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.74);
+}
+
+.instagram-feed-grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.4rem;
+    align-items: flex-start;
+}
+
+.instagram-post-card{
+    padding: 0.85rem;
+    border-radius: 1.6rem;
+    background: #000;
+    border: 1px solid rgba(255, 130, 205, 0.18);
+    box-shadow:
+        0 18px 40px rgba(0,0,0,0.34),
+        inset 0 1px 0 rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.instagram-post-card .instagram-media{
+    min-width: 100% !important;
+    max-width: 100% !important;
+}
+
+.instagram-feed-cta{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.instagram-feed-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.95rem 1.45rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.18);
+    background: linear-gradient(135deg, rgba(255, 91, 181, 0.18), rgba(176, 82, 255, 0.16));
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.instagram-feed-btn:hover{
+    transform: translateY(-2px);
+    border-color: rgba(255,255,255,0.35);
+    background: linear-gradient(135deg, rgba(255, 91, 181, 0.28), rgba(176, 82, 255, 0.24));
+}
+
+@media (max-width: 1100px){
+    .instagram-feed-grid{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 700px){
+    .instagram-feed-section{
+        padding: 4.5rem 0 5rem;
+    }
+
+    .instagram-feed-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .instagram-post-card{
+        padding: 0.6rem;
+        border-radius: 1.2rem;
+    }
+}
+
+.instagram-feed-section{
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    padding: 6rem 0 6.5rem;
+    background: #07040b;
+}
+
+.instagram-feed-shell{
+    position: relative;
+    z-index: 5;
+}
+
+.instagram-collage-bg{
+    position: absolute;
+    inset: -3%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 220px);
+    gap: 1rem;
+    transform: scale(1.05) rotate(-1.2deg);
+    filter: brightness(1.15) contrast(1.05) saturate(1.08);
+    z-index: 0;
+    opacity: 0.95;
+}
+
+.collage-tile{
+    display: block;
+    border-radius: 1.4rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.35),
+        inset 0 0 0 1px rgba(255,255,255,0.05);
+    overflow: hidden;
+    position: relative;
+}
+
+.collage-tile::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(180deg, rgba(0,0,0,0.08), rgba(0,0,0,0.24)),
+        linear-gradient(135deg, rgba(255, 100, 180, 0.08), rgba(130, 70, 255, 0.08));
+}
+
+/* layout variety */
+.t1{ grid-column: 1 / span 2; grid-row: 1 / span 1; }
+.t2{ grid-column: 3 / span 1; grid-row: 1 / span 2; }
+.t3{ grid-column: 4 / span 2; grid-row: 1 / span 1; }
+.t4{ grid-column: 6 / span 1; grid-row: 1 / span 2; }
+
+.t5{ grid-column: 1 / span 1; grid-row: 2 / span 2; }
+.t6{ grid-column: 2 / span 2; grid-row: 2 / span 1; }
+.t7{ grid-column: 4 / span 2; grid-row: 2 / span 2; }
+.t8{ grid-column: 6 / span 1; grid-row: 3 / span 1; }
+
+.t9{ grid-column: 2 / span 1; grid-row: 3 / span 2; }
+.t10{ grid-column: 3 / span 2; grid-row: 4 / span 1; }
+.t11{ grid-column: 5 / span 1; grid-row: 4 / span 1; }
+.t12{ grid-column: 6 / span 1; grid-row: 4 / span 1; }
+
+.t1{ background-image: url("/images/gallery/promcom1.jpg"); }
+.t2{ background-image: url("/images/gallery/promcom2.jpg"); }
+.t3{ background-image: url("/images/gallery/promcom3.jpg"); }
+.t4{ background-image: url("/images/gallery/promcom4.jpg"); }
+.t5{ background-image: url("/images/gallery/promcom5.jpg"); }
+.t6{ background-image: url("/images/gallery/promcom6.jpg"); }
+.t7{ background-image: url("/images/gallery/promcom7.jpg"); }
+.t8{ background-image: url("/images/gallery/promcom8.jpg"); }
+.t9{ background-image: url("/images/gallery/promcom9.jpg"); }
+.t10{ background-image: url("/images/gallery/promcom10.jpg"); }
+.t11{ background-image: url("/images/gallery/promcom11.jpg"); }
+.t12{ background-image: url("/images/gallery/promcom12.jpg"); }
+.t13{ background-image: url("/images/gallery/promcom13.jpg"); }
+.t14{ background-image: url("/images/gallery/promcom14.jpg"); }
+.t15{ background-image: url("/images/gallery/place1.jpg"); }
+.t16{ background-image: url("/images/gallery/building.png");}
+.t17{ background-image: url("/images/gallery/karaoke.png");}
+.t18{ background-image: url("/images/gallery/event2.png");}
+.t19{ background-image: url("/images/gallery/karaoke2.png");}
+.t20{ background-image: url("/images/gallery/overview1.png");}
+
+.instagram-collage-overlay{
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+
+    background:
+        linear-gradient(180deg,
+        rgba(0,0,0,0.25) 0%,
+        rgba(0,0,0,0.15) 40%,
+        rgba(0,0,0,0.25) 100%
+        ),
+        radial-gradient(circle at 30% 20%, rgba(255, 200, 120, 0.12), transparent 40%),
+        radial-gradient(circle at 70% 30%, rgba(255, 180, 80, 0.10), transparent 35%);
+}
+
+.instagram-collage-vignette{
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+
+    background:
+        linear-gradient(to right,
+        rgba(0,0,0,0.35),
+        transparent 20%,
+        transparent 80%,
+        rgba(0,0,0,0.35)
+        ),
+        linear-gradient(to bottom,
+        rgba(0,0,0,0.4),
+        transparent 20%,
+        transparent 80%,
+        rgba(0,0,0,0.45)
+        );
+}
+
+.instagram-collage-glow{
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    pointer-events: none;
+    background:
+        radial-gradient(circle at 18% 22%, rgba(255, 110, 190, 0.18), transparent 18%),
+        radial-gradient(circle at 72% 18%, rgba(124, 85, 255, 0.18), transparent 20%),
+        radial-gradient(circle at 55% 78%, rgba(255, 190, 90, 0.10), transparent 18%);
+}
+
+.instagram-feed-head{
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 2.6rem;
+}
+
+.instagram-kicker{
+    margin: 0 0 0.7rem;
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: #ff9fe1;
+}
+
+.instagram-feed-head h2{
+    margin: 0;
+    font-size: clamp(2.2rem, 5vw, 4.2rem);
+    line-height: 0.95;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
+.instagram-subtext{
+    margin: 1rem auto 0;
+    max-width: 680px;
+    color: rgba(255,255,255,0.78);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.instagram-feed-grid{
+    position: relative;
+    z-index: 5;
+}
+
+@media (max-width: 1100px){
+    .instagram-collage-bg{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 180px);
+    }
+
+    .t1{ grid-column: 1 / span 2; grid-row: 1 / span 1; }
+    .t2{ grid-column: 3 / span 2; grid-row: 1 / span 1; }
+    .t3{ grid-column: 1 / span 1; grid-row: 2 / span 2; }
+    .t4{ grid-column: 2 / span 2; grid-row: 2 / span 1; }
+    .t5{ grid-column: 4 / span 1; grid-row: 2 / span 2; }
+    .t6{ grid-column: 2 / span 1; grid-row: 3 / span 2; }
+    .t7{ grid-column: 3 / span 2; grid-row: 3 / span 2; }
+    .t8{ grid-column: 1 / span 1; grid-row: 4 / span 1; }
+    .t9{ grid-column: 1 / span 2; grid-row: 5 / span 1; }
+    .t10{ grid-column: 3 / span 2; grid-row: 5 / span 1; }
+    .t11{ grid-column: 1 / span 2; grid-row: 6 / span 1; }
+    .t12{ grid-column: 3 / span 2; grid-row: 6 / span 1; }
+}
+
+@media (max-width: 700px){
+    .instagram-feed-section{
+        padding: 4.8rem 0 5rem;
+    }
+
+    .instagram-collage-bg{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 140px);
+        gap: 0.7rem;
+        transform: scale(1.04);
+    }
+
+    .collage-tile{
+        border-radius: 1rem;
+    }
+
+    .t1{ grid-column: 1 / span 1; grid-row: 1 / span 1; }
+    .t2{ grid-column: 2 / span 1; grid-row: 1 / span 2; }
+    .t3{ grid-column: 1 / span 1; grid-row: 2 / span 1; }
+    .t4{ grid-column: 1 / span 2; grid-row: 3 / span 1; }
+    .t5{ grid-column: 1 / span 1; grid-row: 4 / span 2; }
+    .t6{ grid-column: 2 / span 1; grid-row: 4 / span 1; }
+    .t7{ grid-column: 2 / span 1; grid-row: 5 / span 2; }
+    .t8{ grid-column: 1 / span 1; grid-row: 6 / span 1; }
+    .t9{ grid-column: 1 / span 2; grid-row: 7 / span 1; }
+    .t10{ grid-column: 1 / span 1; grid-row: 8 / span 1; }
+    .t11{ grid-column: 2 / span 1; grid-row: 8 / span 1; }
+    .t12{ display: none; }
+
+    .instagram-feed-head h2{
+        font-size: clamp(2rem, 10vw, 3rem);
+    }
+}

@@ -33,6 +33,25 @@
             </section>
         </section>
 
+{{--        <section class="prom-voting-section">--}}
+{{--            <div class="prom-voting-glow prom-voting-glow-1"></div>--}}
+{{--            <div class="prom-voting-glow prom-voting-glow-2"></div>--}}
+
+{{--            <div class="container prom-voting-inner">--}}
+{{--                <p class="prom-voting-eyebrow">VOTE FOR YOUR FAVORITES</p>--}}
+{{--                <h2 class="prom-voting-title">Prom Court Voting</h2>--}}
+{{--                <p class="prom-voting-text">--}}
+{{--                    Vote for Prom King and Queen and make your choice count.--}}
+{{--                    Voting is quick, simple, and will open during homeroom on April 15.--}}
+{{--                </p>--}}
+
+{{--                <div class="prom-voting-actions">--}}
+{{--                    <a href="#" class="prom-voting-btn">Vote Now</a>--}}
+{{--                    <span class="prom-voting-note">One submission per student</span>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </section>--}}
+
 {{--        <section class="spirit-week-section">--}}
 {{--            <div class="spirit-week-bg"></div>--}}
 {{--            <div class="spirit-week-overlay"></div>--}}
@@ -86,7 +105,13 @@
         <section class="tickets-strip">
             <div class="tickets-strip-inner">
                 <p class="tickets-strip-text">More than 100 tickets sold</p>
-                <a href="{{ route('tickets') }}" class="tickets-strip-btn">Buy Your Tickets</a>
+                <a href="https://osp.osmsinc.com/CMS/BVModules/ProductTemplates/Bvc2013/Product.aspx?productid=AZ536-189"
+                   class="tickets-strip-btn" target="_blank"
+                   onclick="gtag('event', 'buy_tickets_click', {
+                     event_category: 'engagement',
+                     event_label: 'go to payment',
+                     transport_type: 'beacon'
+                   })">Buy Your Tickets</a>
             </div>
         </section>
 
@@ -150,6 +175,8 @@
         @include('components.prom-info')
 
         <section class="venue-showcase">
+            <div class="venue-wave venue-wave-top"></div>
+
             <div class="venue-inner">
                 <img src="{{ asset('images/bhrs-logo.jpg') }}" alt="BRHS Logo" class="venue-logo">
 
@@ -162,11 +189,14 @@
                 <p class="venue-text">
                     BRHS Prom 2026 • A Night in Las Vegas
                 </p>
+
                 <p class="venue-text">
                     Join us for an unforgettable night filled with music, lights, and great energy.
                     Celebrate with friends, make memories, and enjoy every moment of BRHS Prom 2026 together.
                 </p>
             </div>
+
+            <div class="venue-wave venue-wave-bottom"></div>
         </section>
 
     </main>

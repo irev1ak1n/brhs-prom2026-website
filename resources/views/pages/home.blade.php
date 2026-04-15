@@ -141,6 +141,26 @@
 
         @include('components.prom-info')
 
+        <section class="venue-showcase">
+            <div class="venue-inner">
+                <img src="{{ asset('images/bhrs-logo.jpg') }}" alt="BRHS Logo" class="venue-logo">
+
+                <div class="venue-socials">
+                    <i class="fa-regular fa-envelope"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-snapchat"></i>
+                </div>
+
+                <p class="venue-text">
+                    BRHS Prom 2026 • A Night in Las Vegas
+                </p>
+                <p class="venue-text">
+                    Join us for an unforgettable night filled with music, lights, and great energy.
+                    Celebrate with friends, make memories, and enjoy every moment of BRHS Prom 2026 together.
+                </p>
+            </div>
+        </section>
+
     </main>
 @endsection
 

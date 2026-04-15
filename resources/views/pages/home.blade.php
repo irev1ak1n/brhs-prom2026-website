@@ -108,73 +108,6 @@
         </section>
 
 
-{{--        <section class="prom-voting-section">--}}
-{{--            <div class="prom-voting-glow prom-voting-glow-1"></div>--}}
-{{--            <div class="prom-voting-glow prom-voting-glow-2"></div>--}}
-
-{{--            <div class="container prom-voting-inner">--}}
-{{--                <p class="prom-voting-eyebrow">VOTE FOR YOUR FAVORITES</p>--}}
-{{--                <h2 class="prom-voting-title">Prom Court Voting</h2>--}}
-{{--                <p class="prom-voting-text">--}}
-{{--                    Vote for Prom King and Queen and make your choice count.--}}
-{{--                    Voting is quick, simple, and will open during homeroom on April 15.--}}
-{{--                </p>--}}
-
-{{--                <div class="prom-voting-actions">--}}
-{{--                    <a href="#" class="prom-voting-btn">Vote Now</a>--}}
-{{--                    <span class="prom-voting-note">One submission per student</span>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </section>--}}
-
-{{--        <section class="spirit-week-section">--}}
-{{--            <div class="spirit-week-bg"></div>--}}
-{{--            <div class="spirit-week-overlay"></div>--}}
-{{--            <div class="spirit-week-lights spirit-light-1"></div>--}}
-{{--            <div class="spirit-week-lights spirit-light-2"></div>--}}
-
-{{--            <div class="spirit-week-events spirit-week-stack">--}}
-{{--                <article class="spirit-day-card card-one">--}}
-{{--                    <span class="spirit-day-date">APRIL 20</span>--}}
-{{--                    <h3 class="spirit-day-title">Tourist Takeover</h3>--}}
-{{--                    <p class="spirit-day-text">--}}
-{{--                        Hawaiian shirts, graphic tees, jerseys, sunglasses, fanny packs, cameras, and travel-style looks.--}}
-{{--                    </p>--}}
-{{--                </article>--}}
-
-{{--                <article class="spirit-day-card card-two">--}}
-{{--                    <span class="spirit-day-date">APRIL 21</span>--}}
-{{--                    <h3 class="spirit-day-title">Lucky Looks Day</h3>--}}
-{{--                    <p class="spirit-day-text">--}}
-{{--                        Wear red, black, or green with lucky numbers, polka dots, stripes, bold patterns, or casino-inspired vibes.--}}
-{{--                    </p>--}}
-{{--                </article>--}}
-
-{{--                <article class="spirit-day-card card-three">--}}
-{{--                    <span class="spirit-day-date">APRIL 22</span>--}}
-{{--                    <h3 class="spirit-day-title">Vegas Icons Day</h3>--}}
-{{--                    <p class="spirit-day-text">--}}
-{{--                        Dress like a famous performer, singer, magician, Elvis-style icon, or any classic Vegas entertainer.--}}
-{{--                    </p>--}}
-{{--                </article>--}}
-
-{{--                <article class="spirit-day-card card-four">--}}
-{{--                    <span class="spirit-day-date">APRIL 23</span>--}}
-{{--                    <h3 class="spirit-day-title">High Rollers Day</h3>--}}
-{{--                    <p class="spirit-day-text">--}}
-{{--                        Suits, ties, dresses, blazers, jewelry, and polished red carpet inspired outfits.--}}
-{{--                    </p>--}}
-{{--                </article>--}}
-
-{{--                <article class="spirit-day-card card-five">--}}
-{{--                    <span class="spirit-day-date">APRIL 24</span>--}}
-{{--                    <h3 class="spirit-day-title">Lights on the Vegas Strip</h3>--}}
-{{--                    <p class="spirit-day-text">--}}
-{{--                        Wear school colors with sparkle, glitter, sequins, or neon accents.--}}
-{{--                    </p>--}}
-{{--                </article>--}}
-{{--            </div>--}}
-{{--        </section>--}}
 
 
         <section class="tickets-strip">
@@ -189,34 +122,6 @@
                    })">Buy Your Tickets</a>
             </div>
         </section>
-
-{{--       <section class="song-request-section">--}}
-{{--            <div class="song-request-glow glow-1"></div>--}}
-{{--            <div class="song-request-glow glow-2"></div>--}}
-
-{{--            <div class="container song-request-inner">--}}
-{{--                <p class="song-request-eyebrow">BRHS PROM 2026</p>--}}
-{{--                <h2 class="song-request-title">Suggest a Song</h2>--}}
-
-{{--                <p class="song-request-text">--}}
-{{--                    Want to hear your favorite song at prom? Drop it below and help build the playlist.--}}
-{{--                </p>--}}
-
-{{--                <form class="contact-form" id="contactForm" action="https://formspree.io/f/xwvaeejy" method="POST">--}}
-{{--                    <input type="hidden" name="form_type" value="song_request">--}}
-
-{{--                    <input type="text" name="song" placeholder="Song name" required>--}}
-{{--                    <input type="text" name="artist" placeholder="Artist (optional)">--}}
-{{--                    <input type="text" name="name" placeholder="Your name (optional)">--}}
-
-{{--                    <button type="submit">Submit Song</button>--}}
-{{--                </form>--}}
-
-{{--                @if(session('song_success'))--}}
-{{--                    <p class="song-success">{{ session('song_success') }}</p>--}}
-{{--                @endif--}}
-{{--            </div>--}}
-{{--        </section>--}}
 
         <section class="signup-band" id="newsletter">
 

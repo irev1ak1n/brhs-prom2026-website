@@ -39,122 +39,46 @@
 {{--            <div class="spirit-week-lights spirit-light-1"></div>--}}
 {{--            <div class="spirit-week-lights spirit-light-2"></div>--}}
 
-{{--            <div class="container spirit-week-container">--}}
-{{--                <div class="spirit-week-intro">--}}
-{{--                    <span class="spirit-week-kicker">PROM COUNTDOWN</span>--}}
-{{--                    <h2>Spirit Week</h2>--}}
-{{--                    <p>--}}
-{{--                        Every day brings a new look. Dress up, have fun, and build the hype--}}
-{{--                        before prom night with a full week of Vegas-inspired themes.--}}
+{{--            <div class="spirit-week-events spirit-week-stack">--}}
+{{--                <article class="spirit-day-card card-one">--}}
+{{--                    <span class="spirit-day-date">APRIL 20</span>--}}
+{{--                    <h3 class="spirit-day-title">Tourist Takeover</h3>--}}
+{{--                    <p class="spirit-day-text">--}}
+{{--                        Hawaiian shirts, graphic tees, jerseys, sunglasses, fanny packs, cameras, and travel-style looks.--}}
 {{--                    </p>--}}
-{{--                </div>--}}
+{{--                </article>--}}
 
-{{--                <div class="spirit-week-events">--}}
-{{--                    <article class="spirit-event event-gold">--}}
-{{--                        <div class="spirit-event-top">--}}
-{{--                            <div class="spirit-event-heading">--}}
-{{--                                <span class="spirit-event-date">APRIL 20</span>--}}
-{{--                                <h3 class="spirit-event-weekday">Monday</h3>--}}
-{{--                            </div>--}}
+{{--                <article class="spirit-day-card card-two">--}}
+{{--                    <span class="spirit-day-date">APRIL 21</span>--}}
+{{--                    <h3 class="spirit-day-title">Lucky Looks Day</h3>--}}
+{{--                    <p class="spirit-day-text">--}}
+{{--                        Wear red, black, or green with lucky numbers, polka dots, stripes, bold patterns, or casino-inspired vibes.--}}
+{{--                    </p>--}}
+{{--                </article>--}}
 
-{{--                            <div class="spirit-event-badge">Spirit Week</div>--}}
-{{--                        </div>--}}
+{{--                <article class="spirit-day-card card-three">--}}
+{{--                    <span class="spirit-day-date">APRIL 22</span>--}}
+{{--                    <h3 class="spirit-day-title">Vegas Icons Day</h3>--}}
+{{--                    <p class="spirit-day-text">--}}
+{{--                        Dress like a famous performer, singer, magician, Elvis-style icon, or any classic Vegas entertainer.--}}
+{{--                    </p>--}}
+{{--                </article>--}}
 
-{{--                        <div class="spirit-event-body">--}}
-{{--                            <h4 class="spirit-event-title">Tourist Takeover</h4>--}}
-{{--                            <p>--}}
-{{--                                Hawaiian shirts, graphic tees, sports jerseys, sunglasses, fanny packs,--}}
-{{--                                cameras, sandals, bucket hats, and travel-style outfits.--}}
-{{--                            </p>--}}
-{{--                        </div>--}}
+{{--                <article class="spirit-day-card card-four">--}}
+{{--                    <span class="spirit-day-date">APRIL 23</span>--}}
+{{--                    <h3 class="spirit-day-title">High Rollers Day</h3>--}}
+{{--                    <p class="spirit-day-text">--}}
+{{--                        Suits, ties, dresses, blazers, jewelry, and polished red carpet inspired outfits.--}}
+{{--                    </p>--}}
+{{--                </article>--}}
 
-{{--                        <img src="/images/home/spirit/monday.png" alt="Tourist Takeover outfit inspiration" class="spirit-event-image">--}}
-{{--                    </article>--}}
-
-{{--                    <article class="spirit-event event-green">--}}
-{{--                        <div class="spirit-event-top">--}}
-{{--                            <div class="spirit-event-heading">--}}
-{{--                                <span class="spirit-event-date">APRIL 21</span>--}}
-{{--                                <h3 class="spirit-event-weekday">Tuesday</h3>--}}
-{{--                            </div>--}}
-
-{{--                            <div class="spirit-event-badge">Spirit Week</div>--}}
-{{--                        </div>--}}
-
-{{--                        <div class="spirit-event-body">--}}
-{{--                            <h4 class="spirit-event-title">Lucky Looks Day</h4>--}}
-{{--                            <p>--}}
-{{--                                Wear red, black, or green with lucky numbers, polka dots, stripes,--}}
-{{--                                bold patterns, card-game inspired pieces, or casino-style looks.--}}
-{{--                            </p>--}}
-{{--                        </div>--}}
-
-{{--                        <img src="/images/home/spirit/tuesday.png" alt="Lucky Looks Day outfit inspiration" class="spirit-event-image">--}}
-{{--                    </article>--}}
-
-{{--                    <article class="spirit-event event-pink">--}}
-{{--                        <div class="spirit-event-top">--}}
-{{--                            <div class="spirit-event-heading">--}}
-{{--                                <span class="spirit-event-date">APRIL 22</span>--}}
-{{--                                <h3 class="spirit-event-weekday">Wednesday</h3>--}}
-{{--                            </div>--}}
-
-{{--                            <div class="spirit-event-badge">Spirit Week</div>--}}
-{{--                        </div>--}}
-
-{{--                        <div class="spirit-event-body">--}}
-{{--                            <h4 class="spirit-event-title">Vegas Icons Day</h4>--}}
-{{--                            <p>--}}
-{{--                                Dress like a famous performer, singer, magician, Elvis-inspired icon,--}}
-{{--                                show star, or any classic Las Vegas entertainer.--}}
-{{--                            </p>--}}
-{{--                        </div>--}}
-
-{{--                        <img src="/images/home/spirit/wednesday.png" alt="Vegas Icons Day outfit inspiration" class="spirit-event-image">--}}
-{{--                    </article>--}}
-
-{{--                    <article class="spirit-event event-silver">--}}
-{{--                        <div class="spirit-event-top">--}}
-{{--                            <div class="spirit-event-heading">--}}
-{{--                                <span class="spirit-event-date">APRIL 23</span>--}}
-{{--                                <h3 class="spirit-event-weekday">Thursday</h3>--}}
-{{--                            </div>--}}
-
-{{--                            <div class="spirit-event-badge">Spirit Week</div>--}}
-{{--                        </div>--}}
-
-{{--                        <div class="spirit-event-body">--}}
-{{--                            <h4 class="spirit-event-title">High Rollers Day</h4>--}}
-{{--                            <p>--}}
-{{--                                Suits, ties, dresses, blazers, jewelry, heels, loafers, and polished--}}
-{{--                                red-carpet inspired outfits with a classy Vegas feel.--}}
-{{--                            </p>--}}
-{{--                        </div>--}}
-
-{{--                        <img src="/images/home/spirit/thursday.png" alt="High Rollers Day outfit inspiration" class="spirit-event-image">--}}
-{{--                    </article>--}}
-
-{{--                    <article class="spirit-event event-orange">--}}
-{{--                        <div class="spirit-event-top">--}}
-{{--                            <div class="spirit-event-heading">--}}
-{{--                                <span class="spirit-event-date">APRIL 24</span>--}}
-{{--                                <h3 class="spirit-event-weekday">Friday</h3>--}}
-{{--                            </div>--}}
-
-{{--                            <div class="spirit-event-badge">Spirit Week</div>--}}
-{{--                        </div>--}}
-
-{{--                        <div class="spirit-event-body">--}}
-{{--                            <h4 class="spirit-event-title">Lights on the Vegas Strip</h4>--}}
-{{--                            <p>--}}
-{{--                                Wear school colors with sparkle, glitter, sequins, metallic details,--}}
-{{--                                neon accents, glowing accessories, and bright Vegas-style energy.--}}
-{{--                            </p>--}}
-{{--                        </div>--}}
-
-{{--                        <img src="/images/home/spirit/friday.png" alt="Lights on the Vegas Strip outfit inspiration" class="spirit-event-image">--}}
-{{--                    </article>--}}
-{{--                </div>--}}
+{{--                <article class="spirit-day-card card-five">--}}
+{{--                    <span class="spirit-day-date">APRIL 24</span>--}}
+{{--                    <h3 class="spirit-day-title">Lights on the Vegas Strip</h3>--}}
+{{--                    <p class="spirit-day-text">--}}
+{{--                        Wear school colors with sparkle, glitter, sequins, or neon accents.--}}
+{{--                    </p>--}}
+{{--                </article>--}}
 {{--            </div>--}}
 {{--        </section>--}}
 
@@ -219,3 +143,35 @@
 
     </main>
 @endsection
+
+
+@push('scripts')
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const section = document.querySelector(".spirit-week-section");
+            const cards = document.querySelectorAll(".spirit-float-card");
+
+            if (!section || !cards.length) return;
+
+            let hasAnimated = false;
+
+            window.addEventListener("scroll", () => {
+                if (hasAnimated) return;
+
+                const rect = section.getBoundingClientRect();
+
+                const inView = rect.top < window.innerHeight * 0.8 && rect.bottom > 0;
+
+                if (inView) {
+                    hasAnimated = true;
+
+                    cards.forEach((card, index) => {
+                        setTimeout(() => {
+                            card.classList.add("animate-in");
+                        }, index * 120);
+                    });
+                }
+            });
+        });
+    </script>
+@endpush

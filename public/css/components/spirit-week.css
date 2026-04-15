@@ -1,20 +1,18 @@
-/* =========================
-   SPIRIT WEEK
-========================= */
 .spirit-week-section{
     position: relative;
     overflow: hidden;
     padding: 7rem 0 6rem;
+    min-height: 100vh;
     background: #07060b;
     isolation: isolate;
 }
 
 .spirit-week-bg{
     position: absolute;
-    inset: 0;
-    background: url("/images/home/vegas.jpg") center center / cover no-repeat;
-    filter: brightness(0.28) saturate(1.05);
-    transform: scale(1.03);
+    inset: -2%;
+    background: url("/images/home/vegas.jpg") center 35% / cover no-repeat;
+    filter: blur(1px) brightness(1.35) saturate(1.22) contrast(1.08);
+    transform: scale(1.02);
     z-index: 0;
 }
 
@@ -22,251 +20,231 @@
     position: absolute;
     inset: 0;
     background:
-        linear-gradient(180deg, rgba(6,4,10,0.8) 0%, rgba(10,6,16,0.7) 35%, rgba(5,3,10,0.88) 100%);
+        linear-gradient(
+            90deg,
+            rgba(8, 6, 12, 0.22) 0%,
+            rgba(8, 6, 12, 0.12) 40%,
+            rgba(8, 6, 12, 0.08) 60%,
+            rgba(8, 6, 12, 0.18) 100%
+        );
     z-index: 1;
+}
+
+.spirit-week-section::before{
+    display: none;
+}
+
+.spirit-week-lights{
+    display: none;
+}
+
+.spirit-light-1{
+    width: 320px;
+    height: 320px;
+    top: 90px;
+    right: 8%;
+    background: rgba(255, 209, 71, 0.16);
+}
+
+.spirit-light-2{
+    width: 300px;
+    height: 300px;
+    bottom: 60px;
+    left: 6%;
+    background: rgba(255, 77, 157, 0.12);
 }
 
 .spirit-week-container{
     position: relative;
-    z-index: 3;
+    z-index: 2;
 }
-
 .spirit-week-intro{
-    max-width: 760px;
-    margin-bottom: 2.5rem;
+    max-width: 720px;
+    margin-bottom: 2rem;
+    color: #fff;
 }
 
 .spirit-week-kicker{
     display: inline-block;
     margin-bottom: 0.8rem;
+    color: #d9b15f;
     font-size: 0.82rem;
     font-weight: 800;
-    letter-spacing: 0.18em;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: #ffd86b;
 }
 
 .spirit-week-intro h2{
-    margin: 0 0 0.9rem;
-    font-size: clamp(2.4rem, 6vw, 4.8rem);
+    margin: 0 0 0.85rem;
+    font-size: clamp(2.6rem, 7vw, 5.6rem);
     line-height: 0.95;
-    font-weight: 900;
+    letter-spacing: -0.04em;
     color: #fff;
+    text-shadow: none;
 }
 
 .spirit-week-intro p{
     margin: 0;
-    max-width: 720px;
-    font-size: 1.12rem;
+    max-width: 640px;
+    font-size: 1.02rem;
     line-height: 1.7;
-    color: rgba(255,255,255,0.88);
-}
-
-.spirit-week-events{
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.4rem;
-    align-items: stretch;
-}
-
-.spirit-event{
-    position: relative;
-    padding: 1.4rem 1.35rem 1.45rem;
-    border-radius: 1.55rem;
-    overflow: hidden;
-    background: rgba(16, 10, 24, 0.92);
-    border: 1px solid rgba(255,255,255,0.08);
-    box-shadow:
-        0 16px 34px rgba(0,0,0,0.34),
-        inset 0 0 0 1px rgba(255,255,255,0.03);
-    min-height: 220px;
-}
-
-.spirit-event::before{
-    content: "";
-    position: absolute;
-    inset: 0;
-    opacity: 0.18;
-    pointer-events: none;
-    background:
-        radial-gradient(circle at top right, rgba(255,255,255,0.22), transparent 30%),
-        linear-gradient(135deg, rgba(255,255,255,0.08), transparent 55%);
-}
-
-.spirit-event::after{
-    content: "";
-    position: absolute;
-    left: 1.2rem;
-    right: 1.2rem;
-    bottom: 0.9rem;
-    height: 3px;
-    border-radius: 999px;
-    background: currentColor;
-    opacity: 0.65;
-    box-shadow: 0 0 14px currentColor;
-}
-
-.spirit-event-day,
-.spirit-event-date,
-.spirit-event h3,
-.spirit-event p{
-    position: relative;
-    z-index: 2;
-}
-
-.spirit-event-day{
-    display: inline-block;
-    margin-bottom: 0.35rem;
-    font-size: 1.55rem;
-    line-height: 1;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    color: #fff;
-}
-
-.spirit-event-date{
-    display: inline-block;
-    margin-bottom: 0.95rem;
-    padding: 0.42rem 0.78rem;
-    border-radius: 999px;
-    font-size: 0.78rem;
-    font-weight: 800;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    background: rgba(255,255,255,0.08);
-    color: rgba(255,255,255,0.88);
-    border: 1px solid rgba(255,255,255,0.1);
-}
-
-.spirit-event h3{
-    margin: 0 0 0.65rem;
-    font-size: 2rem;
-    line-height: 1.02;
-    font-weight: 900;
-    color: #fff;
-    max-width: 90%;
-}
-
-.spirit-event p{
-    margin: 0;
-    max-width: 95%;
-    font-size: 1rem;
-    line-height: 1.65;
     color: rgba(255,255,255,0.84);
 }
 
-/* neon themes */
-.event-gold{
-    color: #ffcc4d;
-    background:
-        linear-gradient(180deg, rgba(36,24,7,0.95), rgba(18,10,7,0.96)),
-        #120c08;
-    box-shadow:
-        0 0 0 1px rgba(255, 204, 77, 0.18),
-        0 0 24px rgba(255, 196, 56, 0.14),
-        0 18px 34px rgba(0,0,0,0.34);
+/* =========================
+   NEW SPIRIT DAY CARDS
+========================= */
+.spirit-week-events{
+    position: relative;
+    min-height: 980px;
+    margin-top: 2.4rem;
 }
 
-.event-green{
-    color: #61f2a5;
-    background:
-        linear-gradient(180deg, rgba(9,32,21,0.95), rgba(7,18,13,0.97)),
-        #08120d;
+.spirit-day-card{
+    position: absolute;
+    max-width: 560px;
+    padding: 1.1rem 1.3rem;
+    border-radius: 28px;
+
+
+    background: linear-gradient(
+        135deg,
+        rgba(255, 112, 181, 0.20),
+        rgba(20,18,28,0.50)
+    );
+
+    border: 1.5px solid rgba(255, 112, 181, 0.35);
+
     box-shadow:
-        0 0 0 1px rgba(97, 242, 165, 0.16),
-        0 0 24px rgba(97, 242, 165, 0.14),
-        0 18px 34px rgba(0,0,0,0.34);
+        0 0 30px rgba(255, 112, 181, 0.18),
+        0 18px 40px rgba(0,0,0,0.22);
+
+    overflow: hidden;
 }
 
-.event-pink{
-    color: #ff78d4;
-    background:
-        linear-gradient(180deg, rgba(36,12,30,0.95), rgba(17,8,18,0.97)),
-        #140910;
-    box-shadow:
-        0 0 0 1px rgba(255, 120, 212, 0.18),
-        0 0 24px rgba(255, 120, 212, 0.14),
-        0 18px 34px rgba(0,0,0,0.34);
+.spirit-day-card::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 120, 230, 0.8),
+        rgba(160, 90, 255, 0.6),
+        rgba(255, 120, 230, 0.4)
+    );
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
 }
 
-.event-silver{
-    color: #d9e4ff;
+.spirit-week-section::after{
+    content: "";
+    position: absolute;
+    inset: 0;
     background:
-        linear-gradient(180deg, rgba(24,28,38,0.95), rgba(12,14,19,0.97)),
-        #0d1016;
-    box-shadow:
-        0 0 0 1px rgba(217, 228, 255, 0.16),
-        0 0 24px rgba(217, 228, 255, 0.12),
-        0 18px 34px rgba(0,0,0,0.34);
+        radial-gradient(circle at 28% 35%, rgba(255, 110, 210, 0.12), transparent 28%),
+        radial-gradient(circle at 72% 48%, rgba(255, 214, 92, 0.12), transparent 26%),
+        radial-gradient(circle at 58% 78%, rgba(85, 145, 255, 0.10), transparent 24%);
+    pointer-events: none;
+    z-index: 1;
 }
 
-.event-orange{
-    color: #ff9a4d;
-    background:
-        linear-gradient(180deg, rgba(38,20,10,0.95), rgba(20,10,7,0.97)),
-        #150c08;
-    box-shadow:
-        0 0 0 1px rgba(255, 154, 77, 0.18),
-        0 0 24px rgba(255, 154, 77, 0.14),
-        0 18px 34px rgba(0,0,0,0.34);
+/* text */
+.spirit-day-date{
+    display: inline-block;
+    margin-bottom: 0.6rem;
+    color: #e3c56f;
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
 }
 
-.spirit-event:last-child{
-    grid-column: 1 / -1;
-    width: 100%;
-    max-width: calc(50% - 0.7rem);
-    justify-self: center;
+.spirit-day-title{
+    margin: 0 0 0.3rem;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.spirit-day-text{
+    margin: 0;
+    color: rgba(255,255,255,0.9);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* positions */
+.card-one{ top: 30px; left: 6%; }
+.card-two{ top: 200px; right: 5%; }
+.card-three{ top: 400px; left: 10%; }
+.card-four{ top: 600px; right: 9%; }
+
+.card-five{
+    top: 820px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 620px;
 }
 
 @media (max-width: 900px){
     .spirit-week-events{
-        grid-template-columns: 1fr;
+        display: grid;
+        gap: 1rem;
+        min-height: auto;
     }
 
-    .spirit-event:last-child{
-        grid-column: auto;
+    .spirit-day-card{
+        position: relative;
         max-width: none;
+        width: 100%;
+        transform: none;
     }
 }
 
-@media (max-width: 768px){
+.spirit-day-title{
+    text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+}
+
+.spirit-day-text{
+    color: rgba(255,255,255,0.95);
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 900px){
     .spirit-week-section{
-        padding: 5.5rem 0 4.5rem;
+        padding: 5rem 0 4rem;
+        min-height: auto;
+    }
+
+    .spirit-week-bg{
+        background-position: center center;
+        transform: scale(1.01);
+    }
+
+    .spirit-week-events{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px){
+    .spirit-week-intro{
+        margin-bottom: 1.75rem;
     }
 
     .spirit-week-intro h2{
-        font-size: clamp(2.2rem, 10vw, 3.3rem);
+        font-size: clamp(2.3rem, 14vw, 4rem);
     }
 
     .spirit-week-intro p{
         font-size: 1rem;
+        line-height: 1.65;
     }
 
-    .spirit-event{
-        min-height: auto;
-        padding: 1.15rem 1rem 1.2rem;
-        border-radius: 1.2rem;
-    }
-
-    .spirit-event-day{
-        font-size: 1.2rem;
-    }
-
-    .spirit-event-date{
-        font-size: 0.72rem;
-        letter-spacing: 0.12em;
-        padding: 0.38rem 0.7rem;
-    }
-
-    .spirit-event h3{
-        font-size: 1.45rem;
-        max-width: 100%;
-    }
-
-    .spirit-event p{
-        max-width: 100%;
-        font-size: 0.94rem;
-        line-height: 1.55;
-    }
 }

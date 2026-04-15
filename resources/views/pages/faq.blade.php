@@ -41,14 +41,14 @@
                 <details class="faq-item">
                     <summary>Is there a deadline to purchase prom tickets?</summary>
                     <p>
-                        Yes. Tickets must be purchased by <strong>April 15</strong>. After this date, ticket sales will be closed and no additional purchases will be available.
+                        Yes. Tickets must be purchased by <strong>April 15</strong>. After that, you can still get tickets at the venue on the night of prom — there will be staff at the entrance checking tickets and helping you purchase one if needed.
                     </p>
                 </details>
 
                 <details class="faq-item">
                     <summary>Are students allowed to bring a guest?</summary>
                     <p>
-                        Guests are allowed with prior approval. A completed guest form must be submitted before the deadline. Additional requirements may apply depending on school guidelines.
+                        Guests are allowed with prior approval. A completed guest form must be submitted before the deadline.
                     </p>
                 </details>
 
@@ -69,21 +69,14 @@
                 <details class="faq-item">
                     <summary>Will food, drinks, or entertainment be provided?</summary>
                     <p>
-                        Food and drinks will be available during the event. Specific details about what will be provided will be shared closer to the date of prom.
-                    </p>
-                </details>
-
-                <details class="faq-item">
-                    <summary>Can I leave and re-enter?</summary>
-                    <p>
-                        Re-entry policies depend on school and venue rules. Students should expect limited or no re-entry once they leave. Final guidelines will be communicated before the event.
+                        Food and drinks will be available during the event.
                     </p>
                 </details>
 
                 <details class="faq-item">
                     <summary>Is parking available at or near the venue?</summary>
                     <p>
-                        Parking will be available near the venue. Additional information about parking locations, directions, and any restrictions will be provided closer to the event date.
+                        Parking will be available near the venue.
                     </p>
                 </details>
 

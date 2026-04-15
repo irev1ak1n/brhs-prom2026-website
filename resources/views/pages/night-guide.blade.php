@@ -19,9 +19,7 @@
             <span class="ng-number">01</span>
             <h2>The Theme</h2>
             <p>
-                More than just a dance.
-
-                Inspired by Las Vegas, the night is built around light, movement, and energy. It’s meant to feel different — something you step into, not just attend.
+                More than a dance. Inspired by Las Vegas, full of light and energy. A night that feels different in a way that is hard to explain but easy to remember.
             </p>
         </div>
     </section>

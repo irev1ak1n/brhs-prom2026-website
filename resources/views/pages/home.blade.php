@@ -208,11 +208,13 @@
             <div class="venue-inner">
                 <img src="{{ asset('images/bhrs-logo.jpg') }}" alt="BRHS Logo" class="venue-logo">
 
-                <div class="venue-socials">
+                <a href="mailto:brhsprom2026@gmail.com" class="venue-social">
                     <i class="fa-regular fa-envelope"></i>
+                </a>
+
+                <a href="https://instagram.com/brhsprom26" target="_blank" class="venue-social">
                     <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-snapchat"></i>
-                </div>
+                </a>
 
                 <p class="venue-text">
                     BRHS Prom 2026 • A Night in Las Vegas

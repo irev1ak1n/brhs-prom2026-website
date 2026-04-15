@@ -69,7 +69,7 @@
                         <span>LATEST FROM INSTAGRAM</span>
                     </h1>
                     <p class="instagram-subtext">
-                        See the newest prom updates, announcements, and behind-the-scenes moments.
+                        See the latest prom announcements, ticket reminders, and event updates.
                     </p>
                 </div>
 

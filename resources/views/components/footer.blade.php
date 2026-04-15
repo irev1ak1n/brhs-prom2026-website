@@ -9,8 +9,8 @@
             <h3>Prom 2026</h3>
             <p class="footer-school">Ballantyne Ridge High School</p>
             <p class="footer-description">
-                Step into an unforgettable night of lights, music, and celebration.
-                Join us for a prom inspired by the energy and glamour of Las Vegas.
+                Get ready for a night full of music, lights, and unforgettable moments.
+                Join us for a prom inspired by the energy and excitement of Las Vegas.
             </p>
             <span class="footer-tagline">A Night in Las Vegas</span>
         </div>

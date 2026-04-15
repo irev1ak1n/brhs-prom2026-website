@@ -50,7 +50,7 @@
     </div>
 
     <div class="container footer-bottom">
-        <p>© 2026 BRHS Prom. All rights reserved.</p>
-        <span class="footer-bottom-line">Ballantyne Ridge High School • Prom Night Experience</span>
+        <span class="footer-bottom-line">© 2026 BRHS Prom • Prom Night Experience</span>
+        <p> Ballantyne Ridge High School  | Designed & Developed by Illia Reviakin</p>
     </div>
 </footer>

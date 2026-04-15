@@ -39,9 +39,16 @@
                 </details>
 
                 <details class="faq-item">
+                    <summary>How do i run for prom Queen/King?</summary>
+                    <p>
+                        Senior homerooms will nominate candidates on 04/15. You CAN self-nominate. Nominees will be notified by 04/17. Campaigning will take place 04/20-04/24. NOTE: You must be a senior attending from to be on court.
+                    </p>
+                </details>
+
+                <details class="faq-item">
                     <summary>Is there a deadline to purchase prom tickets?</summary>
                     <p>
-                        Yes. Tickets must be purchased by <strong>April 15</strong>. After that, you can still get tickets at the venue on the night of prom — there will be staff at the entrance checking tickets and helping you purchase one if needed.
+                        Yes. Tickets must be purchased by <strong>May 1sy</strong>. After that, you can still get tickets at the venue on the night of prom — there will be staff at the entrance checking tickets and helping you purchase one if needed.
                     </p>
                 </details>
 
@@ -56,6 +63,13 @@
                     <summary>What is the dress code?</summary>
                     <p>
                         Prom is a formal event. Students are expected to wear appropriate formal attire such as suits, dresses, or similar clothing that matches the event setting.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Will we get to submit song requests to the DJ?</summary>
+                    <p>
+                        Yes! Starting, on 04/20 we will be collecting song requests to send to our DJ who is ready to turn it up!
                     </p>
                 </details>
 

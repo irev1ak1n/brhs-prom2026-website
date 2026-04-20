@@ -1,250 +1,350 @@
-.spirit-week-section{
+.spirit-week-section {
     position: relative;
     overflow: hidden;
-    padding: 7rem 0 6rem;
-    min-height: 100vh;
-    background: #07060b;
+    padding: 110px 0 95px;
     isolation: isolate;
+    background:
+        linear-gradient(180deg, #080712 0%, #0c0a18 100%);
 }
 
-.spirit-week-bg{
+.spirit-collage-bg {
     position: absolute;
-    inset: -2%;
-    background: url("/images/home/vegas.jpg") center 35% / cover no-repeat;
-    filter: blur(1px) brightness(1.35) saturate(1.22) contrast(1.08);
-    transform: scale(1.02);
+    inset: 0;
     z-index: 0;
 }
 
-.spirit-week-overlay{
+.spirit-collage-tile {
+    position: absolute;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    filter: saturate(1.02) brightness(0.72);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+    border: 1px solid rgba(255,255,255,0.06);
+    animation: spiritFloat 11s ease-in-out infinite;
+}
+
+/* replace image paths with yours */
+.s1  { background-image: url('/images/gallery/promcom1.jpg'); }
+.s2  { background-image: url('/images/gallery/promcom2.jpg'); }
+.s3  { background-image: url('/images/gallery/promcom3.jpg'); }
+.s4  { background-image: url('/images/gallery/promcom4.jpg'); }
+.s5  { background-image: url('/images/gallery/promcom5.jpg'); }
+.s6  { background-image: url('/images/gallery/promcom6.jpg'); }
+.s7  { background-image: url('/images/gallery/promcom7.jpg'); }
+.s8  { background-image: url('/images/gallery/promcom8.jpg'); }
+.s9  { background-image: url('/images/gallery/promcom9.jpg'); }
+.s10 { background-image: url('/images/gallery/promcom10.jpg'); }
+.s11 { background-image: url('/images/gallery/promcom11.jpg'); }
+.s12 { background-image: url('/images/gallery/promcom12.jpg'); }
+.s13 { background-image: url('/images/gallery/promcom13.jpg'); }
+.s14 { background-image: url('/images/gallery/promcom14.jpg'); }
+.s14 { background-image: url('/images/gallery/promcom14.jpg'); }
+
+/* top row */
+.s1 {
+    width: 18%;
+    height: 23%;
+    left: -2%;
+    top: 4%;
+    border-radius: 34px;
+    transform: rotate(-8deg);
+    animation-delay: 0s;
+}
+
+.s2 {
+    width: 20%;
+    height: 20%;
+    left: 18%;
+    top: 2%;
+    border-radius: 24px 48px 24px 48px;
+    transform: rotate(5deg);
+    animation-delay: 1.2s;
+}
+
+.s3 {
+    width: 22%;
+    height: 24%;
+    left: 41%;
+    top: 1%;
+    border-radius: 40px;
+    transform: rotate(-3deg);
+    animation-delay: 2.1s;
+}
+
+.s4 {
+    width: 17%;
+    height: 26%;
+    right: 18%;
+    top: 3%;
+    border-radius: 26px;
+    transform: rotate(8deg);
+    animation-delay: 0.8s;
+}
+
+.s5 {
+    width: 16%;
+    height: 22%;
+    right: -1%;
+    top: 7%;
+    border-radius: 0 40px 0 40px;
+    transform: rotate(-6deg);
+    animation-delay: 1.7s;
+}
+
+/* middle */
+.s6 {
+    width: 21%;
+    height: 22%;
+    left: 2%;
+    top: 33%;
+    border-radius: 28px;
+    transform: rotate(7deg);
+    animation-delay: 2.8s;
+}
+
+.s7 {
+    width: 17%;
+    height: 18%;
+    left: 24%;
+    top: 31%;
+    border-radius: 50%;
+    transform: rotate(-10deg);
+    animation-delay: 0.5s;
+}
+
+.s8 {
+    width: 26%;
+    height: 25%;
+    right: 10%;
+    top: 30%;
+    border-radius: 30px;
+    transform: rotate(-4deg);
+    animation-delay: 1.9s;
+}
+
+/* bottom */
+.s9 {
+    width: 18%;
+    height: 24%;
+    left: -1%;
+    bottom: 4%;
+    border-radius: 38px 20px 38px 20px;
+    transform: rotate(-11deg);
+    animation-delay: 1.4s;
+}
+
+.s10 {
+    width: 22%;
+    height: 20%;
+    left: 20%;
+    bottom: 2%;
+    border-radius: 22px;
+    transform: rotate(6deg);
+    animation-delay: 2.4s;
+}
+
+.s11 {
+    width: 18%;
+    height: 20%;
+    right: 20%;
+    bottom: 4%;
+    border-radius: 999px;
+    transform: rotate(-7deg);
+    animation-delay: 0.9s;
+}
+
+.s12 {
+    width: 20%;
+    height: 24%;
+    right: 1%;
+    bottom: 1%;
+    border-radius: 28px;
+    transform: rotate(9deg);
+    animation-delay: 2.9s;
+}
+
+.spirit-collage-overlay {
     position: absolute;
     inset: 0;
+    z-index: 1;
     background:
         linear-gradient(
-            90deg,
-            rgba(8, 6, 12, 0.22) 0%,
-            rgba(8, 6, 12, 0.12) 40%,
-            rgba(8, 6, 12, 0.08) 60%,
-            rgba(8, 6, 12, 0.18) 100%
+            180deg,
+            rgba(8, 7, 18, 0.38) 0%,
+            rgba(10, 8, 22, 0.58) 40%,
+            rgba(8, 7, 18, 0.74) 100%
         );
+}
+
+.spirit-collage-vignette {
+    position: absolute;
+    inset: 0;
     z-index: 1;
+    background:
+        radial-gradient(circle at center, transparent 35%, rgba(5, 4, 12, 0.48) 100%);
 }
 
-.spirit-week-section::before{
-    display: none;
+.spirit-collage-glow {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background:
+        radial-gradient(circle at 20% 25%, rgba(123, 63, 255, 0.18), transparent 24%),
+        radial-gradient(circle at 80% 68%, rgba(255, 74, 176, 0.14), transparent 26%),
+        radial-gradient(circle at 50% 10%, rgba(92, 124, 255, 0.12), transparent 22%);
+    filter: blur(24px);
 }
 
-.spirit-week-lights{
-    display: none;
-}
-
-.spirit-light-1{
-    width: 320px;
-    height: 320px;
-    top: 90px;
-    right: 8%;
-    background: rgba(255, 209, 71, 0.16);
-}
-
-.spirit-light-2{
-    width: 300px;
-    height: 300px;
-    bottom: 60px;
-    left: 6%;
-    background: rgba(255, 77, 157, 0.12);
-}
-
-.spirit-week-container{
+.spirit-week-wrap {
     position: relative;
     z-index: 2;
 }
-.spirit-week-intro{
-    max-width: 720px;
-    margin-bottom: 2rem;
-    color: #fff;
+
+.spirit-week-head {
+    text-align: center;
+    margin-bottom: 34px;
 }
 
-.spirit-week-kicker{
-    display: inline-block;
-    margin-bottom: 0.8rem;
-    color: #d9b15f;
-    font-size: 0.82rem;
-    font-weight: 800;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-}
-
-.spirit-week-intro h2{
-    margin: 0 0 0.85rem;
-    font-size: clamp(2.6rem, 7vw, 5.6rem);
-    line-height: 0.95;
-    letter-spacing: -0.04em;
-    color: #fff;
-    text-shadow: none;
-}
-
-.spirit-week-intro p{
+.spirit-week-head h2 {
     margin: 0;
-    max-width: 640px;
-    font-size: 1.02rem;
-    line-height: 1.7;
-    color: rgba(255,255,255,0.84);
-}
-
-/* =========================
-   NEW SPIRIT DAY CARDS
-========================= */
-.spirit-week-events{
-    position: relative;
-    min-height: 980px;
-    margin-top: 2.4rem;
-}
-
-.spirit-day-card{
-    position: absolute;
-    max-width: 560px;
-    padding: 1.1rem 1.3rem;
-    border-radius: 28px;
-
-
-    background: linear-gradient(
-        135deg,
-        rgba(255, 112, 181, 0.20),
-        rgba(20,18,28,0.50)
-    );
-
-    border: 1.5px solid rgba(255, 112, 181, 0.35);
-
-    box-shadow:
-        0 0 30px rgba(255, 112, 181, 0.18),
-        0 18px 40px rgba(0,0,0,0.22);
-
-    overflow: hidden;
-}
-
-.spirit-day-card::before{
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-    padding: 1px;
-    background: linear-gradient(
-        135deg,
-        rgba(255, 120, 230, 0.8),
-        rgba(160, 90, 255, 0.6),
-        rgba(255, 120, 230, 0.4)
-    );
-    -webkit-mask:
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-}
-
-.spirit-week-section::after{
-    content: "";
-    position: absolute;
-    inset: 0;
-    background:
-        radial-gradient(circle at 28% 35%, rgba(255, 110, 210, 0.12), transparent 28%),
-        radial-gradient(circle at 72% 48%, rgba(255, 214, 92, 0.12), transparent 26%),
-        radial-gradient(circle at 58% 78%, rgba(85, 145, 255, 0.10), transparent 24%);
-    pointer-events: none;
-    z-index: 1;
-}
-
-/* text */
-.spirit-day-date{
-    display: inline-block;
-    margin-bottom: 0.6rem;
-    color: #e3c56f;
-    font-size: 0.85rem;
-    font-weight: 800;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-}
-
-.spirit-day-title{
-    margin: 0 0 0.3rem;
     color: #fff;
-    font-size: 2rem;
-    font-weight: 900;
+    font-size: clamp(2rem, 4vw, 3.3rem);
+    font-weight: 800;
+    letter-spacing: 0.08em;
 }
 
-.spirit-day-text{
-    margin: 0;
-    color: rgba(255,255,255,0.9);
+.spirit-week-head p {
+    margin: 12px auto 0;
+    max-width: 680px;
+    color: rgba(255,255,255,0.78);
     font-size: 1rem;
-    line-height: 1.5;
 }
 
-/* positions */
-.card-one{ top: 30px; left: 6%; }
-.card-two{ top: 200px; right: 5%; }
-.card-three{ top: 400px; left: 10%; }
-.card-four{ top: 600px; right: 9%; }
-
-.card-five{
-    top: 820px;
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 620px;
+.spirit-week-box {
+    width: min(100%, 780px);
+    margin: 0 auto;
+    padding: 26px;
+    border-radius: 28px;
+    background: rgba(12, 10, 28, 0.7);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow:
+        0 20px 60px rgba(0,0,0,0.34),
+        inset 0 1px 0 rgba(255,255,255,0.05);
 }
 
-@media (max-width: 900px){
-    .spirit-week-events{
-        display: grid;
-        gap: 1rem;
-        min-height: auto;
-    }
+.spirit-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
 
-    .spirit-day-card{
-        position: relative;
-        max-width: none;
-        width: 100%;
-        transform: none;
+.spirit-row {
+    display: grid;
+    grid-template-columns: 88px 1fr;
+    gap: 16px;
+    align-items: start;
+    padding: 16px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.045);
+    border: 1px solid rgba(255,255,255,0.07);
+    transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+}
+
+.spirit-row:hover {
+    transform: translateY(-3px);
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(144, 102, 255, 0.26);
+}
+
+.spirit-date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 64px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #5521d9 0%, #7b3ff2 55%, #a46bff 100%);
+    color: #fff;
+    font-size: 1.85rem;
+    font-weight: 800;
+    box-shadow:
+        0 10px 24px rgba(103, 53, 255, 0.28),
+        inset 0 1px 0 rgba(255,255,255,0.14);
+}
+
+.spirit-info h4 {
+    margin: 0 0 6px;
+    color: #fff;
+    font-size: 1.08rem;
+    font-weight: 700;
+}
+
+.spirit-info p {
+    margin: 0;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.55;
+    font-size: 0.96rem;
+}
+
+@keyframes spiritFloat {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-12px) scale(1.03);
     }
 }
 
-.spirit-day-title{
-    text-shadow: 0 2px 10px rgba(0,0,0,0.6);
-}
-
-.spirit-day-text{
-    color: rgba(255,255,255,0.95);
-}
-
-/* =========================
-   MOBILE
-========================= */
-@media (max-width: 900px){
-    .spirit-week-section{
-        padding: 5rem 0 4rem;
-        min-height: auto;
-    }
-
-    .spirit-week-bg{
-        background-position: center center;
-        transform: scale(1.01);
-    }
-
-    .spirit-week-events{
-        grid-template-columns: 1fr;
+@media (max-width: 1100px) {
+    .spirit-collage-tile {
+        opacity: 0.2;
     }
 }
 
-@media (max-width: 640px){
-    .spirit-week-intro{
-        margin-bottom: 1.75rem;
+@media (max-width: 768px) {
+    .spirit-week-section {
+        padding: 80px 0 72px;
     }
 
-    .spirit-week-intro h2{
-        font-size: clamp(2.3rem, 14vw, 4rem);
+    .spirit-week-box {
+        padding: 18px;
+        border-radius: 22px;
     }
 
-    .spirit-week-intro p{
-        font-size: 1rem;
-        line-height: 1.65;
+    .spirit-row {
+        grid-template-columns: 64px 1fr;
+        gap: 12px;
+        padding: 12px;
     }
 
+    .spirit-date {
+        min-height: 54px;
+        font-size: 1.45rem;
+        border-radius: 14px;
+    }
+
+    .spirit-info h4 {
+        font-size: 0.96rem;
+    }
+
+    .spirit-info p {
+        font-size: 0.87rem;
+    }
+
+    .s3, .s7, .s11 {
+        display: none;
+    }
+}
+
+@media (max-width: 560px) {
+    .s2, .s4, .s6, .s8, .s10, .s12 {
+        display: none;
+    }
+
+    .spirit-collage-tile {
+        opacity: 0.14;
+    }
 }

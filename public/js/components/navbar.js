@@ -9,7 +9,7 @@
         const examples = [
             "When is prom night?",
             "Where is the venue?",
-            "Ticket deadline April 15",
+            "Ticket deadline May 1",
             "What should I wear?",
             "Dress code for prom",
             "Buy prom tickets",

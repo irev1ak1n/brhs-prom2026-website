@@ -33,79 +33,79 @@
             </section>
         </section>
 
-{{--        <section class="spirit-week-section">--}}
-{{--            <div class="spirit-collage-bg" aria-hidden="true">--}}
-{{--                <span class="spirit-collage-tile s1"></span>--}}
-{{--                <span class="spirit-collage-tile s2"></span>--}}
-{{--                <span class="spirit-collage-tile s3"></span>--}}
-{{--                <span class="spirit-collage-tile s4"></span>--}}
-{{--                <span class="spirit-collage-tile s5"></span>--}}
-{{--                <span class="spirit-collage-tile s6"></span>--}}
-{{--                <span class="spirit-collage-tile s7"></span>--}}
-{{--                <span class="spirit-collage-tile s8"></span>--}}
-{{--                <span class="spirit-collage-tile s9"></span>--}}
-{{--                <span class="spirit-collage-tile s10"></span>--}}
-{{--                <span class="spirit-collage-tile s11"></span>--}}
-{{--                <span class="spirit-collage-tile s12"></span>--}}
-{{--                <span class="spirit-collage-tile s13"></span>--}}
-{{--                <span class="spirit-collage-tile s14"></span>--}}
-{{--            </div>--}}
+        <section class="spirit-week-section">
+            <div class="spirit-collage-bg" aria-hidden="true">
+                <span class="spirit-collage-tile s1"></span>
+                <span class="spirit-collage-tile s2"></span>
+                <span class="spirit-collage-tile s3"></span>
+                <span class="spirit-collage-tile s4"></span>
+                <span class="spirit-collage-tile s5"></span>
+                <span class="spirit-collage-tile s6"></span>
+                <span class="spirit-collage-tile s7"></span>
+                <span class="spirit-collage-tile s8"></span>
+                <span class="spirit-collage-tile s9"></span>
+                <span class="spirit-collage-tile s10"></span>
+                <span class="spirit-collage-tile s11"></span>
+                <span class="spirit-collage-tile s12"></span>
+                <span class="spirit-collage-tile s13"></span>
+                <span class="spirit-collage-tile s14"></span>
+            </div>
 
-{{--            <div class="spirit-collage-overlay"></div>--}}
-{{--            <div class="spirit-collage-vignette"></div>--}}
-{{--            <div class="spirit-collage-glow"></div>--}}
+            <div class="spirit-collage-overlay"></div>
+            <div class="spirit-collage-vignette"></div>
+            <div class="spirit-collage-glow"></div>
 
-{{--            <div class="container spirit-week-wrap">--}}
-{{--                <div class="spirit-week-head">--}}
-{{--                    <h2>SPIRIT WEEK</h2>--}}
-{{--                    <p>Plan your outfits for the week and step into the Vegas vibe.</p>--}}
-{{--                </div>--}}
+            <div class="container spirit-week-wrap">
+                <div class="spirit-week-head">
+                    <h2>SPIRIT WEEK</h2>
+                    <p>Plan your outfits for the week and step into the Vegas vibe.</p>
+                </div>
 
-{{--                <div class="spirit-week-box">--}}
-{{--                    <div class="spirit-rows">--}}
-{{--                        <div class="spirit-row">--}}
-{{--                            <div class="spirit-date">20</div>--}}
-{{--                            <div class="spirit-info">--}}
-{{--                                <h4>Tourist Takeover</h4>--}}
-{{--                                <p>Hawaiian shirts, graphic tees, jerseys, sunglasses, fanny packs, cameras, and travel vibes.</p>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
+                <div class="spirit-week-box">
+                    <div class="spirit-rows">
+                        <div class="spirit-row">
+                            <div class="spirit-date">20</div>
+                            <div class="spirit-info">
+                                <h4>Tourist Takeover</h4>
+                                <p>Hawaiian shirts, graphic tees, jerseys, sunglasses, fanny packs, cameras, and travel vibes.</p>
+                            </div>
+                        </div>
 
-{{--                        <div class="spirit-row">--}}
-{{--                            <div class="spirit-date">21</div>--}}
-{{--                            <div class="spirit-info">--}}
-{{--                                <h4>Lucky Looks Day</h4>--}}
-{{--                                <p>Wear red, black, or green, plus lucky numbers, polka dots, stripes, and bold patterns.</p>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
+                        <div class="spirit-row">
+                            <div class="spirit-date">21</div>
+                            <div class="spirit-info">
+                                <h4>Lucky Looks Day</h4>
+                                <p>Wear red, black, or green, plus lucky numbers, polka dots, stripes, and bold patterns.</p>
+                            </div>
+                        </div>
 
-{{--                        <div class="spirit-row">--}}
-{{--                            <div class="spirit-date">22</div>--}}
-{{--                            <div class="spirit-info">--}}
-{{--                                <h4>Vegas Icons Day</h4>--}}
-{{--                                <p>Dress like a famous entertainer, singer, magician, or go for sequins and performance looks.</p>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
+                        <div class="spirit-row">
+                            <div class="spirit-date">22</div>
+                            <div class="spirit-info">
+                                <h4>Vegas Icons Day</h4>
+                                <p>Dress like a famous entertainer, singer, magician, or go for sequins and performance looks.</p>
+                            </div>
+                        </div>
 
-{{--                        <div class="spirit-row">--}}
-{{--                            <div class="spirit-date">23</div>--}}
-{{--                            <div class="spirit-info">--}}
-{{--                                <h4>High Rollers Day</h4>--}}
-{{--                                <p>Dress like a Vegas VIP with suits, ties, dresses, blazers, and red-carpet energy.</p>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
+                        <div class="spirit-row">
+                            <div class="spirit-date">23</div>
+                            <div class="spirit-info">
+                                <h4>High Rollers Day</h4>
+                                <p>Dress like a Vegas VIP with suits, ties, dresses, blazers, and red-carpet energy.</p>
+                            </div>
+                        </div>
 
-{{--                        <div class="spirit-row">--}}
-{{--                            <div class="spirit-date">24</div>--}}
-{{--                            <div class="spirit-info">--}}
-{{--                                <h4>Lights on the Vegas Strip</h4>--}}
-{{--                                <p>Wear school colors with sparkle, glitter, sequins, or neon accents.</p>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </section>--}}
+                        <div class="spirit-row">
+                            <div class="spirit-date">24</div>
+                            <div class="spirit-info">
+                                <h4>Lights on the Vegas Strip</h4>
+                                <p>Wear school colors with sparkle, glitter, sequins, or neon accents.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section class="instagram-feed-section">
             <div class="instagram-collage-bg" aria-hidden="true">
@@ -186,7 +186,7 @@
 
         <section class="tickets-strip">
             <div class="tickets-strip-inner">
-                <p class="tickets-strip-text">Almost 200 Tickets Sold - Don’t Miss Out</p>
+                <p class="tickets-strip-text">MORE THAN 200 Tickets Sold - Don’t Miss Out</p>
                 <a href="https://osp.osmsinc.com/CMS/BVModules/ProductTemplates/Bvc2013/Product.aspx?productid=AZ536-189"
                    class="tickets-strip-btn" target="_blank"
                    onclick="gtag('event', 'buy_tickets_click', {

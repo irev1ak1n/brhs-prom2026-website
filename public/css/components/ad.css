@@ -1,0 +1,78 @@
+
+.yb-marquee {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    background: linear-gradient(90deg, #7b3fe4 0%, #c85ccf 50%, #ff7ab6 100%);
+
+    padding: 1rem 0;
+    z-index: 5;
+}
+
+.yb-marquee::before,
+.yb-marquee::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.yb-marquee::before {
+    left: 0;
+    background: linear-gradient(to right, #7b3fe4, transparent);
+}
+
+.yb-marquee::after {
+    right: 0;
+    background: linear-gradient(to left, #ff7ab6, transparent);
+}
+
+.yb-marquee-track {
+    display: flex;
+    width: max-content;
+}
+
+.yb-marquee-content {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    white-space: nowrap;
+
+    animation: marqueeMove 22s linear infinite;
+}
+
+.yb-marquee-content span {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.9rem;
+    letter-spacing: 0.08em;
+    color: white;
+    text-transform: uppercase;
+}
+
+.yb-marquee-sep {
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
+@keyframes marqueeMove {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.yb-marquee:hover .yb-marquee-content {
+    animation-play-state: paused;
+}
+
+@media (max-width: 768px) {
+    .yb-marquee-content span {
+        font-size: 1.3rem;
+    }
+}

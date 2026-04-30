@@ -33,7 +33,8 @@
                     <h3>Email</h3>
                     <p>
                         brhsprom2026@gmail.com<br>
-                        Use this for general questions, ticket issues, or guest approvals.
+                        Assistant Principle: rachaeln.smith@cms.k12.nc.us<br>
+                        Use either of these for general questions, ticket issues, or guest approvals.
                     </p>
                 </div>
 

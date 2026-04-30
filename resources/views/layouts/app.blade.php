@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="{{ asset('css/components/prom-info.css') }}">
     <link rel="stylesheet" href="{{ asset('css/components/spirit-week.css') }}">
     <link rel="stylesheet" href="{{ asset('css/components/insta-section.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/components/ad.css') }}">
 
     <link rel="stylesheet" href="{{ asset('css/pages/faq.css') }}">
     <link rel="stylesheet" href="{{ asset('css/pages/contact.css') }}">

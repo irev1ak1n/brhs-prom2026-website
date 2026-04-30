@@ -181,19 +181,16 @@
             </div>
         </section>
 
-
-
-
         <section class="tickets-strip">
             <div class="tickets-strip-inner">
-                <p class="tickets-strip-text">MORE THAN 200 Tickets Sold - Don’t Miss Out</p>
+                <p class="tickets-strip-text">ALMOST 250 TICKETS SOLD OUT - DON'T MISS OUT</p>
                 <a href="https://osp.osmsinc.com/CMS/BVModules/ProductTemplates/Bvc2013/Product.aspx?productid=AZ536-189"
                    class="tickets-strip-btn" target="_blank"
                    onclick="gtag('event', 'buy_tickets_click', {
                      event_category: 'engagement',
                      event_label: 'go to payment',
                      transport_type: 'beacon'
-                   })">Buy Your Tickets</a>
+                   })">SOLD OUT</a>
             </div>
         </section>
 

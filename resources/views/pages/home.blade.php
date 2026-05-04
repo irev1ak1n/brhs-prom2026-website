@@ -190,7 +190,7 @@
                      event_category: 'engagement',
                      event_label: 'go to payment',
                      transport_type: 'beacon'
-                   })">SOLD OUT</a>
+                   })">BUY TICKETS</a>
             </div>
         </section>
 

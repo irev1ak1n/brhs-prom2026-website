@@ -195,6 +195,7 @@
 .t11{ grid-column: 5 / span 1; grid-row: 4 / span 1; }
 .t12{ grid-column: 6 / span 1; grid-row: 4 / span 1; }
 
+/* ORIGINAL IMAGES */
 .t1{ background-image: url("/images/gallery/promcom1.jpg"); }
 .t2{ background-image: url("/images/gallery/promcom2.jpg"); }
 .t3{ background-image: url("/images/gallery/promcom3.jpg"); }
@@ -210,11 +211,95 @@
 .t13{ background-image: url("/images/gallery/promcom13.jpg"); }
 .t14{ background-image: url("/images/gallery/promcom14.jpg"); }
 .t15{ background-image: url("/images/gallery/place1.jpg"); }
-.t16{ background-image: url("/images/gallery/building.png");}
-.t17{ background-image: url("/images/gallery/karaoke.png");}
-.t18{ background-image: url("/images/gallery/event2.png");}
-.t19{ background-image: url("/images/gallery/karaoke2.png");}
-.t20{ background-image: url("/images/gallery/overview1.png");}
+.t16{ background-image: url("/images/gallery/building.png"); }
+.t17{ background-image: url("/images/gallery/karaoke.png"); }
+.t18{ background-image: url("/images/gallery/event2.png"); }
+.t19{ background-image: url("/images/gallery/karaoke2.png"); }
+.t20{ background-image: url("/images/gallery/overview1.png"); }
+
+/* NEW PROM PICS */
+.t21{ background-image: url("/images/gallery/prom/pic (1).jpg"); }
+.t22{ background-image: url("/images/gallery/prom/pic (4).jpg"); }
+.t23{ background-image: url("/images/gallery/prom/pic (67).jpg"); }
+.t24{ background-image: url("/images/gallery/prom/pic (23).jpg"); }
+.t25{ background-image: url("/images/gallery/prom/pic (81).jpg"); }
+.t26{ background-image: url("/images/gallery/prom/pic (44).jpg"); }
+.t27{ background-image: url("/images/gallery/prom/pic (24).jpg"); }
+.t28{ background-image: url("/images/gallery/prom/pic (9).jpg"); }
+.t29{ background-image: url("/images/gallery/prom/pic (52).jpg"); }
+.t30{ background-image: url("/images/gallery/prom/pic (13).jpg"); }
+.t31{ background-image: url("/images/gallery/prom/pic (76).jpg"); }
+.t32{ background-image: url("/images/gallery/prom/pic (2).jpg"); }
+.t33{ background-image: url("/images/gallery/prom/pic (39).jpg"); }
+.t34{ background-image: url("/images/gallery/prom/pic (58).jpg"); }
+.t35{ background-image: url("/images/gallery/prom/pic (11).jpg"); }
+.t36{ background-image: url("/images/gallery/prom/pic (73).jpg"); }
+.t37{ background-image: url("/images/gallery/prom/pic (31).jpg"); }
+.t38{ background-image: url("/images/gallery/prom/pic (5).jpg"); }
+.t39{ background-image: url("/images/gallery/prom/pic (62).jpg"); }
+.t40{ background-image: url("/images/gallery/prom/pic (27).jpg"); }
+.t41{ background-image: url("/images/gallery/prom/pic (80).jpg"); }
+.t42{ background-image: url("/images/gallery/prom/pic (14).jpg"); }
+.t43{ background-image: url("/images/gallery/prom/pic (46).jpg"); }
+.t44{ background-image: url("/images/gallery/prom/pic (7).jpg"); }
+.t45{ background-image: url("/images/gallery/prom/pic (55).jpg"); }
+.t46{ background-image: url("/images/gallery/prom/pic (18).jpg"); }
+.t47{ background-image: url("/images/gallery/prom/pic (71).jpg"); }
+.t48{ background-image: url("/images/gallery/prom/pic (29).jpg"); }
+.t49{ background-image: url("/images/gallery/prom/pic (64).jpg"); }
+.t50{ background-image: url("/images/gallery/prom/pic (10).jpg"); }
+.t51{ background-image: url("/images/gallery/prom/pic (37).jpg"); }
+.t52{ background-image: url("/images/gallery/prom/pic (79).jpg"); }
+.t53{ background-image: url("/images/gallery/prom/pic (21).jpg"); }
+.t54{ background-image: url("/images/gallery/prom/pic (49).jpg"); }
+.t55{ background-image: url("/images/gallery/prom/pic (6).jpg"); }
+.t56{ background-image: url("/images/gallery/prom/pic (69).jpg"); }
+.t57{ background-image: url("/images/gallery/prom/pic (32).jpg"); }
+.t58{ background-image: url("/images/gallery/prom/pic (15).jpg"); }
+.t59{ background-image: url("/images/gallery/prom/pic (60).jpg"); }
+.t60{ background-image: url("/images/gallery/prom/pic (3).jpg"); }
+.t61{ background-image: url("/images/gallery/prom/pic (48).jpg"); }
+.t62{ background-image: url("/images/gallery/prom/pic (75).jpg"); }
+.t63{ background-image: url("/images/gallery/prom/pic (26).jpg"); }
+.t64{ background-image: url("/images/gallery/prom/pic (57).jpg"); }
+.t65{ background-image: url("/images/gallery/prom/pic (12).jpg"); }
+.t66{ background-image: url("/images/gallery/prom/pic (82).jpg"); }
+.t67{ background-image: url("/images/gallery/prom/pic (34).jpg"); }
+.t68{ background-image: url("/images/gallery/prom/pic (19).jpg"); }
+.t69{ background-image: url("/images/gallery/prom/pic (66).jpg"); }
+.t70{ background-image: url("/images/gallery/prom/pic (28).jpg"); }
+.t71{ background-image: url("/images/gallery/prom/pic (54).jpg"); }
+.t72{ background-image: url("/images/gallery/prom/pic (8).jpg"); }
+.t73{ background-image: url("/images/gallery/prom/pic (72).jpg"); }
+.t74{ background-image: url("/images/gallery/prom/pic (22).jpg"); }
+.t75{ background-image: url("/images/gallery/prom/pic (41).jpg"); }
+.t76{ background-image: url("/images/gallery/prom/pic (16).jpg"); }
+.t77{ background-image: url("/images/gallery/prom/pic (63).jpg"); }
+.t78{ background-image: url("/images/gallery/prom/pic (30).jpg"); }
+.t79{ background-image: url("/images/gallery/prom/pic (78).jpg"); }
+.t80{ background-image: url("/images/gallery/prom/pic (25).jpg"); }
+.t81{ background-image: url("/images/gallery/prom/pic (50).jpg"); }
+.t82{ background-image: url("/images/gallery/prom/pic (17).jpg"); }
+.t83{ background-image: url("/images/gallery/prom/pic (68).jpg"); }
+.t84{ background-image: url("/images/gallery/prom/pic (33).jpg"); }
+.t85{ background-image: url("/images/gallery/prom/pic (74).jpg"); }
+.t86{ background-image: url("/images/gallery/prom/pic (20).jpg"); }
+.t87{ background-image: url("/images/gallery/prom/pic (45).jpg"); }
+.t88{ background-image: url("/images/gallery/prom/pic (61).jpg"); }
+.t89{ background-image: url("/images/gallery/prom/pic (35).jpg"); }
+.t90{ background-image: url("/images/gallery/prom/pic (77).jpg"); }
+.t91{ background-image: url("/images/gallery/prom/pic (40).jpg"); }
+.t92{ background-image: url("/images/gallery/prom/pic (53).jpg"); }
+.t93{ background-image: url("/images/gallery/prom/pic (36).jpg"); }
+.t94{ background-image: url("/images/gallery/prom/pic (70).jpg"); }
+.t95{ background-image: url("/images/gallery/prom/pic (43).jpg"); }
+.t96{ background-image: url("/images/gallery/prom/pic (59).jpg"); }
+.t97{ background-image: url("/images/gallery/prom/pic (38).jpg"); }
+.t98{ background-image: url("/images/gallery/prom/pic (65).jpg"); }
+.t99{ background-image: url("/images/gallery/prom/pic (42).jpg"); }
+.t100{ background-image: url("/images/gallery/prom/pic (51).jpg"); }
+.t101{ background-image: url("/images/gallery/prom/pic (47).jpg"); }
+.t102{ background-image: url("/images/gallery/prom/pic (56).jpg"); }
 
 .instagram-collage-overlay{
     position: absolute;

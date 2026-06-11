@@ -5,7 +5,14 @@
 @section('content')
     <main class="home-page">
         <section class="hero-page" id="home">
-            <div class="hero-bg"></div>
+            <div class="hero-bg">
+                @foreach ([4,5,6,9,10,11,12,15,17,20,21,53,54] as $i)
+                    <span
+                        class="hero-slide"
+                        style="background-image: url('{{ asset("images/gallery/prom/pic ($i).jpg") }}');">
+                    </span>
+                @endforeach
+            </div>
             <div class="hero-glow hero-glow-1"></div>
             <div class="hero-glow hero-glow-2"></div>
 

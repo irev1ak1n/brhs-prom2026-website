@@ -12,7 +12,7 @@
             "Ticket deadline May 1",
             "What should I wear?",
             "Dress code for prom",
-            "Buy prom tickets",
+            "Buy prom initMobileMenu",
             "Prom night schedule",
             "Parking at The Hamilton",
             "Guest rules for prom",
@@ -329,6 +329,7 @@
         const closeMenu = document.getElementById("closeMenu");
         const overlay = document.getElementById("mobileMenuOverlay");
         const sidebar = document.getElementById("mobileSidebar");
+        const navbarCloseBtn = document.getElementById("navbarCloseBtn");
 
         if (!menuToggle) return;
 
@@ -344,18 +345,43 @@
             sidebar?.setAttribute("aria-hidden", "true");
         }
 
-        menuToggle.addEventListener("click", openMenu);
+        menuToggle.addEventListener("click", () => {
+            const isOpen = body.classList.contains("mobile-menu-open");
+
+            if (isOpen) {
+                closeSidebar();
+            } else {
+                openMenu();
+            }
+        });
+
         closeMenu?.addEventListener("click", closeSidebar);
         overlay?.addEventListener("click", closeSidebar);
+        navbarCloseBtn?.addEventListener("click", closeSidebar);
 
         document.addEventListener("keydown", (e) => {
-            if (e.key === "Escape") closeSidebar();
+            if (e.key === "Escape") {
+                closeSidebar();
+            }
         });
 
         // close menu when clicking links
-        document.querySelectorAll(".mobile-sidebar a").forEach(link => {
+        document.querySelectorAll(".mobile-sidebar a").forEach((link) => {
             link.addEventListener("click", closeSidebar);
         });
+    }
+
+    function closeEverything() {
+        document.body.classList.remove(
+            "mobile-menu-open",
+            "mobile-search-open"
+        );
+
+        menuToggle?.setAttribute("aria-expanded", "false");
+        searchToggle?.setAttribute("aria-expanded", "false");
+
+        sidebar?.setAttribute("aria-hidden", "true");
+        searchPanel?.setAttribute("aria-hidden", "true");
     }
 
     function initMobileSearch() {
@@ -364,6 +390,7 @@
         const searchPanel = document.getElementById("mobileSearchPanel");
         const mobileSearchInput = document.getElementById("mobileSearchInput");
         const mobileSearchBtn = document.getElementById("mobileSearchBtn");
+        const navbarCloseBtn = document.getElementById("navbarCloseBtn");
 
         if (!searchToggle || !searchPanel) return;
 

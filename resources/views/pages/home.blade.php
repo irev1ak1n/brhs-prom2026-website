@@ -6,15 +6,17 @@
     <main class="home-page">
         <section class="hero-page" id="home">
             <div class="hero-bg">
-                @foreach ([4,5,6,9,10,11,12,15,17,20,21,53,54] as $i)
-                    <span
-                        class="hero-slide"
-                        style="background-image: url('{{ asset("images/gallery/prom/pic ($i).jpg") }}');">
-                    </span>
-                @endforeach
+                <div class="hero-collage">
+                    @foreach ([4,5,6,9,10,11,12,15,17,20,21,53,54] as $i)
+                        <div class="collage-item">
+                            <img src="{{ asset("images/gallery/prom/pic ($i).jpg") }}" alt="">
+                        </div>
+                    @endforeach
+                </div>
             </div>
             <div class="hero-glow hero-glow-1"></div>
             <div class="hero-glow hero-glow-2"></div>
+            <canvas id="hero-embers" aria-hidden="true"></canvas>
 
             <section class="hero container hero-minimal">
 
@@ -187,6 +189,7 @@
         @include('components.prom-info')
 
         <section class="venue-showcase">
+            <canvas class="venue-embers" aria-hidden="true"></canvas>
             <div class="venue-wave venue-wave-top"></div>
 
             <div class="venue-inner">
